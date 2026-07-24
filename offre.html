@@ -125,6 +125,31 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .pc-name { font-size: 13px; font-weight: 900; color: var(--text); margin-bottom: 4px; }
 .pc-ct { font-size: 10px; font-weight: 300; color: var(--mid); }
 
+/* ── TABLEAUX DE BORD ── */
+.dash-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; margin-bottom: 24px; }
+.dcard {
+  position: relative; overflow: hidden;
+  background: linear-gradient(135deg, #002060 0%, #013a8f 100%);
+  border-radius: 3px; padding: 18px 20px 16px;
+  text-decoration: none; display: block;
+  transition: box-shadow 0.16s, transform 0.12s;
+}
+.dcard:hover { box-shadow: 0 8px 26px rgba(0,32,96,0.26); transform: translateY(-2px); }
+.dcard-deco { position: absolute; right: -24px; top: 0; bottom: 0; width: 150px; background: rgba(0,193,222,0.13); clip-path: polygon(28% 0,100% 0,72% 100%,0% 100%); pointer-events: none; }
+.dcard-deco2 { position: absolute; right: 64px; top: 0; bottom: 0; width: 80px; background: rgba(255,185,29,0.07); clip-path: polygon(28% 0,100% 0,72% 100%,0% 100%); pointer-events: none; }
+.dcard-top { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; margin-bottom: 14px; }
+.dcard-ico { width: 36px; height: 36px; border-radius: 3px; background: rgba(0,193,222,0.18); display: flex; align-items: center; justify-content: center; font-size: 17px; }
+.dcard-eye { font-size: 8px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--turq); }
+.dcard-t { font-size: 14px; font-weight: 900; color: #fff; line-height: 1.25; position: relative; z-index: 1; margin-bottom: 4px; }
+.dcard-d { font-size: 10px; font-weight: 300; color: rgba(255,255,255,0.55); position: relative; z-index: 1; line-height: 1.4; }
+.dcard-chart { display: flex; align-items: flex-end; gap: 5px; height: 30px; margin-top: 16px; position: relative; z-index: 1; }
+.dcard-chart i { flex: 1; background: rgba(255,255,255,0.16); border-radius: 1px; display: block; transition: background 0.16s; }
+.dcard:hover .dcard-chart i { background: rgba(0,193,222,0.6); }
+.dcard-link { font-size: 9px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.7); position: relative; z-index: 1; margin-top: 14px; display: flex; align-items: center; gap: 5px; transition: color 0.16s; }
+.dcard:hover .dcard-link { color: var(--turq); }
+.dcard-link span { transition: transform 0.16s; }
+.dcard:hover .dcard-link span { transform: translateX(3px); }
+
 .site-footer {
   background: var(--white); border-top: 1px solid var(--border);
   padding: 20px 28px; text-align: center;
@@ -133,10 +158,14 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .footer-logo { height: 28px; width: auto; opacity: 0.7; }
 
 /* ── RESPONSIVE ── */
+@media (max-width: 1300px) {
+  .dash-grid { grid-template-columns: repeat(3,1fr); }
+}
 @media (max-width: 1100px) {
   .projects-grid { grid-template-columns: repeat(3,1fr); }
 }
 @media (max-width: 900px) {
+  .dash-grid { grid-template-columns: repeat(2,1fr); }
   .offre-grid { grid-template-columns: 1fr; }
   .quick-row { grid-template-columns: repeat(2,1fr); }
   .menus-grid { grid-template-columns: repeat(2,1fr); }
@@ -145,7 +174,7 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 }
 @media (max-width: 560px) {
   .body-wrap { padding: 18px 16px 36px; }
-  .quick-row, .menus-grid, .projects-grid { grid-template-columns: 1fr; }
+  .dash-grid, .quick-row, .menus-grid, .projects-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -162,6 +191,65 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
     </div>
     <button class="feat-btn">Accéder au CRM</button>
   </a>
+
+  <div class="section-label">Tableaux de bord</div>
+  <div class="dash-grid">
+    <a class="dcard" target="_parent" href="https://safeplace.teepee.fr/#/homepage/view/D35E43C6">
+      <div class="dcard-deco"></div><div class="dcard-deco2"></div>
+      <div class="dcard-top">
+        <div class="dcard-ico">🎯</div>
+        <div class="dcard-eye">Power BI</div>
+      </div>
+      <div class="dcard-t">CRM</div>
+      <div class="dcard-d">Pilotage commercial &amp; opportunités</div>
+      <div class="dcard-chart"><i style="height:52%"></i><i style="height:70%"></i><i style="height:44%"></i><i style="height:86%"></i><i style="height:60%"></i><i style="height:92%"></i><i style="height:74%"></i></div>
+      <div class="dcard-link">Ouvrir le tableau de bord <span>→</span></div>
+    </a>
+    <a class="dcard" target="_parent" href="https://safeplace.teepee.fr/#/homepage/view/7FFDF492">
+      <div class="dcard-deco"></div><div class="dcard-deco2"></div>
+      <div class="dcard-top">
+        <div class="dcard-ico">📋</div>
+        <div class="dcard-eye">Power BI</div>
+      </div>
+      <div class="dcard-t">Suivi fiche de contrôle</div>
+      <div class="dcard-d">Avancement et statut des contrôles</div>
+      <div class="dcard-chart"><i style="height:40%"></i><i style="height:65%"></i><i style="height:50%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:95%"></i><i style="height:72%"></i></div>
+      <div class="dcard-link">Ouvrir le tableau de bord <span>→</span></div>
+    </a>
+    <a class="dcard" target="_parent" href="https://safeplace.teepee.fr/#/homepage/view/F4D24233">
+      <div class="dcard-deco"></div><div class="dcard-deco2"></div>
+      <div class="dcard-top">
+        <div class="dcard-ico">📊</div>
+        <div class="dcard-eye">Power BI</div>
+      </div>
+      <div class="dcard-t">Tableau de bord qualité</div>
+      <div class="dcard-d">Indicateurs qualité, non-conformités &amp; actions d'amélioration</div>
+      <div class="dcard-chart"><i style="height:55%"></i><i style="height:35%"></i><i style="height:70%"></i><i style="height:50%"></i><i style="height:88%"></i><i style="height:62%"></i><i style="height:78%"></i></div>
+      <div class="dcard-link">Ouvrir le tableau de bord <span>→</span></div>
+    </a>
+    <a class="dcard" target="_parent" href="https://safeplace.teepee.fr/#/homepage/view/403B7A7F">
+      <div class="dcard-deco"></div><div class="dcard-deco2"></div>
+      <div class="dcard-top">
+        <div class="dcard-ico">🛡️</div>
+        <div class="dcard-eye">Power BI</div>
+      </div>
+      <div class="dcard-t">Quart d'heure QSE</div>
+      <div class="dcard-d">Suivi des chiffres sécurité &amp; environnement</div>
+      <div class="dcard-chart"><i style="height:48%"></i><i style="height:72%"></i><i style="height:58%"></i><i style="height:90%"></i><i style="height:66%"></i><i style="height:82%"></i><i style="height:54%"></i></div>
+      <div class="dcard-link">Ouvrir le tableau de bord <span>→</span></div>
+    </a>
+    <a class="dcard" target="_parent" href="https://safeplace.teepee.fr/#/homepage/view/D877A9DE">
+      <div class="dcard-deco"></div><div class="dcard-deco2"></div>
+      <div class="dcard-top">
+        <div class="dcard-ico">📈</div>
+        <div class="dcard-eye">Power BI</div>
+      </div>
+      <div class="dcard-t">Suivi chantier</div>
+      <div class="dcard-d">Suivi HSE, Actions &amp; Réserves</div>
+      <div class="dcard-chart"><i style="height:62%"></i><i style="height:45%"></i><i style="height:78%"></i><i style="height:55%"></i><i style="height:92%"></i><i style="height:68%"></i><i style="height:84%"></i></div>
+      <div class="dcard-link">Ouvrir le tableau de bord <span>→</span></div>
+    </a>
+  </div>
 
   <div class="section-label">Offre</div>
   <div class="offre-grid">
