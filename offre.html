@@ -59,25 +59,35 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .feat-btn:hover { background: #EEF3F8; }
 
 /* ── GRANDES CARTES OFFRE ── */
-.offre-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 24px; }
+.offre-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; margin-bottom: 24px; }
 .ocard {
   background: var(--white); border: 1px solid var(--border);
   border-top: 3px solid var(--blue); border-radius: 3px;
   padding: 20px 22px 18px; text-decoration: none; color: inherit;
-  display: block; position: relative; overflow: hidden;
+  display: flex; flex-direction: column; position: relative; overflow: hidden;
   transition: box-shadow 0.15s, transform 0.12s, border-color 0.15s;
 }
 .ocard:hover { box-shadow: 0 6px 20px rgba(0,32,96,0.10); transform: translateY(-2px); }
 .ocard.c1 { border-top-color: var(--blue); }
 .ocard.c2 { border-top-color: var(--turq); }
 .ocard.c3 { border-top-color: var(--deep); }
+.ocard.c4 { border-top-color: var(--colvert); }
+.ocard.c5 { border-top-color: var(--yellow); }
 .ocard-ico { width: 44px; height: 44px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 14px; }
 .ocard.c1 .ocard-ico { background: rgba(0,113,206,0.10); }
 .ocard.c2 .ocard-ico { background: rgba(0,193,222,0.12); }
 .ocard.c3 .ocard-ico { background: rgba(0,32,96,0.07); }
+.ocard.c4 .ocard-ico { background: rgba(0,123,153,0.10); }
+.ocard.c5 .ocard-ico { background: rgba(255,185,29,0.14); }
+.ocard-tag {
+  position: absolute; top: 14px; right: 14px;
+  font-size: 8px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--colvert); background: rgba(0,193,222,0.13);
+  padding: 3px 8px; border-radius: 2px;
+}
 .ocard-t { font-size: 15px; font-weight: 900; color: var(--text); margin-bottom: 5px; line-height: 1.25; }
-.ocard-d { font-size: 11px; font-weight: 300; color: var(--mid); line-height: 1.5; margin-bottom: 14px; }
-.ocard-link { font-size: 9px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); display: flex; align-items: center; gap: 5px; }
+.ocard-d { font-size: 11px; font-weight: 300; color: var(--mid); line-height: 1.5; margin-bottom: 16px; }
+.ocard-link { font-size: 9px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); display: flex; align-items: center; gap: 5px; margin-top: auto; }
 .ocard-link span { transition: transform 0.16s; }
 .ocard:hover .ocard-link span { transform: translateX(3px); }
 
@@ -162,13 +172,14 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 /* ── RESPONSIVE ── */
 @media (max-width: 1300px) {
   .dash-grid { grid-template-columns: repeat(3,1fr); }
+  .offre-grid { grid-template-columns: repeat(3,1fr); }
 }
 @media (max-width: 1100px) {
   .projects-grid { grid-template-columns: repeat(3,1fr); }
 }
 @media (max-width: 900px) {
   .dash-grid { grid-template-columns: repeat(2,1fr); }
-  .offre-grid { grid-template-columns: 1fr; }
+  .offre-grid { grid-template-columns: repeat(2,1fr); }
   .quick-row { grid-template-columns: repeat(2,1fr); }
   .menus-grid { grid-template-columns: repeat(2,1fr); }
   .projects-grid { grid-template-columns: repeat(2,1fr); }
@@ -176,7 +187,7 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 }
 @media (max-width: 560px) {
   .body-wrap { padding: 18px 16px 36px; }
-  .dash-grid, .quick-row, .menus-grid, .projects-grid { grid-template-columns: 1fr; }
+  .dash-grid, .offre-grid, .quick-row, .menus-grid, .projects-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -193,6 +204,41 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
     </div>
     <button class="feat-btn">Dossier MPA</button>
   </a>
+
+  <div class="section-label">Offre — CRM</div>
+  <div class="offre-grid">
+    <a class="ocard c1" target="_parent" href="https://safeplace.teepee.fr/#/category/0E3BFD62/B83A513C/dataList/CRMOpportunite/default_CRMOpportunite">
+      <div class="ocard-ico">🎯</div>
+      <div class="ocard-t">Toutes les opportunités</div>
+      <div class="ocard-d">Pipeline commercial complet, tous statuts confondus</div>
+      <div class="ocard-link">Ouvrir <span>→</span></div>
+    </a>
+    <a class="ocard c2" target="_parent" href="https://safeplace.teepee.fr/#/category/0E3BFD62/E6B257D2/dataList/CRMOpportunite/CRMOpportuniteEnCours">
+      <div class="ocard-tag">En cours</div>
+      <div class="ocard-ico">📐</div>
+      <div class="ocard-t">Chiffrages en cours</div>
+      <div class="ocard-d">Opportunités en cours de chiffrage, à traiter</div>
+      <div class="ocard-link">Ouvrir <span>→</span></div>
+    </a>
+    <a class="ocard c3" target="_parent" href="https://safeplace.teepee.fr/#/category/0E3BFD62/DD0397AD/dataList/TEEPEE_Entreprise/Client">
+      <div class="ocard-ico">🏢</div>
+      <div class="ocard-t">Clients</div>
+      <div class="ocard-d">Base des entreprises clientes et de leurs affaires</div>
+      <div class="ocard-link">Ouvrir <span>→</span></div>
+    </a>
+    <a class="ocard c4" target="_parent" href="https://safeplace.teepee.fr/#/category/0E3BFD62/46A65DBC/dataList/TEEPEE_Contact/default_TEEPEE_Contact">
+      <div class="ocard-ico">👥</div>
+      <div class="ocard-t">Contacts</div>
+      <div class="ocard-d">Annuaire des interlocuteurs clients et partenaires</div>
+      <div class="ocard-link">Ouvrir <span>→</span></div>
+    </a>
+    <a class="ocard c5" target="_parent" href="https://safeplace.teepee.fr/#/category/0E3BFD62/9ED75B57/dataList/CRMActionCommerciale/default_CRMActionCommerciale">
+      <div class="ocard-ico">📣</div>
+      <div class="ocard-t">Actions commerciales</div>
+      <div class="ocard-d">Suivi des actions, relances et rendez-vous</div>
+      <div class="ocard-link">Ouvrir <span>→</span></div>
+    </a>
+  </div>
 
   <div class="section-label">Tableaux de bord</div>
   <div class="dash-grid">
@@ -250,28 +296,6 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
       <div class="dcard-d">Suivi HSE, Actions &amp; Réserves</div>
       <div class="dcard-chart"><i style="height:62%"></i><i style="height:45%"></i><i style="height:78%"></i><i style="height:55%"></i><i style="height:92%"></i><i style="height:68%"></i><i style="height:84%"></i></div>
       <div class="dcard-link">Ouvrir le tableau de bord <span>→</span></div>
-    </a>
-  </div>
-
-  <div class="section-label">Offre</div>
-  <div class="offre-grid">
-    <a class="ocard c1" target="_parent" href="https://safeplace.teepee.fr/#/category/0E3BFD62/9ED75B57/dataList/CRMActionCommerciale/default_CRMActionCommerciale">
-      <div class="ocard-ico">📣</div>
-      <div class="ocard-t">Actions commerciales</div>
-      <div class="ocard-d">Suivi des actions et relances commerciales</div>
-      <div class="ocard-link">Ouvrir <span>→</span></div>
-    </a>
-    <a class="ocard c2" target="_parent" href="https://safeplace.teepee.fr/#/category/0E3BFD62/B83A513C/dataList/CRMOpportunite/default_CRMOpportunite">
-      <div class="ocard-ico">🎯</div>
-      <div class="ocard-t">Opportunités</div>
-      <div class="ocard-d">Pipeline et suivi des opportunités</div>
-      <div class="ocard-link">Ouvrir <span>→</span></div>
-    </a>
-    <a class="ocard c3" target="_parent" href="https://safeplace.teepee.fr/#/category/0E3BFD62/DD0397AD/dataList/TEEPEE_Entreprise/Client">
-      <div class="ocard-ico">🏢</div>
-      <div class="ocard-t">Clients</div>
-      <div class="ocard-d">Base clients et comptes entreprises</div>
-      <div class="ocard-link">Ouvrir <span>→</span></div>
     </a>
   </div>
 
