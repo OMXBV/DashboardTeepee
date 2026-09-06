@@ -10,7 +10,8 @@ TeePee via son URL de publication GitHub Pages.
 |---|---|---|
 | `index.html` | Accueil TeePee — Omexom Vincennes Nagi | https://omxbv.github.io/DashboardTeepee/ |
 | `en.html` | Home TeePee — Omexom International | https://omxbv.github.io/DashboardTeepee/en.html |
-| `offre.html` | Offre & Projet — Omexom Teepee | https://omxbv.github.io/DashboardTeepee/offre.html |
+| `offre.html` | Offre & Projet · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/offre.html |
+| `rh.html` | Ressources humaines · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/rh.html |
 
 ## Publication
 
@@ -41,7 +42,7 @@ puissances, responsables affectés, volumétrie du plan d'action et des non-conf
 et des liens profonds vers l'application interne `safeplace.teepee.fr`.
 
 Le dépôt étant public, **ces informations sont lisibles par toute personne connaissant
-l'URL**. Les trois pages portent un `noindex, nofollow, noarchive` et un `robots.txt`
+l'URL**. Les quatre pages portent un `noindex, nofollow, noarchive` et un `robots.txt`
 interdit l'exploration : les moteurs de recherche sont écartés, mais ce n'est pas un
 contrôle d'accès.
 
@@ -58,7 +59,7 @@ extraites, ni redistribuées, ni employées dans un autre projet, interne ou ext
 
 Elles sont sous-ensemblées au latin étendu (729 glyphes, kerning et `ss02` conservés) et
 livrées en WOFF2 — 396 Ko au lieu de 1,3 Mo en TTF. `index.html` les embarque en base64
-pour rester autonome ; `en.html` et `offre.html` les chargent en externe.
+pour rester autonome ; `en.html`, `offre.html` et `rh.html` les chargent en externe.
 
 Pour régénérer après une mise à jour de la police :
 
