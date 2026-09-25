@@ -190,6 +190,12 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .dcard-top { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; margin-bottom: 14px; }
 .dcard-ico { width: 36px; height: 36px; border-radius: 3px; background: rgba(0,193,222,0.18); display: flex; align-items: center; justify-content: center; font-size: 17px; }
 .dcard-eye { font-size: 8px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--turq); }
+.dcard-eyes { display: flex; align-items: center; gap: 9px; }
+.dcard-new {
+  font-size: 8px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--deep); background: var(--yellow);
+  padding: 3px 11px 3px 7px; clip-path: polygon(0 0,88% 0,100% 100%,12% 100%);
+}
 .dcard-t { font-size: 14px; font-weight: 900; color: #fff; line-height: 1.25; position: relative; z-index: 1; margin-bottom: 4px; }
 .dcard-d { font-size: 10px; font-weight: 300; color: rgba(255,255,255,0.55); position: relative; z-index: 1; line-height: 1.4; }
 .dcard-chart { display: flex; align-items: flex-end; gap: 5px; height: 30px; margin-top: 16px; position: relative; z-index: 1; }
@@ -261,7 +267,7 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
       <div class="dcard-deco"></div><div class="dcard-deco2"></div>
       <div class="dcard-top">
         <div class="dcard-ico">🛡️</div>
-        <div class="dcard-eye">Power BI</div>
+        <div class="dcard-eyes"><span class="dcard-new">New</span><span class="dcard-eye">Power BI</span></div>
       </div>
       <div class="dcard-t">Quart d'heure QSE</div>
       <div class="dcard-d">Suivi des chiffres sécurité &amp; environnement</div>
