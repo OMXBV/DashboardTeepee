@@ -25,6 +25,15 @@ le dépôt et la publication, ce fichier décrit la façon de travailler dessus.
   explicite de Bastou, demandé en une ligne.
 - Exception : un lien mort en production se corrige tout de suite, et on le dit.
 
+## Une carte doit être ouvrable par le public de sa page
+
+`CONTEXTE.md` dit qui voit chaque page et ce que ce public a le droit d'ouvrir dans
+TeePee. Chaque page sert une poignée de rôles, pas tout le monde : une carte que son
+lecteur ne peut pas ouvrir est pire qu'une carte absente, elle fait douter du reste.
+
+Avant d'ajouter ou de déplacer une carte, vérifier là-bas. L'export des droits n'est
+pas dans le dépôt, il est à redemander à Bastou.
+
 ## Écriture
 
 - **Pas de tirets cadratins ni demi-cadratins** (`—`, `–`), nulle part : pages, doc,

@@ -19,6 +19,7 @@ TeePee via son URL de publication GitHub Pages.
 |---|---|
 | `LIENS.md` | Source de vérité des liens TeePee, et historique de ceux qui ont changé |
 | `CLAUDE.md` | Règles de travail sur le dépôt |
+| `CONTEXTE.md` | Qui voit chaque page, et ce que son public a le droit d'ouvrir |
 
 ## Publication
 

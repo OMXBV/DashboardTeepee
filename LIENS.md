@@ -144,14 +144,18 @@ Détail du remplacement du 2026-09-21 :
 
 ## Liens manquants
 
+Avant d'ajouter une carte, vérifier dans `CONTEXTE.md` que le public de la page
+concernée a le droit d'ouvrir la liste visée.
+
 Ce qu'il reste à obtenir, et pourquoi :
 
 | Ce qu'il faut | Pour quoi faire | État |
 |---|---|---|
-| Contacts CRM dans le menu `32DB80F2` | remettre la carte Contacts sur la page Offre | à fournir |
+| ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
-| Listes RH hors recrutement (intégration, entretiens, formation) | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié | à fournir |
+| Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
+| Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
 ### Sur les liens de saisie
 
