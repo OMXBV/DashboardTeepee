@@ -69,6 +69,25 @@ largeur d'environ **1830 px** sur un écran de 1920. C'est nettement plus large 
 1440 px auxquels on teste d'habitude : les grilles à cinq colonnes respirent, et il
 reste de la place.
 
+### Ce que l'iframe reçoit, et le piège du cache
+
+La page parente est `#/home/view/D32F1E3A`. L'iframe y est déclarée avec pour seuls
+attributs `width`, `height`, `title`, `style` et `src`. Pas de `sandbox`, pas de
+`allow`.
+
+**TeePee ne transmet rien à la page** : ni utilisateur, ni entité, ni jeton. Adapter
+la page au rôle de celui qui la regarde est donc impossible, et la règle du chapitre
+précédent reste la seule façon de traiter le problème des cartes non ouvrables.
+
+Le `src` est `https://omxbv.github.io/DashboardTeepee/index.html?v=2`. **Ce `?v=2` est
+écrit en dur côté TeePee**, vraisemblablement pour contourner le cache du navigateur.
+C'est ce qui peut expliquer qu'une mise à jour poussée sur `main` n'apparaisse pas
+dans l'intranet alors qu'elle est bien en ligne : passer le paramètre à `v=3` dans le
+`src` de l'iframe, côté TeePee, force le rechargement.
+
+L'absence de `sandbox` confirme par ailleurs que le `target="_parent"` utilisé partout
+dans les pages fait bien naviguer TeePee en entier.
+
 L'iframe a son propre ascenseur, en plus de celui de TeePee. Sur l'accueil, la rangée
 **Menus métier** tombe sous la ligne de flottaison : ce qui y est placé est vu par
 ceux qui font l'effort de descendre.

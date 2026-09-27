@@ -22,9 +22,34 @@ https://safeplace.teepee.fr/#/category/32DB80F2/50F618EA/dataList/CRMOpportunite
 Quatre routes existent :
 
 - `#/category/<menu>` : un menu complet
-- `#/category/<menu>/<sous-cat>/dataList/<formulaire>/<filtre>` : une liste filtrée
+- `#/category/<menu>/<sous-cat>/dataList/<formulaire>/<vue>` : une liste
 - `#/viewData/<menu>/<sous-cat>/<formulaire>/<vue>/<GUID>?context=<GUID>` : une fiche
+- `#/viewData/<menu>/<sous-cat>/<formulaire>/<vue>?context=<GUID>` : une saisie vierge,
+  c'est l'absence du GUID de fiche qui la distingue
 - `#/homepage/view/<id>` : un rapport Power BI
+- `#/home/view/<id>` : une page d'accueil TeePee, celle qui porte l'iframe
+
+## Ce que l'URL ne porte pas
+
+Relevé dans TeePee le 2026-09-27, sur la liste Actions commerciales.
+
+**La recherche, le tri et le filtrage ne passent pas dans l'URL.** Ils restent dans
+l'état de l'application. Impossible donc de fabriquer un lien vers une liste
+pré-filtrée en bricolant l'adresse.
+
+Le seul filtrage partageable est le **dernier segment**, qui est le nom d'une vue
+définie dans TeePee : `default_CRMOpportunite` contre `CRMOpportuniteEnCours`. Pour
+obtenir un lien filtré, il faut donc créer la vue côté TeePee puis pointer sur son
+nom. C'est du paramétrage TeePee, pas du HTML.
+
+**Le `?context=` d'une saisie vierge change à chaque clic.** Deux ouvertures de suite
+donnent deux GUID différents. Reste à savoir si ce paramètre est obligatoire : ouvrir
+la route sans `?context=` dirait si TeePee en génère un seul. Test non fait.
+
+**Le compteur du formulaire avance à chaque ouverture de saisie, même annulée.** Sur
+Actions commerciales, deux ouvertures annulées ont consommé les numéros 318 et 319
+alors que le maximum en base était 311. Un raccourci de saisie posé sur une page
+d'accueil creusera donc un trou dans la numérotation à chaque clic curieux.
 
 **Les identifiants de catégorie ne sont pas stables.** Une réorganisation côté TeePee
 les change sans prévenir et sans redirection : les liens cassent en silence. D'ou ce
