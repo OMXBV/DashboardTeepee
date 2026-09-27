@@ -79,7 +79,7 @@ fichier, et l'historique en bas.
 | Garr | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/4F9DBAFD-E998-4801-8C86-EC361E5F5006?context=B4362240-6E2C-4E98-A4BB-D8EFBB324C88 |
 | Johnstown North | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/F1713C99-2928-4BAB-8E2A-9EC6BFD70761?context=B953F48E-55F8-4F2C-AB26-0DF7CC2EFA09 |
 
-## MPA — CRM
+## MPA · CRM
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
@@ -89,7 +89,7 @@ fichier, et l'historique en bas.
 | Actions commerciales | `32DB80F2` / `36086F3F` | offre | https://safeplace.teepee.fr/#/category/32DB80F2/36086F3F/dataList/CRMActionCommerciale/default_CRMActionCommerciale |
 | Enquêtes de satisfaction | `32DB80F2` / `8D8DC69D` | offre | https://safeplace.teepee.fr/#/category/32DB80F2/8D8DC69D/dataList/EnqueTeDeSatisfactionClient/default_EnqueTeDeSatisfactionClient |
 
-## RH — Recrutement
+## RH · Recrutement
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
@@ -107,7 +107,7 @@ fichier, et l'historique en bas.
 | Non-conformités | `92F82BEE` / `E279156E` | index | https://safeplace.teepee.fr/#/category/92F82BEE/E279156E/dataList/FicheDeNonConformite/default_FicheDeNonConformite |
 | Quart d'heures QSE | `92F82BEE` / `4231E439` | index | https://safeplace.teepee.fr/#/category/92F82BEE/4231E439/dataList/14DHeureQHSE/default_14DHeureQHSE |
 
-## International — listes
+## International · listes
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
