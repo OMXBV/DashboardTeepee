@@ -89,7 +89,7 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .pcard:hover { box-shadow: 0 4px 16px rgba(0,32,96,0.10); transform: translateY(-2px); border-color: var(--blue); }
 .pc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
 .pc-badge { font-size: 8px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; }
-.pc-power { font-size: 11px; font-weight: 500; color: var(--mid); }
+.pc-power { font-size: 11px; font-weight: 500; color: var(--mid); margin-left: auto; }
 .pc-name { font-size: 13px; font-weight: 900; color: var(--text); margin-bottom: 4px; }
 .pc-ct { font-size: 10px; font-weight: 300; color: var(--mid); }
 .site-footer {
