@@ -155,6 +155,16 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 }
 .ocard-t { font-size: 15px; font-weight: 900; color: var(--text); margin-bottom: 5px; line-height: 1.25; }
 .ocard-d { font-size: 11px; font-weight: 300; color: var(--mid); line-height: 1.5; margin-bottom: 16px; }
-.ocard-link { font-size: 9px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); display: flex; align-items: center; gap: 5px; margin-top: auto; }
+.ocard-link { font-size: 9px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); display: flex; align-items: center; gap: 5px; }
+.ocard-hit { position: absolute; inset: 0; z-index: 1; }
+.ocard-actions { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.ocard-saisir {
+  position: relative; z-index: 2; text-decoration: none; white-space: nowrap;
+  font-family: inherit; font-size: 9px; font-weight: 900; letter-spacing: 1.2px;
+  text-transform: uppercase; color: var(--blue); background: rgba(0,113,206,0.10);
+  padding: 7px 15px 7px 11px; clip-path: polygon(0 0,90% 0,100% 100%,10% 100%);
+  transition: background 0.15s, color 0.15s;
+}
+.ocard-saisir:hover { background: var(--blue); color: #fff; }
 .ocard-link span { transition: transform 0.16s; }
 .ocard:hover .ocard-link span { transform: translateX(3px); }

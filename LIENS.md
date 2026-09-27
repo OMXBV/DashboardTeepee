@@ -202,29 +202,35 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
-## Saisies directes à relever
+## Saisies directes
 
-Un lien de saisie par formulaire, à relever dans TeePee puis à reporter ici. La liste
-couvre les formulaires déjà présents sur les pages. Pour chacun : ouvrir sa liste,
-cliquer Saisir, copier l'URL, quitter sans enregistrer.
+Relevés dans TeePee le 2026-09-27, un par un, et dépouillés de leur `?context=` qui est
+facultatif. **Le dernier segment est le nom de la vue de saisie, il ne se déduit pas du
+nom du formulaire** : `EntrepriseOmexomRE` ouvre la vue `RHRecrutement`,
+`RHEntretientCandidat` ouvre `RHEntretienCandidat` sans le t. Toute nouvelle entrée se
+relève, jamais ne se reconstruit.
 
-| Page | Carte | Formulaire | État |
-|---|---|---|---|
-| offre | Toutes les opportunités et En cours de suivi | `CRMOpportunite` | à relever |
-| offre | Panel clients | `TEEPEE_Entreprise` | à relever |
-| offre | Actions commerciales | `CRMActionCommerciale` | **relevé**, vue `CRMActionCommerciale` |
-| offre | Enquêtes de satisfaction | `EnqueTeDeSatisfactionClient` | à relever |
-| rh | Ouvertures de poste | `OuvertureDePoste` | à relever |
-| rh | Entretiens candidats | `RHEntretientCandidat` | à relever |
-| rh | Renseignements d'embauche | `RHDemandeDeRenseignementsDEmbauche` | à relever |
-| rh | Autorisations d'embauche | `RHAutorisationDEmbauche` | à relever |
-| rh | Entreprises Omexom | `EntrepriseOmexomRE` | à relever |
-| accueil | Plan d'action | `PlanDActions` | à relever |
-| accueil | Non-conformités | `FicheDeNonConformite` | à arbitrer, registre |
-| accueil | Quart d'heures QSE | `14DHeureQHSE` | à arbitrer, registre |
+| Page | Carte | URL de saisie |
+|---|---|---|
+| offre | Toutes les opportunités | https://safeplace.teepee.fr/#/viewData/32DB80F2/50F618EA/CRMOpportunite/CRMOpportunite |
+| offre | Panel clients | https://safeplace.teepee.fr/#/viewData/32DB80F2/65B438CC/TEEPEE_Entreprise/TEEPEE_Entreprise_CRM |
+| offre | Actions commerciales | https://safeplace.teepee.fr/#/viewData/32DB80F2/36086F3F/CRMActionCommerciale/CRMActionCommerciale |
+| offre | Enquêtes de satisfaction | https://safeplace.teepee.fr/#/viewData/32DB80F2/8D8DC69D/EnqueTeDeSatisfactionClient/EnqueTeDeSatisfactionClient |
+| rh | Ouvertures de poste | https://safeplace.teepee.fr/#/viewData/02E2474B/8663F6A6/OuvertureDePoste/OuvertureDePoste |
+| rh | Entretiens candidats | https://safeplace.teepee.fr/#/viewData/02E2474B/E4FDB727/RHEntretientCandidat/RHEntretienCandidat |
+| rh | Renseignements d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/0A9A7C08/RHDemandeDeRenseignementsDEmbauche/RHAutorisationDEmbauche |
+| rh | Autorisations d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/EBEF9E36/RHAutorisationDEmbauche/RHAutorisationDEmbauche |
+| rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
+| accueil | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
 
-Les deux dernières portent une numérotation qui sert de registre. Un raccourci de
-saisie y creusera un trou à chaque clic curieux : à décider avant de les poser.
+Relevés mais **non posés**, ce sont des registres numérotés et chaque saisie annulée y
+creuse un trou. À décider avec Bastou avant de les mettre sur une page :
+
+| Carte | URL de saisie |
+|---|---|
+| Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
+| Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
+| IN PV de livraison | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/INPVDeLivraison/FRINPVDeLivraison |
 
 ### Sur les liens de saisie
 
