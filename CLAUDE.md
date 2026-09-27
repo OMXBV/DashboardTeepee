@@ -66,6 +66,7 @@ class P(html.parser.HTMLParser):
         super().__init__(); self.stack=[]; self.void={'meta','link','br','img','hr','input','source'}
     def handle_starttag(self,t,a):
         if t not in self.void: self.stack.append(t)
+    def handle_startendtag(self,t,a): pass   # les balises SVG auto-fermantes
     def handle_endtag(self,t):
         if not self.stack or self.stack[-1]!=t: print('MISMATCH',t,self.stack[-4:]); sys.exit(1)
         self.stack.pop()
@@ -98,3 +99,14 @@ modifier l'une demande encore la même dans l'autre.
 
 Après une modification de `omexom.css`, vérifier les quatre pages, pas seulement celle
 sur laquelle on travaillait.
+
+## Les pictogrammes sont maison
+
+Pas d'emoji dans les pages. Les pictogrammes sont des SVG en traits, dessinés à la
+main, posés en ligne dans le HTML : 24 par 24, `fill="none"`, `stroke="currentColor"`,
+épaisseur 1.8, bouts et jointures ronds. Ils prennent la couleur de leur support, fixée
+par la classe de la carte dans `omexom.css`.
+
+En ligne et non dans un fichier séparé, parce qu'un sprite SVG externe appelé par
+`<use>` est bloqué par le navigateur en `file://` : la page ne s'ouvrirait plus
+directement. Le coût est quelques centaines d'octets par pictogramme.
