@@ -55,6 +55,17 @@ saisie   #/viewData/32DB80F2/36086F3F/CRMActionCommerciale/CRMActionCommerciale
 Attention : le dernier segment de la saisie est le nom de la **vue du formulaire**, qui
 n'est pas toujours celui du filtre de la liste. À vérifier formulaire par formulaire.
 
+**Le contexte du projet ne passe pas non plus.** Une saisie ouverte depuis la fiche
+d'un chantier donne `#/viewData/F427C2AF/D956BEFD/INPVDeLivraison/FRINPVDeLivraison`,
+sans aucune trace du projet d'origine. Un lien du type « déclarer une livraison sur
+Sennely » n'est donc pas constructible : la saisie s'ouvrira toujours vierge, à
+rattacher à la main.
+
+**Le nom de la vue de saisie ne se déduit pas de celui du filtre de la liste.** Sur
+Actions commerciales, le filtre est `default_CRMActionCommerciale` et la vue de saisie
+`CRMActionCommerciale`. Sur les livraisons, la vue est `FRINPVDeLivraison`. Aucune
+règle commune : **chaque lien de saisie doit être relevé dans TeePee, jamais déduit.**
+
 **Le compteur du formulaire avance à chaque ouverture de saisie, même annulée.** Sur
 Actions commerciales, deux ouvertures annulées ont consommé les numéros 318 et 319
 alors que le maximum en base était 311. Un raccourci de saisie posé sur une page
@@ -158,15 +169,6 @@ fichier, et l'historique en bas.
 | Support | `DC3605A6` / `AE9641CE` | index, rh | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
 | Administration / Annuaire | `FA584D40` / `DED3EB21` | index, rh | https://safeplace.teepee.fr/#/category/FA584D40/DED3EB21/dataList/USER/default_USER |
 
-## Saisies directes
-
-Les liens de création, fabriqués selon la route ci-dessus. Vérifier chaque nouveau lien
-en l'ouvrant une fois avant de le poser sur une page.
-
-| Formulaire | Menu | URL |
-|---|---|---|
-| IN PV de livraison | Projets `F427C2AF` / `D956BEFD` | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/INPVDeLivraison/FRINPVDeLivraison |
-
 ## Historique des remplacements
 
 | Date | Ce qui a changé | Avant | Après |
@@ -199,6 +201,30 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
+
+## Saisies directes à relever
+
+Un lien de saisie par formulaire, à relever dans TeePee puis à reporter ici. La liste
+couvre les formulaires déjà présents sur les pages. Pour chacun : ouvrir sa liste,
+cliquer Saisir, copier l'URL, quitter sans enregistrer.
+
+| Page | Carte | Formulaire | État |
+|---|---|---|---|
+| offre | Toutes les opportunités et En cours de suivi | `CRMOpportunite` | à relever |
+| offre | Panel clients | `TEEPEE_Entreprise` | à relever |
+| offre | Actions commerciales | `CRMActionCommerciale` | **relevé**, vue `CRMActionCommerciale` |
+| offre | Enquêtes de satisfaction | `EnqueTeDeSatisfactionClient` | à relever |
+| rh | Ouvertures de poste | `OuvertureDePoste` | à relever |
+| rh | Entretiens candidats | `RHEntretientCandidat` | à relever |
+| rh | Renseignements d'embauche | `RHDemandeDeRenseignementsDEmbauche` | à relever |
+| rh | Autorisations d'embauche | `RHAutorisationDEmbauche` | à relever |
+| rh | Entreprises Omexom | `EntrepriseOmexomRE` | à relever |
+| accueil | Plan d'action | `PlanDActions` | à relever |
+| accueil | Non-conformités | `FicheDeNonConformite` | à arbitrer, registre |
+| accueil | Quart d'heures QSE | `14DHeureQHSE` | à arbitrer, registre |
+
+Les deux dernières portent une numérotation qui sert de registre. Un raccourci de
+saisie y creusera un trou à chaque clic curieux : à décider avant de les poser.
 
 ### Sur les liens de saisie
 

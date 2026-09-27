@@ -8,8 +8,8 @@ TeePee via son URL de publication GitHub Pages.
 
 | Fichier | Rôle | URL publiée |
 |---|---|---|
-| `index.html` | Accueil TeePee — Omexom Vincennes Nagi | https://omxbv.github.io/DashboardTeepee/ |
-| `en.html` | Home TeePee — Omexom International | https://omxbv.github.io/DashboardTeepee/en.html |
+| `index.html` | Accueil TeePee · Omexom Vincennes Nagi | https://omxbv.github.io/DashboardTeepee/ |
+| `en.html` | Home TeePee · Omexom International | https://omxbv.github.io/DashboardTeepee/en.html |
 | `offre.html` | Offre & Projet · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/offre.html |
 | `rh.html` | Ressources humaines · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/rh.html |
 
@@ -82,5 +82,5 @@ U+2070-209F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+2200-22FF,U+2C60-2C7F,U+A720-A
 
 ## Conditions
 
-Contenu, marques et identité visuelle Omexom / VINCI Energies — tous droits réservés.
+Contenu, marques et identité visuelle Omexom / VINCI Energies, tous droits réservés.
 Dépôt public pour les seuls besoins de la publication GitHub Pages ci-dessus.
