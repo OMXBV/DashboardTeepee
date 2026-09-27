@@ -13,6 +13,13 @@ TeePee via son URL de publication GitHub Pages.
 | `offre.html` | Offre & Projet · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/offre.html |
 | `rh.html` | Ressources humaines · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/rh.html |
 
+## Organisation du dépôt
+
+| Fichier | Rôle |
+|---|---|
+| `LIENS.md` | Source de vérité des liens TeePee, et historique de ceux qui ont changé |
+| `CLAUDE.md` | Règles de travail sur le dépôt |
+
 ## Publication
 
 Le site est servi par GitHub Pages depuis la branche `main`, à la racine du dépôt.
