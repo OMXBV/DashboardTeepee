@@ -158,6 +158,15 @@ fichier, et l'historique en bas.
 | Support | `DC3605A6` / `AE9641CE` | index, rh | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
 | Administration / Annuaire | `FA584D40` / `DED3EB21` | index, rh | https://safeplace.teepee.fr/#/category/FA584D40/DED3EB21/dataList/USER/default_USER |
 
+## Saisies directes
+
+Les liens de création, fabriqués selon la route ci-dessus. Vérifier chaque nouveau lien
+en l'ouvrant une fois avant de le poser sur une page.
+
+| Formulaire | Menu | URL |
+|---|---|---|
+| IN PV de livraison | Projets `F427C2AF` / `D956BEFD` | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/INPVDeLivraison/FRINPVDeLivraison |
+
 ## Historique des remplacements
 
 | Date | Ce qui a changé | Avant | Après |

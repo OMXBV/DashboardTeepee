@@ -82,12 +82,19 @@ Voir le rendu réel plutôt que le supposer :
   --virtual-time-budget=3000 file://$PWD/offre.html
 ```
 
-`index.html` porte un `</div>` en trop, antérieur à ces règles : le contrôle de balises
-échoue dessus tant qu'il n'est pas nettoyé.
+## Le style vit dans omexom.css
 
-## Cohérence entre les pages
+`omexom.css` porte les polices, les jetons de couleur et tous les composants partagés
+par au moins deux pages. Les quatre pages le chargent. **Un composant se modifie là,
+une seule fois**, et le changement vaut pour tout le monde.
 
-Les pages FR partagent la même direction artistique. Un composant modifié doit l'être
-partout où il apparaît, sinon les pages divergent. Aujourd'hui le même CSS est recopié
-dans chaque fichier, et les cartes projet sont dupliquées entre `index.html` et
-`offre.html` : toute modification de l'un demande la même dans l'autre.
+Ce qui reste dans la balise `<style>` de chaque page : le nombre de colonnes de ses
+grilles et ses points de rupture, qui lui sont propres. Rien d'autre n'a vocation à y
+rester. Si une règle ajoutée dans une page se met à servir ailleurs, elle remonte dans
+la feuille commune.
+
+Les cartes projet restent dupliquées entre `index.html` et `offre.html` cote HTML :
+modifier l'une demande encore la même dans l'autre.
+
+Après une modification de `omexom.css`, vérifier les quatre pages, pas seulement celle
+sur laquelle on travaillait.

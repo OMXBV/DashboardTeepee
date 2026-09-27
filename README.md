@@ -20,6 +20,7 @@ TeePee via son URL de publication GitHub Pages.
 | `LIENS.md` | Source de vérité des liens TeePee, et historique de ceux qui ont changé |
 | `CLAUDE.md` | Règles de travail sur le dépôt |
 | `CONTEXTE.md` | Qui voit chaque page, et ce que son public a le droit d'ouvrir |
+| `omexom.css` | Feuille de style commune aux quatre pages |
 
 ## Publication
 
@@ -66,8 +67,8 @@ Elles ne sont couvertes par aucune licence de réutilisation : elles ne peuvent 
 extraites, ni redistribuées, ni employées dans un autre projet, interne ou externe.
 
 Elles sont sous-ensemblées au latin étendu (729 glyphes, kerning et `ss02` conservés) et
-livrées en WOFF2 — 396 Ko au lieu de 1,3 Mo en TTF. `index.html` les embarque en base64
-pour rester autonome ; `en.html`, `offre.html` et `rh.html` les chargent en externe.
+livrées en WOFF2, 396 Ko au lieu de 1,3 Mo en TTF. Les sept graisses sont déclarées une
+seule fois, dans `omexom.css`, et chargées en externe par les quatre pages.
 
 Pour régénérer après une mise à jour de la police :
 
