@@ -145,9 +145,6 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 }
 .dcard-t { font-size: 14px; font-weight: 900; color: #fff; line-height: 1.25; position: relative; z-index: 1; margin-bottom: 4px; }
 .dcard-d { font-size: 10px; font-weight: 300; color: rgba(255,255,255,0.55); position: relative; z-index: 1; line-height: 1.4; }
-.dcard-chart { display: flex; align-items: flex-end; gap: 5px; height: 30px; margin-top: 16px; position: relative; z-index: 1; }
-.dcard-chart i { flex: 1; background: rgba(255,255,255,0.16); border-radius: 1px; display: block; transition: background 0.16s; }
-.dcard:hover .dcard-chart i { background: rgba(0,193,222,0.6); }
 .dcard-link { font-size: 9px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.7); position: relative; z-index: 1; margin-top: 14px; display: flex; align-items: center; gap: 5px; transition: color 0.16s; }
 .dcard:hover .dcard-link { color: var(--turq); }
 .dcard-link span { transition: transform 0.16s; }
