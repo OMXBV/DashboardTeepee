@@ -29,14 +29,14 @@
 .site-logo { height: 38px; width: auto; display: block; flex: none; }
 .site-id { border-left: 1px solid var(--border); padding-left: 24px; min-width: 0; }
 .site-eyebrow {
-  font-size: 9px; font-weight: 900; letter-spacing: 2.5px; text-transform: uppercase;
+  font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase;
   color: var(--mid); margin-bottom: 3px;
 }
-.site-title { font-size: 17px; font-weight: 900; color: var(--deep); line-height: 1.2; }
+.site-title { font-size: 18px; font-weight: 900; color: var(--deep); line-height: 1.2; }
 .site-cta {
   margin-left: auto; flex: none; text-decoration: none;
   background: var(--blue); color: #fff;
-  font-size: 10px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;
+  font-size: 11px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;
   padding: 12px 24px 12px 18px;
   clip-path: polygon(0 0,92% 0,100% 100%,8% 100%);
   transition: background 0.15s;
@@ -57,7 +57,7 @@
 body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; }
 .body-wrap { padding: 24px 28px 48px; }
 .section-label {
-  font-size: 9px; font-weight: 900; letter-spacing: 2.5px; text-transform: uppercase;
+  font-size: 11px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase;
   color: var(--mid); margin-bottom: 12px;
   display: flex; align-items: center; gap: 10px;
 }
@@ -91,8 +91,8 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .qico.it { color: var(--colvert); }
 .qico.id { color: var(--deep); }
 .qico.iy { color: #9A6B00; }
-.ql2 { font-size: 11px; font-weight: 500; color: var(--text); line-height: 1.3; }
-.qs2 { font-size: 9px; font-weight: 300; color: var(--mid); margin-top: 1px; }
+.ql2 { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.3; }
+.qs2 { font-size: 11px; font-weight: 400; color: var(--mid); margin-top: 1px; }
 .mcard {
   background: var(--white); border: 1px solid var(--border);
   border-top: 3px solid var(--blue); border-radius: 3px;
@@ -105,20 +105,26 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .mcard.co { border-top-color: var(--blue); }
 .mcard.cs { border-top-color: var(--turq); }
 .mcard.ca { border-top-color: var(--yellow); }
-.badge { display: inline-block; font-size: 8px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; padding: 3px 12px 3px 7px; clip-path: polygon(0 0,88% 0,100% 100%,12% 100%); color: white; margin-bottom: 10px; }
+/* Une seule forme de pastille, partout : menus, projets, tableaux de bord, cartes Offre. */
+.badge, .pc-badge, .dcard-new, .ocard-tag {
+  display: inline-block; font-size: 10px; font-weight: 900; letter-spacing: 1.2px; line-height: 1.2;
+  text-transform: uppercase; padding: 4px 12px 4px 8px; clip-path: polygon(0 0,88% 0,100% 100%,12% 100%);
+}
+.badge { color: white; margin-bottom: 10px; }
 .bm { background: var(--deep); }
 .bo { background: var(--blue); }
-.bs { background: var(--turq); }
+.bs { background: var(--colvert); }
 .ba { background: var(--yellow); color: var(--deep); }
-.mc-t { font-size: 12px; font-weight: 900; color: var(--text); margin-bottom: 4px; line-height: 1.3; padding-right: 36px; }
-.mc-d { font-size: 10px; font-weight: 300; color: var(--mid); line-height: 1.5; }
+.mc-t { font-size: 14px; font-weight: 900; color: var(--text); margin-bottom: 4px; line-height: 1.3; padding-right: 36px; }
+.mc-d { font-size: 12px; font-weight: 400; color: var(--mid); line-height: 1.5; }
 .pcard { background: var(--white); border: 1px solid var(--border); border-radius: 3px; padding: 14px 16px; text-decoration: none; color: inherit; display: block; transition: box-shadow 0.15s, transform 0.12s; }
 .pcard:hover { box-shadow: 0 4px 16px rgba(0,32,96,0.10); transform: translateY(-2px); border-color: var(--blue); }
 .pc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
-.pc-badge { font-size: 8px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; }
-.pc-power { font-size: 11px; font-weight: 500; color: var(--mid); margin-left: auto; }
-.pc-name { font-size: 13px; font-weight: 900; color: var(--text); margin-bottom: 4px; }
-.pc-ct { font-size: 10px; font-weight: 300; color: var(--mid); }
+.pc-badge.new { background: var(--blue); color: #fff; }
+.pc-badge.works { background: var(--yellow); color: var(--deep); }
+.pc-power { font-size: 12px; font-weight: 500; color: var(--mid); margin-left: auto; }
+.pc-name { font-size: 14px; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+.pc-ct { font-size: 12px; font-weight: 400; color: var(--mid); }
 .site-footer {
   background: var(--white);
   border-top: 1px solid var(--border);
@@ -126,7 +132,7 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
   text-align: center;
 }
 .footer-inner { display: flex; justify-content: center; align-items: center; }
-.footer-note { font-size: 10px; font-weight: 300; color: var(--mid); letter-spacing: 0.3px; }
+.footer-note { font-size: 12px; font-weight: 400; color: var(--mid); letter-spacing: 0.3px; }
 .dcard {
   position: relative; overflow: hidden;
   background: linear-gradient(135deg, #002060 0%, #013a8f 100%);
@@ -139,16 +145,12 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .dcard-deco2 { position: absolute; right: 64px; top: 0; bottom: 0; width: 80px; background: rgba(255,185,29,0.07); clip-path: polygon(28% 0,100% 0,72% 100%,0% 100%); pointer-events: none; }
 .dcard-top { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; margin-bottom: 14px; }
 .dcard-ico { width: 36px; height: 36px; border-radius: 3px; background: rgba(0,193,222,0.18); display: flex; align-items: center; justify-content: center; color: var(--turq); }
-.dcard-eye { font-size: 8px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--turq); }
+.dcard-eye { font-size: 10px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--turq); }
 .dcard-eyes { display: flex; align-items: center; gap: 9px; }
-.dcard-new {
-  font-size: 8px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase;
-  color: var(--deep); background: var(--yellow);
-  padding: 3px 11px 3px 7px; clip-path: polygon(0 0,88% 0,100% 100%,12% 100%);
-}
-.dcard-t { font-size: 14px; font-weight: 900; color: #fff; line-height: 1.25; position: relative; z-index: 1; margin-bottom: 4px; }
-.dcard-d { font-size: 10px; font-weight: 300; color: rgba(255,255,255,0.55); position: relative; z-index: 1; line-height: 1.4; }
-.dcard-link { font-size: 9px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.7); position: relative; z-index: 1; margin-top: 14px; display: flex; align-items: center; gap: 5px; transition: color 0.16s; }
+.dcard-new { color: var(--deep); background: var(--yellow); }
+.dcard-t { font-size: 15px; font-weight: 900; color: #fff; line-height: 1.25; position: relative; z-index: 1; margin-bottom: 4px; }
+.dcard-d { font-size: 12px; font-weight: 400; color: rgba(255,255,255,0.72); position: relative; z-index: 1; line-height: 1.4; }
+.dcard-link { font-size: 11px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.7); position: relative; z-index: 1; margin-top: 14px; display: flex; align-items: center; gap: 5px; transition: color 0.16s; }
 .dcard:hover .dcard-link { color: var(--turq); }
 .dcard-link span { transition: transform 0.16s; }
 .dcard:hover .dcard-link span { transform: translateX(3px); }
@@ -176,21 +178,16 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .ocard.c3 .ocard-ico { color: var(--deep); }
 .ocard.c4 .ocard-ico { color: var(--colvert); }
 .ocard.c5 .ocard-ico { color: #9A6B00; }
-.ocard-tag {
-  position: absolute; top: 14px; right: 14px;
-  font-size: 8px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;
-  color: var(--colvert); background: rgba(0,193,222,0.13);
-  padding: 3px 8px; border-radius: 2px;
-}
-.ocard-t { font-size: 15px; font-weight: 900; color: var(--text); margin-bottom: 5px; line-height: 1.25; }
-.ocard-d { font-size: 11px; font-weight: 300; color: var(--mid); line-height: 1.5; margin-bottom: 16px; }
-.ocard-link { font-size: 9px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); display: flex; align-items: center; gap: 5px; }
+.ocard-tag { position: absolute; top: 14px; right: 14px; color: var(--colvert); background: rgba(0,193,222,0.13); }
+.ocard-t { font-size: 16px; font-weight: 900; color: var(--text); margin-bottom: 5px; line-height: 1.25; }
+.ocard-d { font-size: 12px; font-weight: 400; color: var(--mid); line-height: 1.5; margin-bottom: 16px; }
+.ocard-link { font-size: 11px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); display: flex; align-items: center; gap: 5px; }
 .ocard-hit { position: absolute; inset: 0; z-index: 1; }
 .ocard-actions { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .ocard-saisir {
   position: relative; z-index: 2; text-decoration: none; white-space: nowrap;
   display: inline-flex; align-items: center; gap: 6px;
-  font-family: inherit; font-size: 10px; font-weight: 900; letter-spacing: 1.3px;
+  font-family: inherit; font-size: 11px; font-weight: 900; letter-spacing: 1.3px;
   text-transform: uppercase; color: #fff; background: var(--blue);
   padding: 10px 18px 10px 14px; clip-path: polygon(0 0,92% 0,100% 100%,8% 100%);
   transition: background 0.15s, transform 0.12s;
