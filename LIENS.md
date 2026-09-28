@@ -199,6 +199,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 |---|---|---|
 | ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
+| Saisie du **ticket support** | bouton Saisir sur la carte Support de la page RH et de l'accueil. Liste : `DC3605A6` / `AE9641CE`, formulaire `TicketsSupport` | à relever |
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
