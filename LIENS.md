@@ -199,7 +199,8 @@ Ce qu'il reste à obtenir, et pourquoi :
 |---|---|---|
 | ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
-| Saisie du **ticket support** | bouton Saisir sur la carte Support de la page RH et de l'accueil. Liste : `DC3605A6` / `AE9641CE`, formulaire `TicketsSupport` | à relever |
+| Saisie du **ticket support** | bouton + sur la carte Support de l'accueil et de la page RH. Liste : `DC3605A6` / `AE9641CE`, formulaire `TicketsSupport` | à relever, demandé par Bastou |
+| Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
@@ -224,14 +225,16 @@ relève, jamais ne se reconstruit.
 | rh | Autorisations d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/EBEF9E36/RHAutorisationDEmbauche/RHAutorisationDEmbauche |
 | rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
 | accueil | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
+| accueil | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
+| accueil | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
-Relevés mais **non posés**, ce sont des registres numérotés et chaque saisie annulée y
-creuse un trou. À décider avec Bastou avant de les mettre sur une page :
+Non-conformités et Quart d'heures sont des registres numérotés, chaque saisie annulée y
+creuse un trou : Bastou a tranché, les boutons restent sur l'accueil.
+
+Relevé mais **non posé** :
 
 | Carte | URL de saisie |
 |---|---|
-| Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
-| Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 | IN PV de livraison | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/INPVDeLivraison/FRINPVDeLivraison |
 
 ### Sur les liens de saisie
