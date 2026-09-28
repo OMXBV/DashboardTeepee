@@ -17,12 +17,13 @@ le dépôt et la publication, ce fichier décrit la façon de travailler dessus.
   pire qu'une carte absente.
 - Avant de retirer une carte, vérifier dans `LIENS.md` si son lien sert ailleurs.
 
-## La V2 se développe sur `claude/v2`
+## `main` est la production
 
 - `main` est publié automatiquement par GitHub Pages et **affiché en production dans
   l'intranet**. Tout commit sur `main` est en ligne en une à deux minutes.
-- Le travail de V2 reste sur `claude/v2`. Rien ne part sur `main` sans un feu vert
-  explicite de Bastou, demandé en une ligne.
+- Le travail se fait sur une branche à part. Rien ne part sur `main` sans un feu vert
+  explicite de Bastou, demandé en une ligne. La V2 a été mise en ligne le 2026-09-28
+  et sa branche `claude/v2` n'a plus lieu d'être.
 - Exception : un lien mort en production se corrige tout de suite, et on le dit.
 
 ## Une carte doit être ouvrable par le public de sa page
