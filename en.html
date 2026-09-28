@@ -8,10 +8,19 @@
 <title>Home TeePee · Omexom International</title>
 <link rel="stylesheet" href="omexom.css">
 <style>
-.quick-row { display: grid; grid-template-columns: repeat(6,1fr); gap: 8px; margin-bottom: 24px; }
-.io { background: rgba(224,90,0,0.09); }
-.menus-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 24px; }
+.quick-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin-bottom: 24px; }
+.menus-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 24px; }
 .projects-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 24px; }
+@media (max-width: 1100px) {
+  .quick-row, .projects-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 820px) {
+  .menus-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 560px) {
+  .body-wrap { padding: 18px 16px 36px; }
+  .quick-row, .menus-grid, .projects-grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -30,36 +39,16 @@
   <div class="section-label">Current projects</div>
   <div class="projects-grid">
     <a class="pcard" href="https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/98EE3433-FBE0-44E2-B1CA-39A70FC34B79?context=01362DEE-5A00-441E-BDAD-BD89B3240270" target="_parent">
-      <div class="pc-top">
-        <span class="pc-badge works">Works</span>
-        <span class="pc-power"></span>
-      </div>
       <div class="pc-name">ThreeCastle</div>
-      <div class="pc-ct"></div>
     </a>
     <a class="pcard" href="https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/00F71013-6615-4195-A339-B004991B3CB7?context=02A1C672-861B-4AAF-AF4D-0689795567F8" target="_parent">
-      <div class="pc-top">
-        <span class="pc-badge works">Works</span>
-        <span class="pc-power"></span>
-      </div>
       <div class="pc-name">Ballinknockane</div>
-      <div class="pc-ct"></div>
     </a>
     <a class="pcard" href="https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/4F9DBAFD-E998-4801-8C86-EC361E5F5006?context=B4362240-6E2C-4E98-A4BB-D8EFBB324C88" target="_parent">
-      <div class="pc-top">
-        <span class="pc-badge works">Works</span>
-        <span class="pc-power"></span>
-      </div>
       <div class="pc-name">Garr</div>
-      <div class="pc-ct"></div>
     </a>
     <a class="pcard" href="https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/F1713C99-2928-4BAB-8E2A-9EC6BFD70761?context=B953F48E-55F8-4F2C-AB26-0DF7CC2EFA09" target="_parent">
-      <div class="pc-top">
-        <span class="pc-badge works">Works</span>
-        <span class="pc-power"></span>
-      </div>
       <div class="pc-name">Johnstown North</div>
-      <div class="pc-ct"></div>
     </a>
   </div>
 

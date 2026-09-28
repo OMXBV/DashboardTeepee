@@ -19,12 +19,13 @@
   --yellow: #FFB91D; --colvert: #007B99;
   --bg: #F4F7FB; --white: #FFFFFF;
   --text: #1C2333; --mid: #5A6978; --border: #E0E8F0;
+  --page-max: 1720px; --gutter: max(28px, calc((100% - var(--page-max)) / 2));
   --plus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3.4' stroke-linecap='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E");
 }
 /* ── BANDEAU DE TETE ── */
 .site-header {
   background: var(--white); border-bottom: 1px solid var(--border);
-  padding: 15px 28px; display: flex; align-items: center; gap: 24px;
+  padding: 15px var(--gutter); display: flex; align-items: center; gap: 24px;
 }
 .site-logo { height: 38px; width: auto; display: block; flex: none; }
 .site-id { border-left: 1px solid var(--border); padding-left: 24px; min-width: 0; }
@@ -55,7 +56,7 @@
 .dcard-ico .ico { width: 21px; height: 21px; }
 
 body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; }
-.body-wrap { padding: 24px 28px 48px; }
+.body-wrap { padding: 24px var(--gutter) 48px; }
 .section-label {
   font-size: 11px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase;
   color: var(--mid); margin-bottom: 12px;
@@ -121,14 +122,13 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .pcard:hover { box-shadow: 0 4px 16px rgba(0,32,96,0.10); transform: translateY(-2px); border-color: var(--blue); }
 .pc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
 .pc-badge.new { background: var(--blue); color: #fff; }
-.pc-badge.works { background: var(--yellow); color: var(--deep); }
 .pc-power { font-size: 12px; font-weight: 500; color: var(--mid); margin-left: auto; }
 .pc-name { font-size: 14px; font-weight: 900; color: var(--text); margin-bottom: 4px; }
 .pc-ct { font-size: 12px; font-weight: 400; color: var(--mid); }
 .site-footer {
   background: var(--white);
   border-top: 1px solid var(--border);
-  padding: 20px 28px;
+  padding: 20px var(--gutter);
   text-align: center;
 }
 .footer-inner { display: flex; justify-content: center; align-items: center; }
@@ -201,3 +201,17 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .ocard-actions { margin-top: auto; padding-top: 4px; }
 .ocard-link span { transition: transform 0.16s; }
 .ocard:hover .ocard-link span { transform: translateX(3px); }
+
+/* ── CLAVIER ET MOUVEMENT ── */
+/* Les liens qui couvrent une carte (qcard-hit, ocard-hit) portent le contour de la carte.
+   Les boutons en parallelogramme sont decoupes par clip-path : leur contour se dessine
+   a l'interieur, sinon il serait coupe. */
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.qcard-hit:focus-visible, .ocard-hit:focus-visible { outline-offset: -2px; border-radius: 3px; }
+.site-cta:focus-visible, .ocard-saisir:focus-visible { outline: 2px solid #fff; outline-offset: -5px; background: var(--deep); }
+.qcard-saisir:focus-visible { background: var(--blue); color: #fff; outline-offset: 1px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; }
+  .qcard:hover, .mcard:hover, .pcard:hover, .dcard:hover, .ocard:hover, .ocard-saisir:hover { transform: none; }
+  .dcard:hover .dcard-link span, .ocard:hover .ocard-link span, .section-link:hover span { transform: none; }
+}
