@@ -105,6 +105,7 @@ fichier, et l'historique en bas.
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
+| Lorris 1 | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV2/ACD92E16-845D-472B-8980-51F9F4274178?context=4359CE66-F199-41BD-AB04-97C2D27FAACD |
 | Bienvenue sur Teepee / Projets en cours / Tous les projets | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/category/F427C2AF/D956BEFD/dataList/Projets/default_Projets |
 | Lorris 2 | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV2/77FA5821-4992-46BE-B434-941BC3A1F169?context=6BB2C517-0812-42A4-A32C-24ED6C10D686 |
 | Sennely | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV2/151959C9-2C1D-4B22-8E7C-0AAF0E75C6A9?context=1F101FEF-C862-4D06-BC59-24A685C88007 |
