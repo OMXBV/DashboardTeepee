@@ -8,7 +8,7 @@ TeePee via son URL de publication GitHub Pages.
 
 | Fichier | Rôle | URL publiée |
 |---|---|---|
-| `index.html` | Accueil TeePee · Omexom Vincennes Nagi | https://omxbv.github.io/DashboardTeepee/ |
+| `index.html` | Accueil TeePee · Omexom | https://omxbv.github.io/DashboardTeepee/ |
 | `en.html` | Home TeePee · Omexom International | https://omxbv.github.io/DashboardTeepee/en.html |
 | `offre.html` | Offre & Projet · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/offre.html |
 | `rh.html` | Ressources humaines · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/rh.html |

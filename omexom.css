@@ -24,15 +24,30 @@
 /* ── BANDEAU DE TETE ── */
 .site-header {
   background: var(--white); border-bottom: 1px solid var(--border);
-  padding: 18px 28px; display: flex; align-items: center; justify-content: space-between;
-  gap: 20px;
+  padding: 15px 28px; display: flex; align-items: center; gap: 24px;
 }
-.site-logo { height: 42px; width: auto; display: block; }
-.site-header-right {
-  font-size: 10px; font-weight: 900; letter-spacing: 2.5px; text-transform: uppercase;
-  color: var(--mid); white-space: nowrap;
+.site-logo { height: 38px; width: auto; display: block; flex: none; }
+.site-id { border-left: 1px solid var(--border); padding-left: 24px; min-width: 0; }
+.site-eyebrow {
+  font-size: 9px; font-weight: 900; letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--mid); margin-bottom: 3px;
 }
-.site-header-right b { color: var(--blue); font-weight: 900; }
+.site-title { font-size: 17px; font-weight: 900; color: var(--deep); line-height: 1.2; }
+.site-cta {
+  margin-left: auto; flex: none; text-decoration: none;
+  background: var(--blue); color: #fff;
+  font-size: 10px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 12px 24px 12px 18px;
+  clip-path: polygon(0 0,92% 0,100% 100%,8% 100%);
+  transition: background 0.15s;
+}
+.site-cta:hover { background: var(--deep); }
+
+@media (max-width: 820px) {
+  .site-header { flex-wrap: wrap; gap: 14px; }
+  .site-id { border-left: 0; padding-left: 0; }
+  .site-cta { margin-left: 0; }
+}
 
 /* ── PICTOGRAMMES ── */
 .ico { width: 26px; height: 26px; display: block; }
@@ -47,30 +62,6 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
   display: flex; align-items: center; gap: 10px;
 }
 .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-.featured {
-  background: var(--blue); border-radius: 3px;
-  padding: 20px 26px; margin-bottom: 24px;
-  display: flex; align-items: center; justify-content: space-between;
-  position: relative; overflow: hidden;
-  cursor: pointer; transition: filter 0.18s; text-decoration: none;
-}
-.featured:hover { filter: brightness(1.08); }
-.fd1 { position: absolute; right: -10px; top: 0; bottom: 0; width: 220px; background: rgba(255,255,255,0.07); clip-path: polygon(16% 0,100% 0,84% 100%,0% 100%); pointer-events: none; }
-.fd2 { position: absolute; right: 80px; top: 0; bottom: 0; width: 120px; background: rgba(0,193,222,0.15); clip-path: polygon(16% 0,100% 0,84% 100%,0% 100%); pointer-events: none; }
-.feat-left { position: relative; z-index: 1; }
-.feat-eye { font-size: 9px; font-weight: 900; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.50); margin-bottom: 6px; }
-.feat-title { font-size: 20px; font-weight: 900; color: white; margin-bottom: 4px; }
-.feat-sub { font-size: 11px; font-weight: 300; color: rgba(255,255,255,0.60); }
-.feat-btn {
-  position: relative; z-index: 1;
-  background: white; color: var(--blue);
-  font-family: 'Vinci Sans', Arial, sans-serif;
-  font-size: 10px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;
-  padding: 11px 22px 11px 16px; border: none; cursor: pointer;
-  clip-path: polygon(0 0,88% 0,100% 100%,12% 100%);
-  transition: background 0.15s; white-space: nowrap;
-}
-.feat-btn:hover { background: #EEF3F8; }
 .qcard {
   background: var(--white); border: 1px solid var(--border); border-radius: 3px;
   padding: 12px 14px; display: flex; align-items: center; gap: 10px; position: relative;
