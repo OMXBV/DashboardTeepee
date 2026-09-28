@@ -42,7 +42,9 @@ reste de la page.
   - le menu métier **MPA** (5 rôles sur 33, et aucun dans le public de l'accueil)
   - le menu métier **Administration** (1 rôle sur 33)
 
-  Ces deux cartes occupent un quart de la rangée « Menus métier » pour rien.
+  Ces deux cartes occupaient un quart de la rangée « Menus métier » pour rien : elles
+  ont été retirées, ainsi que la carte Administration de `rh.html` qui menait à la même
+  liste.
 
 ## Contacts : la question est tranchée
 

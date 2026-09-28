@@ -82,11 +82,11 @@ fichier, et l'historique en bas.
 | Système de management | `92F82BEE` | index | https://safeplace.teepee.fr/#/category/92F82BEE |
 | Installation | `0CBC7D3A` | index | https://safeplace.teepee.fr/#/category/0CBC7D3A |
 | Moyen matériel | `9A294B91` | index | https://safeplace.teepee.fr/#/category/9A294B91 |
-| Management des projets & affaires / Management de projet et des affaires | `32DB80F2` | index, offre | https://safeplace.teepee.fr/#/category/32DB80F2 |
+| Management de projet et des affaires / Menu MPA | `32DB80F2` | offre | https://safeplace.teepee.fr/#/category/32DB80F2 |
 | Achats | `67103350` | index | https://safeplace.teepee.fr/#/category/67103350 |
 | Ressources humaines | `D92BB7C3` | index, rh | https://safeplace.teepee.fr/#/category/D92BB7C3 |
 | Construction & performance | `1EEE8D15` | index | https://safeplace.teepee.fr/#/category/1EEE8D15 |
-| Ressources humaines / Recrutement | `02E2474B` | rh | https://safeplace.teepee.fr/#/category/02E2474B |
+| Recrutement / Menu recrutement | `02E2474B` | rh | https://safeplace.teepee.fr/#/category/02E2474B |
 | Material & Equipment | `C602A3FD` | en | https://safeplace.teepee.fr/#/category/C602A3FD |
 | Management System | `18F7F9BA` | en | https://safeplace.teepee.fr/#/category/18F7F9BA |
 | Installation | `5C12180C` | en | https://safeplace.teepee.fr/#/category/5C12180C |
@@ -106,7 +106,7 @@ fichier, et l'historique en bas.
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
 | Lorris 1 | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV2/ACD92E16-845D-472B-8980-51F9F4274178?context=4359CE66-F199-41BD-AB04-97C2D27FAACD |
-| Bienvenue sur Teepee / Projets en cours / Tous les projets | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/category/F427C2AF/D956BEFD/dataList/Projets/default_Projets |
+| Voir tous les projets / Tous les projets | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/category/F427C2AF/D956BEFD/dataList/Projets/default_Projets |
 | Lorris 2 | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV2/77FA5821-4992-46BE-B434-941BC3A1F169?context=6BB2C517-0812-42A4-A32C-24ED6C10D686 |
 | Sennely | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV2/151959C9-2C1D-4B22-8E7C-0AAF0E75C6A9?context=1F101FEF-C862-4D06-BC59-24A685C88007 |
 | Chauvigny | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV2/2450A316-F4B0-467D-BDD9-3A660E517E23?context=36965137-E5A8-4E70-94ED-A31591FF59A5 |
@@ -168,7 +168,7 @@ fichier, et l'historique en bas.
 |---|---|---|---|
 | Mon profil | `E6FE12CE` / `ED68D778` | index, rh | https://safeplace.teepee.fr/#/category/E6FE12CE/ED68D778/dataList/USER/FiltreLUtilisateurNeVoitQueSesTickets |
 | Support | `DC3605A6` / `AE9641CE` | index, rh | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
-| Administration / Annuaire | `FA584D40` / `DED3EB21` | index, rh | https://safeplace.teepee.fr/#/category/FA584D40/DED3EB21/dataList/USER/default_USER |
+| Administration / Annuaire | `FA584D40` / `DED3EB21` | aucune, retiré : ouvrable par le seul administrateur | https://safeplace.teepee.fr/#/category/FA584D40/DED3EB21/dataList/USER/default_USER |
 
 ## Historique des remplacements
 

@@ -9,23 +9,18 @@
 <link rel="stylesheet" href="omexom.css">
 <style>
 .offre-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; margin-bottom: 24px; }
-.quick-row { display: grid; grid-template-columns: minmax(0,340px); gap: 8px; margin-bottom: 24px; }
-.menus-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 24px; }
-.dash-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; margin-bottom: 24px; }
+.quick-row { display: grid; grid-template-columns: repeat(2,minmax(0,340px)); gap: 8px; margin-bottom: 24px; }
 @media (max-width: 1300px) {
-  .dash-grid { grid-template-columns: repeat(3,1fr); }
   .offre-grid { grid-template-columns: repeat(3,1fr); }
 }
 @media (max-width: 900px) {
-  .dash-grid { grid-template-columns: repeat(2,1fr); }
   .offre-grid { grid-template-columns: repeat(2,1fr); }
   .quick-row { grid-template-columns: repeat(2,1fr); }
-  .menus-grid { grid-template-columns: repeat(2,1fr); }
   .featured { flex-direction: column; align-items: flex-start; gap: 14px; }
 }
 @media (max-width: 560px) {
   .body-wrap { padding: 18px 16px 36px; }
-  .dash-grid, .offre-grid, .quick-row, .menus-grid { grid-template-columns: 1fr; }
+  .offre-grid, .quick-row { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -103,14 +98,12 @@
       <a class="qcard-hit" target="_parent" href="https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets" aria-label="Ouvrir Support"></a>
       <div class="qico ib"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="6" width="17.6" height="12" rx="2"/><path d="M14.6 6v2.2M14.6 10.9v2.2M14.6 15.8v2.2"/><path d="M6.4 10.4h5.2M6.4 13.6h3.4"/></svg></div><div><div class="ql2">Support</div><div class="qs2">Tickets &amp; idées</div></div>
     </div>
+    <div class="qcard">
+      <a class="qcard-hit" target="_parent" href="https://safeplace.teepee.fr/#/category/D92BB7C3" aria-label="Ouvrir le menu Ressources humaines"></a>
+      <div class="qico it"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.2" r="3.2"/><path d="M3.2 19.5c0-3.2 2.6-5.4 5.8-5.4s5.8 2.2 5.8 5.4"/><circle cx="16.8" cy="9.4" r="2.5"/><path d="M15.4 14.4c3 0 5.4 2 5.4 5.1"/></svg></div><div><div class="ql2">Ressources humaines</div><div class="qs2">Intégration · Évaluation · Formation</div></div>
+    </div>
   </div>
 
-  <div class="section-label">Menus liés</div>
-  <div class="menus-grid">
-    <a class="mcard cm" target="_parent" href="https://safeplace.teepee.fr/#/category/02E2474B"><div class="badge bm">REC</div><div class="mc-t">Recrutement</div><div class="mc-d">Postes · Candidats · Embauches</div></a>
-    <a class="mcard cs" target="_parent" href="https://safeplace.teepee.fr/#/category/D92BB7C3"><div class="badge bs">RH</div><div class="mc-t">Ressources humaines</div><div class="mc-d">Intégration · Évaluation · Formation</div></a>
-    <a class="mcard ca" target="_parent" href="https://safeplace.teepee.fr/#/category/FA584D40/DED3EB21/dataList/USER/default_USER"><div class="badge ba">ADM</div><div class="mc-t">Administration</div><div class="mc-d">Utilisateurs · Rôles · Droits</div></a>
-  </div>
 </div>
 
 <!-- FOOTER -->

@@ -61,7 +61,10 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
   color: var(--mid); margin-bottom: 12px;
   display: flex; align-items: center; gap: 10px;
 }
-.section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); order: 1; }
+.section-link { order: 2; text-decoration: none; color: var(--blue); display: flex; align-items: center; gap: 5px; letter-spacing: inherit; }
+.section-link span { transition: transform 0.16s; }
+.section-link:hover span { transform: translateX(3px); }
 .qcard {
   background: var(--white); border: 1px solid var(--border); border-radius: 3px;
   padding: 12px 14px; display: flex; align-items: center; gap: 10px; position: relative;
