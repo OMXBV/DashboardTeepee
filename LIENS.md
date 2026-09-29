@@ -167,7 +167,7 @@ fichier, et l'historique en bas.
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
 | Mon profil | `E6FE12CE` / `ED68D778` | index, rh | https://safeplace.teepee.fr/#/category/E6FE12CE/ED68D778/dataList/USER/FiltreLUtilisateurNeVoitQueSesTickets |
-| Support | `DC3605A6` / `AE9641CE` | index, rh | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
+| Support | `DC3605A6` / `AE9641CE` | index, rh, offre, en, st | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
 | Administration / Annuaire | `FA584D40` / `DED3EB21` | aucune, retiré : ouvrable par le seul administrateur | https://safeplace.teepee.fr/#/category/FA584D40/DED3EB21/dataList/USER/default_USER |
 
 ## Historique des remplacements
@@ -199,7 +199,6 @@ Ce qu'il reste à obtenir, et pourquoi :
 |---|---|---|
 | ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
-| Saisie du **ticket support** | bouton + sur la carte Support de l'accueil et de la page RH. Liste : `DC3605A6` / `AE9641CE`, formulaire `TicketsSupport` | à relever, demandé par Bastou |
 | Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
@@ -237,6 +236,7 @@ relève, jamais ne se reconstruit.
 | rh | Autorisations d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/EBEF9E36/RHAutorisationDEmbauche/RHAutorisationDEmbauche |
 | rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
 | accueil | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
+| accueil, rh, offre, en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
 | accueil | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
 | accueil | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
