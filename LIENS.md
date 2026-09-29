@@ -205,6 +205,18 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
+## Formulaires publics
+
+Hors `safeplace.teepee.fr` : ces formulaires se remplissent sans compte, par le client.
+La page ne les ouvre pas, elle copie le lien pour qu'il soit envoyé.
+
+| Libellé | Pages | URL |
+|---|---|---|
+| Enquête de satisfaction client | offre, bouton « Copier le lien client » | https://public.teepee.fr/#/11093/Enqu%C3%AAte%20de%20satisfaction%20client |
+
+La saisie interne `EnqueTeDeSatisfactionClient/EnqueTeDeSatisfactionClient` existe
+toujours mais n'est plus posée : c'est le client qui répond, pas nous.
+
 ## Saisies directes
 
 Relevés dans TeePee le 2026-09-27, un par un, et dépouillés de leur `?context=` qui est
@@ -218,7 +230,6 @@ relève, jamais ne se reconstruit.
 | offre | Toutes les opportunités | https://safeplace.teepee.fr/#/viewData/32DB80F2/50F618EA/CRMOpportunite/CRMOpportunite |
 | offre | Panel clients | https://safeplace.teepee.fr/#/viewData/32DB80F2/65B438CC/TEEPEE_Entreprise/TEEPEE_Entreprise_CRM |
 | offre | Actions commerciales | https://safeplace.teepee.fr/#/viewData/32DB80F2/36086F3F/CRMActionCommerciale/CRMActionCommerciale |
-| offre | Enquêtes de satisfaction | https://safeplace.teepee.fr/#/viewData/32DB80F2/8D8DC69D/EnqueTeDeSatisfactionClient/EnqueTeDeSatisfactionClient |
 | rh | Ouvertures de poste | https://safeplace.teepee.fr/#/viewData/02E2474B/8663F6A6/OuvertureDePoste/OuvertureDePoste |
 | rh | Entretiens candidats | https://safeplace.teepee.fr/#/viewData/02E2474B/E4FDB727/RHEntretientCandidat/RHEntretienCandidat |
 | rh | Renseignements d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/0A9A7C08/RHDemandeDeRenseignementsDEmbauche/RHAutorisationDEmbauche |

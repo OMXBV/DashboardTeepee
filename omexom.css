@@ -20,6 +20,7 @@
   --bg: #F4F7FB; --white: #FFFFFF;
   --text: #1C2333; --mid: #5A6978; --border: #E0E8F0;
   --page-max: 1720px; --gutter: max(28px, calc((100% - var(--page-max)) / 2));
+  --copy: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='8' y='8' width='13' height='13' rx='2'/%3E%3Cpath d='M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3'/%3E%3C/svg%3E");
   --plus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3.4' stroke-linecap='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E");
 }
 /* ── BANDEAU DE TETE ── */
@@ -198,6 +199,11 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
   -webkit-mask: var(--plus) center/11px no-repeat; mask: var(--plus) center/11px no-repeat;
 }
 .ocard-saisir:hover { background: var(--deep); transform: translateY(-1px); }
+/* Variante : copier un lien plutot que saisir. Meme bouton, pictogramme de copie,
+   et l'etat is-copied confirme deux secondes. */
+.ocard-copier { border: 0; cursor: pointer; }
+.ocard-copier::before { -webkit-mask-image: var(--copy); mask-image: var(--copy); width: 12px; height: 12px; }
+.ocard-copier.is-copied { background: var(--colvert); }
 .ocard-actions { margin-top: auto; padding-top: 4px; }
 .ocard-link span { transition: transform 0.16s; }
 .ocard:hover .ocard-link span { transform: translateX(3px); }
