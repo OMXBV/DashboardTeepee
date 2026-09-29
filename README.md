@@ -12,7 +12,8 @@ TeePee via son URL de publication GitHub Pages.
 | `en.html` | Home TeePee · Omexom International | https://omxbv.github.io/DashboardTeepee/en.html |
 | `offre.html` | Offre & Projet · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/offre.html |
 | `rh.html` | Ressources humaines · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/rh.html |
-| `st.html` | Suivi documentaire sous-traitants · Omexom TeePee, en préparation | https://omxbv.github.io/DashboardTeepee/st.html |
+| `st-en.html` | Subcontractor documents · Omexom International, home page des sous-traitants OSI, en préparation | https://omxbv.github.io/DashboardTeepee/st-en.html |
+| `st.html` | Version française, base de la future home page des sous-traitants ORES. Pas encore branchée dans TeePee | https://omxbv.github.io/DashboardTeepee/st.html |
 
 ## Organisation du dépôt
 

@@ -19,7 +19,8 @@ Dans TeePee, chacune de ces pages est une entrée « Home page » du menu **Aide
 | `en.html` | OSI · Home page | 8 rôles OSI : direction projet, HSE site, ingénierie, supervision, sous-traitance |
 | `offre.html` | CRM · Home page | 5 rôles ORES : chef d'entreprise, chef de projet, responsable d'activité, responsable projet |
 | `rh.html` | RH · Home page | 4 rôles CRE : directeur, gestionnaire RH, responsable RH |
-| `st.html` | à créer | sous-traitants, et les Méthodes & QHSE qui contrôlent leurs documents. Public exact à confirmer dans l'export |
+| `st-en.html` | à créer, OSI | sous-traitants OSI, et les Méthodes & HSE qui contrôlent leurs documents. Public exact à confirmer dans l'export |
+| `st.html` | à créer, ORES, plus tard | version française pour les sous-traitants ORES, gardée de côté |
 
 Un rôle n'est pas une personne : un rôle peut couvrir une ou trente personnes. Mais
 l'ordre de grandeur est là, et il change la façon de concevoir.

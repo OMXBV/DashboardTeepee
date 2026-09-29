@@ -89,7 +89,7 @@ fichier, et l'historique en bas.
 | Recrutement / Menu recrutement | `02E2474B` | rh | https://safeplace.teepee.fr/#/category/02E2474B |
 | Material & Equipment | `C602A3FD` | en | https://safeplace.teepee.fr/#/category/C602A3FD |
 | Management System | `18F7F9BA` | en | https://safeplace.teepee.fr/#/category/18F7F9BA |
-| Installation | `5C12180C` | en | https://safeplace.teepee.fr/#/category/5C12180C |
+| Installation / IN menu | `5C12180C` | en, st-en | https://safeplace.teepee.fr/#/category/5C12180C |
 
 ## Tableaux de bord Power BI
 
@@ -120,9 +120,9 @@ fichier, et l'historique en bas.
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
 | Welcome to Teepee | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/default_Projets |
-| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/98EE3433-FBE0-44E2-B1CA-39A70FC34B79?context=01362DEE-5A00-441E-BDAD-BD89B3240270 |
+| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en, st-en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/98EE3433-FBE0-44E2-B1CA-39A70FC34B79?context=01362DEE-5A00-441E-BDAD-BD89B3240270 |
 | Ballinknockane | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/00F71013-6615-4195-A339-B004991B3CB7?context=02A1C672-861B-4AAF-AF4D-0689795567F8 |
-| Garr | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/4F9DBAFD-E998-4801-8C86-EC361E5F5006?context=B4362240-6E2C-4E98-A4BB-D8EFBB324C88 |
+| Garr | `DDCDAF73` / `7ADDAB11` | en, st-en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/4F9DBAFD-E998-4801-8C86-EC361E5F5006?context=B4362240-6E2C-4E98-A4BB-D8EFBB324C88 |
 | Johnstown North | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/F1713C99-2928-4BAB-8E2A-9EC6BFD70761?context=B953F48E-55F8-4F2C-AB26-0DF7CC2EFA09 |
 
 ## MPA · CRM
@@ -167,7 +167,7 @@ fichier, et l'historique en bas.
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
 | Mon profil | `E6FE12CE` / `ED68D778` | index, rh | https://safeplace.teepee.fr/#/category/E6FE12CE/ED68D778/dataList/USER/FiltreLUtilisateurNeVoitQueSesTickets |
-| Support | `DC3605A6` / `AE9641CE` | index, rh, offre, en, st | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
+| Support | `DC3605A6` / `AE9641CE` | index, rh, offre, en, st-en, st | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
 | Administration / Annuaire | `FA584D40` / `DED3EB21` | aucune, retiré : ouvrable par le seul administrateur | https://safeplace.teepee.fr/#/category/FA584D40/DED3EB21/dataList/USER/default_USER |
 
 ## Historique des remplacements
@@ -202,7 +202,8 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
-| Page `st.html`, suivi documentaire sous-traitants | six liens à relever : menu IN de la page (`0CBC7D3A` côté France ou `5C12180C` côté international, à trancher), liste et saisie des Intervenants, liste et saisie des Documents, liste des Types de documents. Plus tard : fiche entreprise du sous-traitant et rapport Power BI conformité ST | à relever, la page reste hors production tant qu'ils manquent |
+| Page `st-en.html`, home page des sous-traitants OSI | cinq liens à relever côté international : liste et saisie du Personnel, liste et saisie des Documents, liste des Document types. Plus tard : fiche entreprise du sous-traitant et rapport Power BI conformité ST | à relever, la page reste hors production tant qu'ils manquent |
+| Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
 ## Formulaires publics
@@ -236,7 +237,7 @@ relève, jamais ne se reconstruit.
 | rh | Autorisations d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/EBEF9E36/RHAutorisationDEmbauche/RHAutorisationDEmbauche |
 | rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
 | accueil | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
-| accueil, rh, offre, en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
+| accueil, rh, offre, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
 | accueil | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
 | accueil | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
