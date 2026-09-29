@@ -211,7 +211,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
-| Page `st-en.html`, portail des sous-traitants OSI | quatre liens à relever dans le menu `1428C838` : saisie des Workers (formulaire `INProfilST`), liste et saisie des Documents, liste des Document types | à relever, les boutons restent grisés tant qu'ils manquent |
+| Page `st-en.html`, portail des sous-traitants OSI | trois liens à relever dans le menu `1428C838` : liste et saisie des Documents, liste des Document types | à relever, les cartes restent grisées tant qu'ils manquent |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
@@ -247,6 +247,7 @@ relève, jamais ne se reconstruit.
 | rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
 | accueil | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
 | accueil, rh, offre, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
+| st-en | Workers | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
 | accueil | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
 | accueil | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
