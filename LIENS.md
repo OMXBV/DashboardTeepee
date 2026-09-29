@@ -120,9 +120,9 @@ fichier, et l'historique en bas.
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
 | Welcome to Teepee | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/default_Projets |
-| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/98EE3433-FBE0-44E2-B1CA-39A70FC34B79?context=01362DEE-5A00-441E-BDAD-BD89B3240270 |
+| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/98EE3433-FBE0-44E2-B1CA-39A70FC34B79?context=01362DEE-5A00-441E-BDAD-BD89B3240270 |
 | Ballinknockane | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/00F71013-6615-4195-A339-B004991B3CB7?context=02A1C672-861B-4AAF-AF4D-0689795567F8 |
-| Garr | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/4F9DBAFD-E998-4801-8C86-EC361E5F5006?context=B4362240-6E2C-4E98-A4BB-D8EFBB324C88 |
+| Garr | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/4F9DBAFD-E998-4801-8C86-EC361E5F5006?context=B4362240-6E2C-4E98-A4BB-D8EFBB324C88 |
 | Johnstown North | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/F1713C99-2928-4BAB-8E2A-9EC6BFD70761?context=B953F48E-55F8-4F2C-AB26-0DF7CC2EFA09 |
 
 ## MPA · CRM
@@ -203,6 +203,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
+| Page `st.html`, suivi documentaire sous-traitants | six liens à relever : menu IN de la page (`0CBC7D3A` côté France ou `5C12180C` côté international, à trancher), liste et saisie des Intervenants, liste et saisie des Documents, liste des Types de documents. Plus tard : fiche entreprise du sous-traitant et rapport Power BI conformité ST | à relever, la page reste hors production tant qu'ils manquent |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
 ## Formulaires publics

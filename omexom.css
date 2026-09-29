@@ -19,6 +19,7 @@
   --yellow: #FFB91D; --colvert: #007B99;
   --bg: #F4F7FB; --white: #FFFFFF;
   --text: #1C2333; --mid: #5A6978; --border: #E0E8F0;
+  --ok: #2E7D32; --warn: #B26B00; --ko: #C62828;
   --page-max: 1720px; --gutter: max(28px, calc((100% - var(--page-max)) / 2));
   --copy: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='8' y='8' width='13' height='13' rx='2'/%3E%3Cpath d='M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3'/%3E%3C/svg%3E");
   --plus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3.4' stroke-linecap='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E");
@@ -221,3 +222,28 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
   .qcard:hover, .mcard:hover, .pcard:hover, .dcard:hover, .ocard:hover, .ocard-saisir:hover { transform: none; }
   .dcard:hover .dcard-link span, .ocard:hover .ocard-link span, .section-link:hover span { transform: none; }
 }
+
+/* ── LEGENDE DE STATUTS ── */
+/* Six cases separees par un filet, chacune un pictogramme colore, un mot, une ligne. */
+.legend { display: grid; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 3px; overflow: hidden; }
+.legend-item { background: var(--white); padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px; }
+.legend-item b { display: block; font-size: 13px; font-weight: 900; color: var(--text); line-height: 1.3; }
+.legend-item span { display: block; font-size: 12px; font-weight: 400; color: var(--mid); margin-top: 3px; line-height: 1.4; }
+.legend-ico { width: 32px; height: 32px; border-radius: 3px; flex: none; display: flex; align-items: center; justify-content: center; }
+.legend-ico .ico { width: 18px; height: 18px; }
+.lg-wait { color: var(--mid); background: rgba(90,105,120,0.10); }
+.lg-check { color: var(--blue); background: rgba(0,113,206,0.09); }
+.lg-ok { color: var(--ok); background: rgba(46,125,50,0.10); }
+.lg-warn { color: var(--warn); background: rgba(255,185,29,0.16); }
+.lg-ko { color: var(--ko); background: rgba(198,40,40,0.09); }
+
+/* ── ETATS PROVISOIRES ── */
+/* is-soon : une carte tableau de bord qui annonce sans ouvrir. Pas de lien, pas de survol. */
+.dcard.is-soon { cursor: default; opacity: 0.85; }
+.dcard.is-soon:hover { box-shadow: none; transform: none; }
+/* is-missing : le lien TeePee reste a relever, la carte se voit mais ne s'ouvre pas.
+   A retirer des que LIENS.md a l'URL, jamais a laisser en production. */
+.ocard.is-missing { cursor: default; }
+.ocard.is-missing:hover { box-shadow: none; transform: none; }
+.ocard.is-missing .ocard-link, .ocard.is-missing .ocard-saisir, .site-cta.is-missing { opacity: 0.45; cursor: not-allowed; }
+.ocard.is-missing .ocard-tag { color: var(--warn); background: rgba(255,185,29,0.16); }
