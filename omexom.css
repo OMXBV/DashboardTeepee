@@ -245,5 +245,6 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
    A retirer des que LIENS.md a l'URL, jamais a laisser en production. */
 .ocard.is-missing { cursor: default; }
 .ocard.is-missing:hover { box-shadow: none; transform: none; }
-.ocard.is-missing .ocard-link, .ocard.is-missing .ocard-saisir, .site-cta.is-missing { opacity: 0.45; cursor: not-allowed; }
+.ocard.is-missing .ocard-link, .ocard.is-missing .ocard-saisir, .ocard-saisir.is-missing, .site-cta.is-missing { opacity: 0.45; cursor: not-allowed; }
+.ocard-saisir.is-missing:hover { background: var(--blue); transform: none; }
 .ocard.is-missing .ocard-tag { color: var(--warn); background: rgba(255,185,29,0.16); }
