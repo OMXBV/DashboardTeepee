@@ -119,10 +119,11 @@ fichier, et l'historique en bas.
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
-| Welcome to Teepee | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/default_Projets |
-| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en, st-en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/98EE3433-FBE0-44E2-B1CA-39A70FC34B79?context=01362DEE-5A00-441E-BDAD-BD89B3240270 |
+| View all projects | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/default_Projets |
+| My projects, vue `ProjetsOSI`, à filtrer côté TeePee pour que chaque sous-traitant ne voie que son projet | `DDCDAF73` / `7ADDAB11` | st-en | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/ProjetsOSI |
+| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/98EE3433-FBE0-44E2-B1CA-39A70FC34B79?context=01362DEE-5A00-441E-BDAD-BD89B3240270 |
 | Ballinknockane | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/00F71013-6615-4195-A339-B004991B3CB7?context=02A1C672-861B-4AAF-AF4D-0689795567F8 |
-| Garr | `DDCDAF73` / `7ADDAB11` | en, st-en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/4F9DBAFD-E998-4801-8C86-EC361E5F5006?context=B4362240-6E2C-4E98-A4BB-D8EFBB324C88 |
+| Garr | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/4F9DBAFD-E998-4801-8C86-EC361E5F5006?context=B4362240-6E2C-4E98-A4BB-D8EFBB324C88 |
 | Johnstown North | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENProjetWeb/F1713C99-2928-4BAB-8E2A-9EC6BFD70761?context=B953F48E-55F8-4F2C-AB26-0DF7CC2EFA09 |
 
 ## MPA · CRM
