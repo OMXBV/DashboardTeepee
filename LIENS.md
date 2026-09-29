@@ -160,7 +160,8 @@ Menu `1428C838`, celui que l'export nommait « Suivi ST ». Relevé par Bastou l
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
-| Workers, liste des profils ST | `1428C838` / `C3224BB5` | st-en | https://safeplace.teepee.fr/#/category/1428C838/C3224BB5/dataList/INProfilST/default_INProfilST |
+| Worker profiles, liste des profils ST | `1428C838` / `C3224BB5` | st-en | https://safeplace.teepee.fr/#/category/1428C838/C3224BB5/dataList/INProfilST/default_INProfilST |
+| All documents, liste des documents ST | `1428C838` / `C8E72E17` | st-en | https://safeplace.teepee.fr/#/category/1428C838/C8E72E17/dataList/INDocumentST/default_INDocumentST |
 
 ## International · listes
 
@@ -211,7 +212,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
-| Page `st-en.html`, portail des sous-traitants OSI | trois liens à relever dans le menu `1428C838` : liste et saisie des Documents, liste des Document types | à relever, les cartes restent grisées tant qu'ils manquent |
+| Page `st-en.html`, portail des sous-traitants OSI | un lien à relever : saisie d'un document ST, formulaire `INDocumentST` dans `1428C838` / `C8E72E17`. La carte Document types n'a pas sa place sur cette page, décision de Bastou | à relever, le bouton New reste grisé |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
@@ -247,7 +248,7 @@ relève, jamais ne se reconstruit.
 | rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
 | accueil | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
 | accueil, rh, offre, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
-| st-en | Workers | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
+| st-en | Worker profiles | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
 | accueil | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
 | accueil | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
