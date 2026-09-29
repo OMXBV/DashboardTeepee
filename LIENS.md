@@ -202,7 +202,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
 | Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
-| Page `st-en.html`, home page des sous-traitants OSI | cinq liens à relever côté international : liste et saisie du Personnel, liste et saisie des Documents, liste des Document types. Plus tard : fiche entreprise du sous-traitant et rapport Power BI conformité ST | à relever, la page reste hors production tant qu'ils manquent |
+| Page `st-en.html`, home page des sous-traitants OSI | cinq liens à relever côté international : liste et saisie des Workers, liste et saisie des Documents, liste des Document types. Plus tard : fiche entreprise du sous-traitant et rapport Power BI conformité ST | à relever, la page reste hors production tant qu'ils manquent |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
