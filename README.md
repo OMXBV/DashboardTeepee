@@ -18,12 +18,17 @@ TeePee via son URL de publication GitHub Pages.
 
 ## Organisation du dépôt
 
-| Fichier | Rôle |
-|---|---|
-| `LIENS.md` | Source de vérité des liens TeePee, et historique de ceux qui ont changé |
-| `CLAUDE.md` | Règles de travail sur le dépôt |
-| `CONTEXTE.md` | Qui voit chaque page, et ce que son public a le droit d'ouvrir |
-| `omexom.css` | Feuille de style commune aux quatre pages |
+```
+*.html            les pages, à la racine : leurs URL sont celles de la production
+omexom.css        feuille de style commune à toutes les pages
+robots.txt        interdit l'exploration
+img/              logo Omexom
+polices/          Vinci Sans en WOFF2, chargées par omexom.css
+polices/source/   les TTF d'origine, pour régénérer les WOFF2
+docs/LIENS.md     source de vérité des liens TeePee, et historique de ceux qui ont changé
+docs/CONTEXTE.md  qui voit chaque page, et ce que son public a le droit d'ouvrir
+CLAUDE.md         règles de travail sur le dépôt
+```
 
 ## Publication
 
@@ -44,8 +49,9 @@ cd DashboardTeepee
 git commit -am "..." && git push
 ```
 
-Les styles sont en `<style>` dans chaque page, les couleurs passent par des variables CSS
-déclarées sur `:root` en haut de fichier.
+Les styles communs sont dans `omexom.css`, les couleurs passent par des variables CSS
+déclarées sur `:root` en haut de ce fichier. La balise `<style>` de chaque page ne porte
+que ses grilles et ses points de rupture.
 
 ## Confidentialité
 
@@ -54,7 +60,7 @@ puissances, responsables affectés, volumétrie du plan d'action et des non-conf
 et des liens profonds vers l'application interne `safeplace.teepee.fr`.
 
 Le dépôt étant public, **ces informations sont lisibles par toute personne connaissant
-l'URL**. Les quatre pages portent un `noindex, nofollow, noarchive` et un `robots.txt`
+l'URL**. Toutes les pages portent un `noindex, nofollow, noarchive` et un `robots.txt`
 interdit l'exploration : les moteurs de recherche sont écartés, mais ce n'est pas un
 contrôle d'accès.
 
@@ -63,7 +69,7 @@ d'extérieur au groupe.
 
 ## Polices
 
-Les fichiers `vinci_sans_*.woff2` sont la police d'entreprise **Vinci Sans**, propriété du
+Les fichiers `polices/vinci_sans_*.woff2` sont la police d'entreprise **Vinci Sans**, propriété du
 groupe VINCI. Elles sont présentes uniquement pour le rendu des pages ci-dessus.
 
 Elles ne sont couvertes par aucune licence de réutilisation : elles ne peuvent être ni
@@ -71,13 +77,13 @@ extraites, ni redistribuées, ni employées dans un autre projet, interne ou ext
 
 Elles sont sous-ensemblées au latin étendu (729 glyphes, kerning et `ss02` conservés) et
 livrées en WOFF2, 396 Ko au lieu de 1,3 Mo en TTF. Les sept graisses sont déclarées une
-seule fois, dans `omexom.css`, et chargées en externe par les quatre pages.
+seule fois, dans `omexom.css`, et chargées en externe par toutes les pages.
 
 Pour régénérer après une mise à jour de la police :
 
 ```bash
 pip install fonttools brotli
-pyftsubset vinci_sans_regular.ttf --output-file=vinci_sans_regular.woff2 \
+pyftsubset polices/source/vinci_sans_regular.ttf --output-file=polices/vinci_sans_regular.woff2 \
   --flavor=woff2 --layout-features='*' --name-IDs='*' \
   --unicodes=U+0020-024F,U+0259,U+02B0-02FF,U+0300-036F,U+1E00-1EFF,U+2000-206F,\
 U+2070-209F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+2200-22FF,U+2C60-2C7F,U+A720-A7FF

@@ -8,7 +8,7 @@ sur 473 entrées de menu : le dépôt est public, cette matrice n'a rien à y fa
 les conclusions sont consignées ci-dessous. Fichier source : `Menu_dataExport_1.xlsx`,
 à redemander à Bastou quand il faut le reconsulter.
 
-## Les quatre pages sont des pages d'accueil par entité
+## Les pages sont des pages d'accueil par entité
 
 Dans TeePee, chacune de ces pages est une entrée « Home page » du menu **Aide**, servie
 à un ensemble de rôles précis :

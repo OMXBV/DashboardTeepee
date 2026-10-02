@@ -3,11 +3,15 @@
 Pages HTML statiques affichées dans TeePee, l'intranet Omexom. Le `README.md` décrit
 le dépôt et la publication, ce fichier décrit la façon de travailler dessus.
 
-## Les liens TeePee passent par LIENS.md
+Rangement : les pages HTML, `omexom.css` et `robots.txt` restent à la racine, car leurs
+URL sont celles de la production. La doc est dans `docs/`, les polices dans `polices/`
+(les sources TTF dans `polices/source/`), les images dans `img/`.
 
-`LIENS.md` est la **source de vérité** de tous les liens vers `safeplace.teepee.fr`.
+## Les liens TeePee passent par docs/LIENS.md
 
-- Un lien ajouté ou remplacé se reporte dans `LIENS.md` **dans le même commit** que la
+`docs/LIENS.md` est la **source de vérité** de tous les liens vers `safeplace.teepee.fr`.
+
+- Un lien ajouté ou remplacé se reporte dans `docs/LIENS.md` **dans le même commit** que la
   page modifiée. Pas de mise à jour différée.
 - Un remplacement se note aussi dans la section « Historique des remplacements », avec
   l'ancien et le nouvel identifiant. Ces identifiants changent sans prévenir côté
@@ -15,7 +19,7 @@ le dépôt et la publication, ce fichier décrit la façon de travailler dessus.
 - Quand un lien manque, il se note dans « Liens manquants » plutôt que d'être deviné.
   **Ne jamais fabriquer une URL TeePee par déduction.** Un lien mort en production est
   pire qu'une carte absente.
-- Avant de retirer une carte, vérifier dans `LIENS.md` si son lien sert ailleurs.
+- Avant de retirer une carte, vérifier dans `docs/LIENS.md` si son lien sert ailleurs.
 
 ## `main` est la production
 
@@ -28,7 +32,7 @@ le dépôt et la publication, ce fichier décrit la façon de travailler dessus.
 
 ## Une carte doit être ouvrable par le public de sa page
 
-`CONTEXTE.md` dit qui voit chaque page et ce que ce public a le droit d'ouvrir dans
+`docs/CONTEXTE.md` dit qui voit chaque page et ce que ce public a le droit d'ouvrir dans
 TeePee. Chaque page sert une poignée de rôles, pas tout le monde : une carte que son
 lecteur ne peut pas ouvrir est pire qu'une carte absente, elle fait douter du reste.
 
@@ -71,8 +75,9 @@ class P(html.parser.HTMLParser):
     def handle_endtag(self,t):
         if not self.stack or self.stack[-1]!=t: print('MISMATCH',t,self.stack[-4:]); sys.exit(1)
         self.stack.pop()
-p=P(); p.feed(open('offre.html',encoding='utf-8').read()); print('non fermees:',p.stack)
-"
+for f in sys.argv[1:]:
+    p=P(); p.feed(open(f,encoding='utf-8').read()); print(f,'non fermees:',p.stack)
+" *.html
 grep -n '—\|–' *.html
 ```
 
@@ -87,7 +92,7 @@ Voir le rendu réel plutôt que le supposer :
 ## Le style vit dans omexom.css
 
 `omexom.css` porte les polices, les jetons de couleur et tous les composants partagés
-par au moins deux pages. Les quatre pages le chargent. **Un composant se modifie là,
+par au moins deux pages. Toutes les pages le chargent. **Un composant se modifie là,
 une seule fois**, et le changement vaut pour tout le monde.
 
 Ce qui reste dans la balise `<style>` de chaque page : le nombre de colonnes de ses
@@ -98,7 +103,7 @@ la feuille commune.
 Les cartes projet restent dupliquées entre `index.html` et `offre.html` cote HTML :
 modifier l'une demande encore la même dans l'autre.
 
-Après une modification de `omexom.css`, vérifier les quatre pages, pas seulement celle
+Après une modification de `omexom.css`, vérifier toutes les pages, pas seulement celle
 sur laquelle on travaillait.
 
 ## Les pictogrammes sont maison
