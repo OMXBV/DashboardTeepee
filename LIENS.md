@@ -224,6 +224,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Page `st-en.html`, portail des sous-traitants OSI | un lien à relever : saisie d'un document ST, formulaire `INDocumentST` dans `1428C838` / `C8E72E17`. La carte Document types n'a pas sa place sur cette page, décision de Bastou | à relever, le bouton New reste grisé |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
 | Saisies de la page `achats.html` | bouton Saisir et bouton « Copier le lien » d'Évaluation prestataire (`67103350` / `B7DA7935`, `HA023`), bouton Saisir de Panel d'entreprise (`67103350` / `321BF513`, `TEEPEE_Entreprise`). Le lien copié est celui de la saisie, pour l'envoyer à qui doit évaluer | à relever, les boutons restent grisés |
+| Second rapport Power BI de la page `achats.html` | carte « Tableau de bord achats », grisée en attendant. Nom et identifiant `homepage/view` à fournir | rapport pas encore créé |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
 ## Formulaires publics
