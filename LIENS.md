@@ -83,7 +83,7 @@ fichier, et l'historique en bas.
 | Installation | `0CBC7D3A` | index | https://safeplace.teepee.fr/#/category/0CBC7D3A |
 | Moyen matériel | `9A294B91` | index | https://safeplace.teepee.fr/#/category/9A294B91 |
 | Management de projet et des affaires / Menu MPA | `32DB80F2` | offre | https://safeplace.teepee.fr/#/category/32DB80F2 |
-| Achats | `67103350` | index | https://safeplace.teepee.fr/#/category/67103350 |
+| Achats / Menu Achats | `67103350` | index, achats | https://safeplace.teepee.fr/#/category/67103350 |
 | Ressources humaines | `D92BB7C3` | index, rh | https://safeplace.teepee.fr/#/category/D92BB7C3 |
 | Construction & performance | `1EEE8D15` | index | https://safeplace.teepee.fr/#/category/1EEE8D15 |
 | Recrutement / Menu recrutement | `02E2474B` | rh | https://safeplace.teepee.fr/#/category/02E2474B |
@@ -99,7 +99,7 @@ fichier, et l'historique en bas.
 | Tableau de bord qualité | `F4D24233` | index, offre | https://safeplace.teepee.fr/#/homepage/view/F4D24233 |
 | Quart d'heure QSE | `403B7A7F` | index, offre | https://safeplace.teepee.fr/#/homepage/view/403B7A7F |
 | Suivi chantier | `D877A9DE` | index, offre | https://safeplace.teepee.fr/#/homepage/view/D877A9DE |
-| CRM | `D35E43C6` | offre | https://safeplace.teepee.fr/#/homepage/view/D35E43C6 |
+| CRM | `D35E43C6` | offre, achats | https://safeplace.teepee.fr/#/homepage/view/D35E43C6 |
 
 ## Projets France
 
@@ -150,9 +150,18 @@ fichier, et l'historique en bas.
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
-| Plan d'action | `0CBC7D3A` / `1A268114` | index | https://safeplace.teepee.fr/#/category/0CBC7D3A/1A268114/dataList/PlanDActions/PlanDActionsGeNeRal |
-| Non-conformités | `92F82BEE` / `E279156E` | index | https://safeplace.teepee.fr/#/category/92F82BEE/E279156E/dataList/FicheDeNonConformite/default_FicheDeNonConformite |
-| Quart d'heures QSE | `92F82BEE` / `4231E439` | index | https://safeplace.teepee.fr/#/category/92F82BEE/4231E439/dataList/14DHeureQHSE/default_14DHeureQHSE |
+| Plan d'action | `0CBC7D3A` / `1A268114` | index, offre, achats | https://safeplace.teepee.fr/#/category/0CBC7D3A/1A268114/dataList/PlanDActions/PlanDActionsGeNeRal |
+| Non-conformités | `92F82BEE` / `E279156E` | index, offre, achats | https://safeplace.teepee.fr/#/category/92F82BEE/E279156E/dataList/FicheDeNonConformite/default_FicheDeNonConformite |
+| Quart d'heures QSE | `92F82BEE` / `4231E439` | index, offre, achats | https://safeplace.teepee.fr/#/category/92F82BEE/4231E439/dataList/14DHeureQHSE/default_14DHeureQHSE |
+
+## HA · Achats
+
+Menu `67103350`. Listes relevées par Bastou le 2026-10-02.
+
+| Libellé | Identifiants | Pages | URL |
+|---|---|---|---|
+| Évaluation prestataire, formulaire `HA023` | `67103350` / `B7DA7935` | achats | https://safeplace.teepee.fr/#/category/67103350/B7DA7935/dataList/HA023/default_HA023 |
+| Panel d'entreprise | `67103350` / `321BF513` | achats | https://safeplace.teepee.fr/#/category/67103350/321BF513/dataList/TEEPEE_Entreprise/default_TEEPEE_Entreprise |
 
 ## Suivi ST · sous-traitants
 
@@ -176,8 +185,8 @@ Menu `1428C838`, celui que l'export nommait « Suivi ST ». Relevé par Bastou l
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
-| Mon profil | `E6FE12CE` / `ED68D778` | index, rh | https://safeplace.teepee.fr/#/category/E6FE12CE/ED68D778/dataList/USER/FiltreLUtilisateurNeVoitQueSesTickets |
-| Support | `DC3605A6` / `AE9641CE` | index, rh, offre, en, st-en, st | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
+| Mon profil | `E6FE12CE` / `ED68D778` | index, rh, offre, achats | https://safeplace.teepee.fr/#/category/E6FE12CE/ED68D778/dataList/USER/FiltreLUtilisateurNeVoitQueSesTickets |
+| Support | `DC3605A6` / `AE9641CE` | index, rh, offre, achats, en, st-en, st | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
 | Administration / Annuaire | `FA584D40` / `DED3EB21` | aucune, retiré : ouvrable par le seul administrateur | https://safeplace.teepee.fr/#/category/FA584D40/DED3EB21/dataList/USER/default_USER |
 
 ## Historique des remplacements
@@ -214,6 +223,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Page `st-en.html`, portail des sous-traitants OSI | un lien à relever : saisie d'un document ST, formulaire `INDocumentST` dans `1428C838` / `C8E72E17`. La carte Document types n'a pas sa place sur cette page, décision de Bastou | à relever, le bouton New reste grisé |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
+| Saisies de la page `achats.html` | bouton Saisir et bouton « Copier le lien » d'Évaluation prestataire (`67103350` / `B7DA7935`, `HA023`), bouton Saisir de Panel d'entreprise (`67103350` / `321BF513`, `TEEPEE_Entreprise`). Le lien copié est celui de la saisie, pour l'envoyer à qui doit évaluer | à relever, les boutons restent grisés |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
 ## Formulaires publics
@@ -246,11 +256,11 @@ relève, jamais ne se reconstruit.
 | rh | Renseignements d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/0A9A7C08/RHDemandeDeRenseignementsDEmbauche/RHAutorisationDEmbauche |
 | rh | Autorisations d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/EBEF9E36/RHAutorisationDEmbauche/RHAutorisationDEmbauche |
 | rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
-| accueil | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
-| accueil, rh, offre, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
+| accueil, offre, achats | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
+| accueil, rh, offre, achats, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
 | st-en | Worker profiles | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
-| accueil | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
-| accueil | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
+| accueil, offre, achats | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
+| accueil, offre, achats | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
 Non-conformités et Quart d'heures sont des registres numérotés, chaque saisie annulée y
 creuse un trou : Bastou a tranché, les boutons restent sur l'accueil.

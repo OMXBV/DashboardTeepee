@@ -18,6 +18,7 @@ Dans TeePee, chacune de ces pages est une entrée « Home page » du menu **Aide
 | `index.html` | ORES · Home page | 8 rôles ORES : études, chantier, QHSE, ingénierie, performance PV, supervision, sous-traitance |
 | `en.html` | OSI · Home page | 8 rôles OSI : direction projet, HSE site, ingénierie, supervision, sous-traitance |
 | `offre.html` | CRM · Home page | 5 rôles ORES : chef d'entreprise, chef de projet, responsable d'activité, responsable projet |
+| `achats.html` | à créer, HA · Home page | service Achats. Public exact à confirmer dans l'export |
 | `rh.html` | RH · Home page | 4 rôles CRE : directeur, gestionnaire RH, responsable RH |
 | `st-en.html` | à créer, OSI | sous-traitants OSI, et les Méthodes & HSE qui contrôlent leurs documents. Public exact à confirmer dans l'export |
 | `st.html` | à créer, ORES, plus tard | version française pour les sous-traitants ORES, gardée de côté |
@@ -39,6 +40,9 @@ reste de la page.
 
 - **`offre.html`** : les neuf cartes sont ouvrables par les cinq rôles du public. Rien
   à corriger.
+  Depuis le 2026-10-02, ses accès rapides reprennent ceux de l'accueil ORES, à la
+  demande de Bastou : Mon profil, Plan d'action, Non-conformités et Quart d'heures
+  QSE n'ont pas été vérifiés pour ces cinq rôles. Même réserve pour `achats.html`.
 - **`index.html`** : quatorze cartes sur seize sont ouvrables par au moins six rôles
   sur huit. Deux exceptions, ouvrables par le seul Administrateur :
   - le menu métier **MPA** (5 rôles sur 33, et aucun dans le public de l'accueil)
@@ -117,7 +121,9 @@ mais il faut le connaître pour ne pas égarer les gens :
 ## Pistes ouvertes par l'export
 
 - **Un tableau de bord qu'on n'affiche pas** : `HA · Panel d'entreprise`, ouvert à 31
-  rôles sur 33, le plus largement accessible de tous. Il n'est sur aucune page.
+  rôles sur 33, le plus largement accessible de tous. La liste du même nom est
+  désormais sur `achats.html`, reste à savoir si l'export désigne cette liste ou un
+  rapport distinct.
 - **`rh.html` est une page recrutement**, bâtie sur le menu `02E2474B`. Le menu
   `RH · Ressources humaines` contient quatre entrées bien plus largement ouvertes :
   demande d'ouverture de poste (17 rôles), parcours d'intégration (22), fiche

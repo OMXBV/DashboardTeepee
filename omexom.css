@@ -206,6 +206,8 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 .ocard-copier::before { -webkit-mask-image: var(--copy); mask-image: var(--copy); width: 12px; height: 12px; }
 .ocard-copier.is-copied { background: var(--colvert); }
 .ocard-actions { margin-top: auto; padding-top: 4px; }
+/* Deux boutons cote a cote (copier le lien, saisir) restent groupes a droite. */
+.ocard-btns { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
 .ocard-link span { transition: transform 0.16s; }
 .ocard:hover .ocard-link span { transform: translateX(3px); }
 
