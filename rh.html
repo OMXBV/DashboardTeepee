@@ -67,7 +67,7 @@
       <div class="ocard-actions">
         <span class="ocard-link">Ouvrir <span>→</span></span>
         <span class="ocard-btns">
-          <span class="ocard-saisir ocard-copier is-missing" title="Lien public à relever dans TeePee">Copier le lien</span>
+          <button type="button" class="ocard-saisir ocard-copier" data-copier="https://public.teepee.fr/#/11093/RH%20-%20Demande%20de%20renseignement" aria-label="Copier le lien du formulaire public de demande de renseignement">Copier le lien</button>
           <a class="ocard-saisir" target="_parent" href="https://safeplace.teepee.fr/#/viewData/02E2474B/0A9A7C08/RHDemandeDeRenseignementsDEmbauche/RHAutorisationDEmbauche">Saisir</a>
         </span>
       </div>
@@ -127,5 +127,32 @@
 <footer class="site-footer">
   <div class="footer-note">Omexom · Plateforme TeePee</div>
 </footer>
+<script>
+/* Copie du lien public dans le presse-papiers. La page vit dans une iframe d'un autre
+   domaine : l'API clipboard peut y etre refusee, d'ou le repli sur execCommand, puis
+   sur une boite de dialogue ou le lien reste a copier a la main. */
+document.querySelectorAll('[data-copier]').forEach(function (btn) {
+  var texte = btn.textContent;
+  btn.addEventListener('click', function () {
+    var lien = btn.getAttribute('data-copier');
+    var fini = function () {
+      btn.classList.add('is-copied'); btn.textContent = 'Lien copié';
+      setTimeout(function () { btn.classList.remove('is-copied'); btn.textContent = texte; }, 2200);
+    };
+    var repli = function () {
+      var z = document.createElement('textarea');
+      z.value = lien; z.setAttribute('readonly', ''); z.style.position = 'fixed'; z.style.opacity = '0';
+      document.body.appendChild(z); z.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      document.body.removeChild(z);
+      if (ok) { fini(); } else { window.prompt('Copiez ce lien et envoyez-le au futur embauché :', lien); }
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(lien).then(fini, repli);
+    } else { repli(); }
+  });
+});
+</script>
 </body>
 </html>
