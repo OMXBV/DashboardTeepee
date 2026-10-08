@@ -9,17 +9,18 @@
 <link rel="stylesheet" href="omexom.css">
 <style>
 .offre-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; margin-bottom: 24px; }
+.dash-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 24px; }
 .quick-row { display: grid; grid-template-columns: repeat(2,minmax(0,340px)); gap: 8px; margin-bottom: 24px; }
 @media (max-width: 1300px) {
   .offre-grid { grid-template-columns: repeat(3,1fr); }
 }
 @media (max-width: 900px) {
-  .offre-grid { grid-template-columns: repeat(2,1fr); }
+  .offre-grid, .dash-grid { grid-template-columns: repeat(2,1fr); }
   .quick-row { grid-template-columns: repeat(2,1fr); }
 }
 @media (max-width: 560px) {
   .body-wrap { padding: 18px 16px 36px; }
-  .offre-grid, .quick-row { grid-template-columns: 1fr; }
+  .offre-grid, .dash-grid, .quick-row { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -62,10 +63,13 @@
       <a class="ocard-hit" target="_parent" href="https://safeplace.teepee.fr/#/category/02E2474B/0A9A7C08/dataList/RHDemandeDeRenseignementsDEmbauche/default_RHAutorisationDEmbauche" aria-label="Ouvrir Renseignements d'embauche"></a>
       <div class="ocard-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h7.5L19 9v11.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1z"/><path d="M13.3 3.6V9H19"/><path d="M8 13h8M8 16.5h8M8 9.5h3"/></svg></div>
       <div class="ocard-t">Renseignements d'embauche</div>
-      <div class="ocard-d">Demandes de renseignements avant embauche</div>
+      <div class="ocard-d">La demande d'information RH que remplit le futur embauché : copiez le lien du formulaire public et envoyez-le lui, ses réponses arrivent ici</div>
       <div class="ocard-actions">
         <span class="ocard-link">Ouvrir <span>→</span></span>
-        <a class="ocard-saisir" target="_parent" href="https://safeplace.teepee.fr/#/viewData/02E2474B/0A9A7C08/RHDemandeDeRenseignementsDEmbauche/RHAutorisationDEmbauche">Saisir</a>
+        <span class="ocard-btns">
+          <span class="ocard-saisir ocard-copier is-missing" title="Lien public à relever dans TeePee">Copier le lien</span>
+          <a class="ocard-saisir" target="_parent" href="https://safeplace.teepee.fr/#/viewData/02E2474B/0A9A7C08/RHDemandeDeRenseignementsDEmbauche/RHAutorisationDEmbauche">Saisir</a>
+        </span>
       </div>
     </div>
     <div class="ocard c4">
@@ -88,6 +92,19 @@
         <span class="ocard-link">Ouvrir <span>→</span></span>
         <a class="ocard-saisir" target="_parent" href="https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement">Saisir</a>
       </div>
+    </div>
+  </div>
+
+  <div class="section-label">Tableaux de bord</div>
+  <div class="dash-grid">
+    <div class="dcard is-soon">
+      <div class="dcard-deco"></div><div class="dcard-deco2"></div>
+      <div class="dcard-top">
+        <div class="dcard-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5h17"/><path d="M6.5 20.5v-6M11 20.5V8M15.5 20.5v-9M20 20.5V4.5"/></svg></div>
+        <div class="dcard-eyes"><span class="dcard-new">Bientôt</span><span class="dcard-eye">Power BI</span></div>
+      </div>
+      <div class="dcard-t">Tableau de bord RH</div>
+      <div class="dcard-d">Le suivi du recrutement, en attendant le rapport</div>
     </div>
   </div>
 

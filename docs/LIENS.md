@@ -219,7 +219,8 @@ Ce qu'il reste à obtenir, et pourquoi :
 | ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
 | Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
-| Rapport Power BI RH | section tableaux de bord de la page RH | aucun identifiant connu |
+| Rapport Power BI RH | carte « Tableau de bord RH » de la page `rh.html`, grisée en attendant. Nom et identifiant `homepage/view` à fournir | aucun identifiant connu |
+| Formulaire public de demande d'information RH | bouton « Copier le lien » de la carte Renseignements d'embauche sur `rh.html`. La RH envoie ce lien au futur embauché, ses réponses arrivent dans la liste `02E2474B` / `0A9A7C08` (`RHDemandeDeRenseignementsDEmbauche`), confirmée par Bastou le 2026-10-08. URL `public.teepee.fr` à relever, sur le modèle de l'enquête de satisfaction | à relever, le bouton reste grisé |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Page `st-en.html`, portail des sous-traitants OSI | un lien à relever : saisie d'un document ST, formulaire `INDocumentST` dans `1428C838` / `C8E72E17`. La carte Document types n'a pas sa place sur cette page, décision de Bastou | à relever, le bouton New reste grisé |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
@@ -235,6 +236,7 @@ La page ne les ouvre pas, elle copie le lien pour qu'il soit envoyé.
 | Libellé | Pages | URL |
 |---|---|---|
 | Enquête de satisfaction client | offre, bouton « Copier le lien client » | https://public.teepee.fr/#/11093/Enqu%C3%AAte%20de%20satisfaction%20client |
+| Demande d'information RH | rh, bouton « Copier le lien » de Renseignements d'embauche | **à relever**, voir « Liens manquants » |
 
 La saisie interne `EnqueTeDeSatisfactionClient/EnqueTeDeSatisfactionClient` existe
 toujours mais n'est plus posée : c'est le client qui répond, pas nous.
