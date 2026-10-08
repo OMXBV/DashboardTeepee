@@ -224,7 +224,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Page `st-en.html`, portail des sous-traitants OSI | un lien à relever : saisie d'un document ST, formulaire `INDocumentST` dans `1428C838` / `C8E72E17`. La carte Document types n'a pas sa place sur cette page, décision de Bastou | à relever, le bouton New reste grisé |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
-| Saisies de la page `achats.html` | bouton Saisir et bouton « Copier le lien » d'Évaluation prestataire (`67103350` / `B7DA7935`, `HA023`), bouton Saisir de Panel d'entreprise (`67103350` / `321BF513`, `TEEPEE_Entreprise`). Le lien copié est celui de la saisie, pour l'envoyer à qui doit évaluer | à relever, les boutons restent grisés |
+| Saisie de Panel d'entreprise, page `achats.html` | bouton Saisir de Panel d'entreprise (`67103350` / `321BF513`, `TEEPEE_Entreprise`) | à relever, le bouton reste grisé |
 | Second rapport Power BI de la page `achats.html` | carte « Tableau de bord achats », grisée en attendant. Nom et identifiant `homepage/view` à fournir | rapport pas encore créé |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
@@ -266,12 +266,19 @@ relève, jamais ne se reconstruit.
 | rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
 | accueil, offre, achats | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
 | accueil, rh, offre, achats, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
+| achats | Évaluation prestataire, boutons Saisir et « Copier le lien » | https://safeplace.teepee.fr/#/viewData/67103350/B7DA7935/HA023/HA0901EvaluationDesPrestatairesSousTraitantsV2 |
 | st-en | Worker profiles | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
 | accueil, offre, achats | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
 | accueil, offre, achats | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
 Non-conformités et Quart d'heures sont des registres numérotés, chaque saisie annulée y
 creuse un trou : Bastou a tranché, les boutons restent sur l'accueil.
+
+Évaluation prestataire a été relevée par Bastou le 2026-10-08, en un seul échantillon,
+avec un `?context=` retiré comme pour les autres. Le même lien sert au bouton Saisir et
+au bouton « Copier le lien », que les acheteurs envoient au conducteur de travaux qui
+évalue : la vue `HA0901EvaluationDesPrestatairesSousTraitantsV2` est une vue nommée,
+pas un brouillon.
 
 Relevé mais **non posé** :
 
