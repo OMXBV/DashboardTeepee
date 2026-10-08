@@ -98,6 +98,8 @@ fichier, et l'historique en bas.
 | Suivi fiche de contrôle | `7FFDF492` | index, offre | https://safeplace.teepee.fr/#/homepage/view/7FFDF492 |
 | Tableau de bord qualité | `F4D24233` | index, offre | https://safeplace.teepee.fr/#/homepage/view/F4D24233 |
 | Quart d'heure QSE | `403B7A7F` | index, offre | https://safeplace.teepee.fr/#/homepage/view/403B7A7F |
+| CRM | `D35E43C6` | offre, achats | https://safeplace.teepee.fr/#/homepage/view/D35E43C6 |
+| Tableau de bord RH | `924A151C` | rh | https://safeplace.teepee.fr/#/homepage/view/924A151C |
 | Suivi chantier | `D877A9DE` | index, offre | https://safeplace.teepee.fr/#/homepage/view/D877A9DE |
 | CRM | `D35E43C6` | offre, achats | https://safeplace.teepee.fr/#/homepage/view/D35E43C6 |
 
@@ -219,7 +221,6 @@ Ce qu'il reste à obtenir, et pourquoi :
 | ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
 | Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
-| Rapport Power BI RH | carte « Tableau de bord RH » de la page `rh.html`, grisée en attendant. Nom et identifiant `homepage/view` à fournir | aucun identifiant connu |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Page `st-en.html`, portail des sous-traitants OSI | un lien à relever : saisie d'un document ST, formulaire `INDocumentST` dans `1428C838` / `C8E72E17`. La carte Document types n'a pas sa place sur cette page, décision de Bastou | à relever, le bouton New reste grisé |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
