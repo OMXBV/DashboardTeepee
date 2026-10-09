@@ -22,6 +22,7 @@ Dans TeePee, chacune de ces pages est une entrée « Home page » du menu **Aide
 | `rh.html` | RH · Home page | 4 rôles CRE : directeur, gestionnaire RH, responsable RH |
 | `st-en.html` | à créer, OSI | sous-traitants OSI, et les Méthodes & HSE qui contrôlent leurs documents. Public exact à confirmer dans l'export |
 | `st.html` | à créer, ORES, plus tard | version française pour les sous-traitants ORES, gardée de côté |
+| `ia.html` | à créer | l'assistant IA Copilot Studio. Aucune carte TeePee, la page ne porte que la conversation : son public est celui à qui l'agent est partagé côté Microsoft |
 
 Un rôle n'est pas une personne : un rôle peut couvrir une ou trente personnes. Mais
 l'ordre de grandeur est là, et il change la façon de concevoir.

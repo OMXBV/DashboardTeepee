@@ -13,6 +13,7 @@ TeePee via son URL de publication GitHub Pages.
 | `offre.html` | Offre & Projet · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/offre.html |
 | `achats.html` | Achats · Omexom TeePee. Pas encore branchée dans TeePee | https://omxbv.github.io/DashboardTeepee/achats.html |
 | `rh.html` | Ressources humaines · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/rh.html |
+| `ia.html` | Assistant IA · Omexom TeePee, l'agent Copilot Studio dans un cadre de conversation plein écran | https://omxbv.github.io/DashboardTeepee/ia.html |
 | `st-en.html` | Subcontractor portal · Omexom International, home page des sous-traitants OSI | https://omxbv.github.io/DashboardTeepee/st-en.html |
 | `st.html` | Version française, base de la future home page des sous-traitants ORES. Pas encore branchée dans TeePee | https://omxbv.github.io/DashboardTeepee/st.html |
 
