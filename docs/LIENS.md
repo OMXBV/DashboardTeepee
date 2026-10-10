@@ -196,6 +196,7 @@ Menu `1428C838`, celui que l'export nommait « Suivi ST ». Relevé par Bastou l
 | Date | Ce qui a changé | Avant | Après |
 |---|---|---|---|
 | 2026-09-21 | Menu MPA réorganisé, tous les liens CRM cassés | `0E3BFD62` | `32DB80F2` |
+| 2026-10-10 | Saisie Non-conformités passée sur la vue V3 du formulaire (accueil, offre, achats) | `FicheDeNonConformite/FicheDeNonConformite` | `FicheDeNonConformite/FicheDeNonConformiteV3` |
 
 Détail du remplacement du 2026-09-21 :
 
@@ -268,8 +269,13 @@ relève, jamais ne se reconstruit.
 | accueil, rh, offre, achats, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
 | achats | Évaluation prestataire, boutons Saisir et « Copier le lien » | https://safeplace.teepee.fr/#/viewData/67103350/B7DA7935/HA023/HA0901EvaluationDesPrestatairesSousTraitantsV2 |
 | st-en | Worker profiles | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
-| accueil, offre, achats | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformite |
+| accueil, offre, achats | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformiteV3 |
 | accueil, offre, achats | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
+
+Non-conformités a été relevée à nouveau par Bastou le 2026-10-10 : le formulaire est
+passé sur sa vue `FicheDeNonConformiteV3`, l'ancienne vue `FicheDeNonConformite` ne sert
+plus. La liste « Ouvrir » n'a pas bougé. Le `?context=` fourni a été retiré comme pour
+les autres.
 
 Non-conformités et Quart d'heures sont des registres numérotés, chaque saisie annulée y
 creuse un trou : Bastou a tranché, les boutons restent sur l'accueil.
