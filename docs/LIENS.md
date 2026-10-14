@@ -101,6 +101,7 @@ fichier, et l'historique en bas.
 | CRM | `D35E43C6` | offre, achats | https://safeplace.teepee.fr/#/homepage/view/D35E43C6 |
 | Tableau de bord RH | `924A151C` | rh | https://safeplace.teepee.fr/#/homepage/view/924A151C |
 | Suivi chantier | `D877A9DE` | index, offre | https://safeplace.teepee.fr/#/homepage/view/D877A9DE |
+| Site monitoring | `91A00BA1` | en | https://safeplace.teepee.fr/#/homepage/view/91A00BA1 |
 | CRM | `D35E43C6` | offre, achats | https://safeplace.teepee.fr/#/homepage/view/D35E43C6 |
 
 ## Projets France
