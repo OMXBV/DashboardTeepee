@@ -90,6 +90,7 @@ fichier, et l'historique en bas.
 | Material & Equipment | `C602A3FD` | en | https://safeplace.teepee.fr/#/category/C602A3FD |
 | Management System | `18F7F9BA` | en | https://safeplace.teepee.fr/#/category/18F7F9BA |
 | Installation | `5C12180C` | en | https://safeplace.teepee.fr/#/category/5C12180C |
+| Suivi ST, menu des sous-traitants | `1428C838` | st-en | https://safeplace.teepee.fr/#/category/1428C838 |
 
 ## Tableaux de bord Power BI
 
@@ -172,8 +173,8 @@ Menu `1428C838`, celui que l'export nommait « Suivi ST ». Relevé par Bastou l
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
-| Worker profiles, liste des profils ST | `1428C838` / `C3224BB5` | st-en | https://safeplace.teepee.fr/#/category/1428C838/C3224BB5/dataList/INProfilST/default_INProfilST |
-| All documents, liste des documents ST | `1428C838` / `C8E72E17` | st-en | https://safeplace.teepee.fr/#/category/1428C838/C8E72E17/dataList/INDocumentST/default_INDocumentST |
+| Worker profiles, liste des profils ST, aussi en accès rapide « My profiles » | `1428C838` / `C3224BB5` | st-en | https://safeplace.teepee.fr/#/category/1428C838/C3224BB5/dataList/INProfilST/default_INProfilST |
+| All documents, liste des documents ST, aussi en accès rapide « My documents » | `1428C838` / `C8E72E17` | st-en | https://safeplace.teepee.fr/#/category/1428C838/C8E72E17/dataList/INDocumentST/default_INDocumentST |
 
 ## International · listes
 
@@ -276,7 +277,7 @@ relève, jamais ne se reconstruit.
 | accueil, offre, achats | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
 | accueil, rh, offre, achats, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
 | achats | Évaluation prestataire, boutons Saisir et « Copier le lien » | https://safeplace.teepee.fr/#/viewData/67103350/B7DA7935/HA023/HA0901EvaluationDesPrestatairesSousTraitantsV2 |
-| st-en | Worker profiles | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
+| st-en | Worker profiles, et le + de My profiles | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
 | en | Subcontractor documents | https://safeplace.teepee.fr/#/viewData/18F7F9BA/323269CE/INDocumentST/INDocumentST |
 | accueil, offre, achats | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformiteV3 |
 | accueil, offre, achats | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
