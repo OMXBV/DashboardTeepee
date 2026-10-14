@@ -182,6 +182,12 @@ Menu `1428C838`, celui que l'export nommait « Suivi ST ». Relevé par Bastou l
 | Delivery | `C602A3FD` / `72956F51` | en | https://safeplace.teepee.fr/#/category/C602A3FD/72956F51/dataList/TESTGARRLIVRAISONS/default_TESTGARRLIVRAISONS |
 | HSE Observations | `18F7F9BA` / `CC910484` | en | https://safeplace.teepee.fr/#/category/18F7F9BA/CC910484/dataList/SMObservationsHSE/default_SMObservationsHSE |
 | Minor Injury Report | `18F7F9BA` / `3D8F08DD` | en | https://safeplace.teepee.fr/#/category/18F7F9BA/3D8F08DD/dataList/AccidentBeNin/default_AccidentBeNin |
+| Subcontractor documents, registre des documents posés sur les profils ST | `18F7F9BA` / `323269CE` | en | https://safeplace.teepee.fr/#/category/18F7F9BA/323269CE/dataList/INDocumentST/default_INDocumentST |
+| Pre-induction quiz | `18F7F9BA` / `2B56635B` | en | https://safeplace.teepee.fr/#/category/18F7F9BA/2B56635B/dataList/SMOnlinePreInductionQuizTeepee/default_SMOnlinePreInductionQuiz |
+
+Relevés par Bastou le 2026-10-14. Le formulaire `INDocumentST` est aussi posé sur
+`st-en` sous un autre chemin, `1428C838` / `C8E72E17` (menu Suivi ST) : ce sont deux
+entrées de menu distinctes vers le même formulaire, pas un remplacement.
 
 ## Transverse
 
@@ -238,6 +244,7 @@ La page ne les ouvre pas, elle copie le lien pour qu'il soit envoyé.
 |---|---|---|
 | Enquête de satisfaction client | offre, bouton « Copier le lien client » | https://public.teepee.fr/#/11093/Enqu%C3%AAte%20de%20satisfaction%20client |
 | RH · Demande de renseignement | rh, bouton « Copier le lien » de Renseignements d'embauche | https://public.teepee.fr/#/11093/RH%20-%20Demande%20de%20renseignement |
+| Online induction | en, bouton « Copy link » de Pre-induction quiz | https://public.teepee.fr/#/11093/Online%20induction |
 
 La saisie interne `EnqueTeDeSatisfactionClient/EnqueTeDeSatisfactionClient` existe
 toujours mais n'est plus posée : c'est le client qui répond, pas nous.
@@ -269,6 +276,7 @@ relève, jamais ne se reconstruit.
 | accueil, rh, offre, achats, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
 | achats | Évaluation prestataire, boutons Saisir et « Copier le lien » | https://safeplace.teepee.fr/#/viewData/67103350/B7DA7935/HA023/HA0901EvaluationDesPrestatairesSousTraitantsV2 |
 | st-en | Worker profiles | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
+| en | Subcontractor documents | https://safeplace.teepee.fr/#/viewData/18F7F9BA/323269CE/INDocumentST/INDocumentST |
 | accueil, offre, achats | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformiteV3 |
 | accueil, offre, achats | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
