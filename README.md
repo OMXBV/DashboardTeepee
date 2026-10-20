@@ -13,6 +13,7 @@ TeePee via son URL de publication GitHub Pages.
 | `offre.html` | Offre & Projet · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/offre.html |
 | `achats.html` | Achats · Omexom TeePee. Pas encore branchée dans TeePee | https://omxbv.github.io/DashboardTeepee/achats.html |
 | `rh.html` | Ressources humaines · Omexom Teepee | https://omxbv.github.io/DashboardTeepee/rh.html |
+| `pepiniere.html` | Pépinière · Omexom TeePee, page d'administration du suivi des pépiniéristes pour les RH du pôle. Pas encore branchée dans TeePee | https://omxbv.github.io/DashboardTeepee/pepiniere.html |
 | `ia.html` | Assistant IA · Omexom TeePee, l'agent Copilot Studio dans un cadre de conversation plein écran | https://omxbv.github.io/DashboardTeepee/ia.html |
 | `base-vie.html` | Calculateur base vie · Omexom RE Solar, dimensionne la base vie d'un chantier selon SM 08.5 et SM 15_A. Pas encore branchée dans TeePee | https://omxbv.github.io/DashboardTeepee/base-vie.html |
 | `st-en.html` | Subcontractor portal · Omexom International, home page des sous-traitants OSI | https://omxbv.github.io/DashboardTeepee/st-en.html |

@@ -135,6 +135,9 @@ body { font-family: 'Vinci Sans', Arial, sans-serif; background: var(--bg); colo
 }
 .footer-inner { display: flex; justify-content: center; align-items: center; }
 .footer-note { font-size: 12px; font-weight: 400; color: var(--mid); letter-spacing: 0.3px; }
+/* Lien discret en pied de page : un outil hors TeePee, garde le temps d'une transition. */
+.footer-link { color: var(--mid); text-decoration: underline; text-underline-offset: 2px; }
+.footer-link:hover { color: var(--blue); }
 .dcard {
   position: relative; overflow: hidden;
   background: linear-gradient(135deg, #002060 0%, #013a8f 100%);

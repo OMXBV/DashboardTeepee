@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Pépinière · Omexom TeePee</title>
+<link rel="stylesheet" href="omexom.css">
+<style>
+/* Quatre colonnes de sections : chaque section garde son titre, les cartes s'alignent d'une section a l'autre. */
+.pep-layout { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 0 12px; }
+.pep-sec { display: flex; flex-direction: column; min-width: 0; margin-bottom: 24px; }
+.pep-sec.span2 { grid-column: span 2; }
+.pep-sec > .ocard, .pep-sec > .dcard { flex: 1; }
+.pep-pair { flex: 1; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.pep-pair.top { align-items: start; }
+@media (max-width: 1100px) {
+  .pep-layout { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 560px) {
+  .body-wrap { padding: 18px 16px 36px; }
+  .pep-layout, .pep-pair { grid-template-columns: 1fr; }
+  .pep-sec.span2 { grid-column: auto; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img class="site-logo" src="img/omexom-logo.png" alt="Omexom" width="212" height="38">
+  <div class="site-id">
+    <div class="site-eyebrow">Omexom · RH du pôle · Administration</div>
+    <div class="site-title">Pépinière</div>
+  </div>
+  <a class="site-cta" target="_parent" href="https://safeplace.teepee.fr/#/category/DF694CB5/B918BD98/dataList/USER/VueRH">Suivi des pépiniéristes</a>
+</header>
+
+<div class="body-wrap">
+<div class="pep-layout">
+
+  <section class="pep-sec">
+    <div class="section-label">Pépiniéristes</div>
+    <div class="ocard c1">
+        <a class="ocard-hit" target="_parent" href="https://safeplace.teepee.fr/#/category/DF694CB5/B918BD98/dataList/USER/VueRH" aria-label="Ouvrir Suivi des pépiniéristes"></a>
+        <div class="ocard-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.2" r="3.2"/><path d="M3.2 19.5c0-3.2 2.6-5.4 5.8-5.4s5.8 2.2 5.8 5.4"/><path d="M17.5 20.5v-6.5"/><path d="M17.5 16c-2.2 0-3.4-1.3-3.4-3.3 2.1 0 3.4 1.2 3.4 3.3z"/><path d="M17.5 14.6c0-2 1.2-3.2 3.3-3.2 0 2-1.2 3.2-3.3 3.2z"/></svg></div>
+        <div class="ocard-t">Suivi des pépiniéristes</div>
+        <div class="ocard-d">Vue RH : parcours, tuteur, état et avancement de chaque pépiniériste</div>
+        <div class="ocard-actions">
+          <span class="ocard-link">Ouvrir <span>→</span></span>
+        </div>
+      </div>
+  </section>
+
+  <section class="pep-sec">
+    <div class="section-label">Suivi</div>
+    <div class="ocard c2">
+        <a class="ocard-hit" target="_parent" href="https://safeplace.teepee.fr/#/category/DF694CB5/C60825D7/dataList/RHPePinieReSuiviDesJalons/default_RHPePinieReSuiviDesJalons" aria-label="Ouvrir Suivi des jalons"></a>
+        <div class="ocard-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M7.5 9.2l1.6 1.6 2.8-2.8"/><path d="M14 9.5h3"/><path d="M7.5 15.2l1.6 1.6 2.8-2.8"/><path d="M14 15.5h3"/></svg></div>
+        <div class="ocard-t">Suivi des jalons</div>
+        <div class="ocard-d">Un jalon par pépiniériste, à cocher quand il est réalisé</div>
+        <div class="ocard-actions">
+          <span class="ocard-link">Ouvrir <span>→</span></span>
+        </div>
+      </div>
+  </section>
+
+  <section class="pep-sec span2">
+    <div class="section-label">Référentiel</div>
+    <div class="pep-pair">
+      <div class="ocard c3">
+          <a class="ocard-hit" target="_parent" href="https://safeplace.teepee.fr/#/category/DF694CB5/5692D69F/dataList/RHPePinieReTypesDeParcours/default_RHPePinieReTypesDeParcours" aria-label="Ouvrir Types de parcours"></a>
+          <div class="ocard-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8.2 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.8"/></svg></div>
+          <div class="ocard-t">Types de parcours</div>
+          <div class="ocard-d">Les profils métier : ingénieur études, chef de projet ou RA, finance…</div>
+          <div class="ocard-actions">
+            <span class="ocard-link">Ouvrir <span>→</span></span>
+          </div>
+        </div>
+      <div class="ocard c4">
+          <a class="ocard-hit" target="_parent" href="https://safeplace.teepee.fr/#/category/DF694CB5/AA3E1105/dataList/RHPePinieReTypesDeJalons/default_RHPePinieReTypesDeJalons" aria-label="Ouvrir Types de jalons"></a>
+          <div class="ocard-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 21V3.5"/><path d="M5.5 4.5h11l-2.5 3.5 2.5 3.5h-11"/></svg></div>
+          <div class="ocard-t">Types de jalons</div>
+          <div class="ocard-d">Les jalons attendus par parcours : entretiens, formations obligatoires, visites, mission Fondation</div>
+          <div class="ocard-actions">
+            <span class="ocard-link">Ouvrir <span>→</span></span>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="pep-sec span2">
+    <div class="section-label">Pilotage</div>
+    <div class="pep-pair">
+      <div class="dcard is-soon">
+          <div class="dcard-deco"></div><div class="dcard-deco2"></div>
+          <div class="dcard-top">
+            <div class="dcard-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5h17"/><path d="M6.5 20.5v-6M11 20.5V8M15.5 20.5v-9M20 20.5V4.5"/></svg></div>
+            <div class="dcard-eyes"><span class="dcard-new">Bientôt</span><span class="dcard-eye">Power BI</span></div>
+          </div>
+          <div class="dcard-t">RH · Pépinière</div>
+          <div class="dcard-d">Avancement des parcours, jalons en retard, conformité des formations</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="pep-sec span2">
+    <div class="section-label">Accès rapides</div>
+    <div class="pep-pair top">
+      <div class="qcard">
+          <a class="qcard-hit" target="_parent" href="https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets" aria-label="Ouvrir Support"></a>
+          <div class="qico ib"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="6" width="17.6" height="12" rx="2"/><path d="M14.6 6v2.2M14.6 10.9v2.2M14.6 15.8v2.2"/><path d="M6.4 10.4h5.2M6.4 13.6h3.4"/></svg></div><div><div class="ql2">Support</div><div class="qs2">Tickets &amp; idées</div></div>
+          <a class="qcard-saisir" target="_parent" href="https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport" title="Nouveau ticket" aria-label="Saisir un ticket support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
+        </div>
+    </div>
+  </section>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-note">Omexom · Plateforme TeePee · <a class="footer-link" target="_parent" href="https://apps.powerapps.com/play/e/default-cae7d061-08f3-40dd-80c3-3c0b8889224a/a/e16cc434-fc01-475a-949f-496e78f3ca67">Ancienne Power App Pépinières (transition)</a></div>
+</footer>
+</body>
+</html>
