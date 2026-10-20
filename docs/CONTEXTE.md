@@ -20,6 +20,7 @@ Dans TeePee, chacune de ces pages est une entrée « Home page » du menu **Aide
 | `offre.html` | CRM · Home page | 5 rôles ORES : chef d'entreprise, chef de projet, responsable d'activité, responsable projet |
 | `achats.html` | à créer, HA · Home page | service Achats. Public exact à confirmer dans l'export |
 | `rh.html` | RH · Home page | 4 rôles CRE : directeur, gestionnaire RH, responsable RH |
+| `pepiniere.html` | à créer | admins et RH du pôle qui suivent les pépiniéristes. Les pépiniéristes eux-mêmes n'y ont pas accès, ils ont leur profil ailleurs. Rôles exacts à confirmer dans l'export, le menu `DF694CB5` étant postérieur à l'analyse |
 | `st-en.html` | à créer, OSI | sous-traitants OSI, et les Méthodes & HSE qui contrôlent leurs documents. Public exact à confirmer dans l'export |
 | `st.html` | à créer, ORES, plus tard | version française pour les sous-traitants ORES, gardée de côté |
 | `ia.html` | à créer | l'assistant IA Copilot Studio. Aucune carte TeePee, la page ne porte que la conversation : son public est celui à qui l'agent est partagé côté Microsoft |

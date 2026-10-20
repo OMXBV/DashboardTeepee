@@ -150,6 +150,17 @@ fichier, et l'historique en bas.
 | Autorisations d'embauche | `02E2474B` / `EBEF9E36` | rh | https://safeplace.teepee.fr/#/category/02E2474B/EBEF9E36/dataList/RHAutorisationDEmbauche/default_RHAutorisationDEmbauche |
 | Entreprises Omexom | `02E2474B` / `092F1C43` | rh | https://safeplace.teepee.fr/#/category/02E2474B/092F1C43/dataList/EntrepriseOmexomRE/ToutesLesEntreprisesCREAdmin |
 
+## RH · Pépinière
+
+Menu `DF694CB5`, module de suivi des parcours pépinière. Listes fournies par Bastou le 2026-10-20.
+
+| Libellé | Identifiants | Pages | URL |
+|---|---|---|---|
+| Suivi des pépiniéristes, vue `VueRH` du formulaire `USER`, aussi bouton d'en-tête | `DF694CB5` / `B918BD98` | pepiniere | https://safeplace.teepee.fr/#/category/DF694CB5/B918BD98/dataList/USER/VueRH |
+| Suivi des jalons | `DF694CB5` / `C60825D7` | pepiniere | https://safeplace.teepee.fr/#/category/DF694CB5/C60825D7/dataList/RHPePinieReSuiviDesJalons/default_RHPePinieReSuiviDesJalons |
+| Types de parcours | `DF694CB5` / `5692D69F` | pepiniere | https://safeplace.teepee.fr/#/category/DF694CB5/5692D69F/dataList/RHPePinieReTypesDeParcours/default_RHPePinieReTypesDeParcours |
+| Types de jalons | `DF694CB5` / `AA3E1105` | pepiniere | https://safeplace.teepee.fr/#/category/DF694CB5/AA3E1105/dataList/RHPePinieReTypesDeJalons/default_RHPePinieReTypesDeJalons |
+
 ## QSE et Installation
 
 | Libellé | Identifiants | Pages | URL |
@@ -196,7 +207,7 @@ entrées de menu distinctes vers le même formulaire, pas un remplacement.
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
 | Mon profil | `E6FE12CE` / `ED68D778` | index, rh, offre, achats | https://safeplace.teepee.fr/#/category/E6FE12CE/ED68D778/dataList/USER/FiltreLUtilisateurNeVoitQueSesTickets |
-| Support | `DC3605A6` / `AE9641CE` | index, rh, offre, achats, en, st-en, st | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
+| Support | `DC3605A6` / `AE9641CE` | index, rh, offre, achats, en, st-en, st, pepiniere | https://safeplace.teepee.fr/#/category/DC3605A6/AE9641CE/dataList/TicketsSupport/FiltreLUtilisateurVoirQueSesTickets |
 | Administration / Annuaire | `FA584D40` / `DED3EB21` | aucune, retiré : ouvrable par le seul administrateur | https://safeplace.teepee.fr/#/category/FA584D40/DED3EB21/dataList/USER/default_USER |
 
 ## Historique des remplacements
@@ -234,6 +245,9 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
 | Saisie de Panel d'entreprise, page `achats.html` | bouton Saisir de Panel d'entreprise (`67103350` / `321BF513`, `TEEPEE_Entreprise`) | à relever, le bouton reste grisé |
 | Second rapport Power BI de la page `achats.html` | carte « Tableau de bord achats », grisée en attendant. Nom et identifiant `homepage/view` à fournir | rapport pas encore créé |
+| Rapport Power BI `RH · Pépinière`, page `pepiniere.html` | carte Pilotage, grisée « Bientôt » en attendant. Identifiant `homepage/view` à fournir une fois le rapport publié dans TeePee | rapport créé le 2026-10-20, pas encore publié |
+| Saisies du module Pépinière | boutons Saisir sur Suivi des jalons, Types de parcours et Types de jalons (`DF694CB5`), à relever deux fois chacun | à relever, les cartes n'ont pour l'instant que « Ouvrir » |
+| Menu racine Pépinière `DF694CB5` | lien de menu complet, non déduit de l'identifiant | à confirmer |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
 
 ## Formulaires publics
@@ -255,6 +269,14 @@ arrivent dans la liste Renseignements d'embauche, `02E2474B` / `0A9A7C08`
 (`RHDemandeDeRenseignementsDEmbauche`), confirmée par Bastou le 2026-10-08 avec le
 lien public. Le bouton Saisir reste posé à côté, la RH pouvant remplir elle-même.
 
+## Outils hors TeePee
+
+Liens qui ne mènent pas à TeePee, notés ici pour qu'ils ne se perdent pas.
+
+| Libellé | Pages | URL |
+|---|---|---|
+| Ancienne Power App Pépinières, lien discret en pied de page le temps de la transition vers TeePee | pepiniere | https://apps.powerapps.com/play/e/default-cae7d061-08f3-40dd-80c3-3c0b8889224a/a/e16cc434-fc01-475a-949f-496e78f3ca67 |
+
 ## Saisies directes
 
 Relevés dans TeePee le 2026-09-27, un par un, et dépouillés de leur `?context=` qui est
@@ -274,7 +296,7 @@ relève, jamais ne se reconstruit.
 | rh | Autorisations d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/EBEF9E36/RHAutorisationDEmbauche/RHAutorisationDEmbauche |
 | rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
 | accueil, offre, achats | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
-| accueil, rh, offre, achats, en, st-en, st | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
+| accueil, rh, offre, achats, en, st-en, st, pepiniere | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
 | achats | Évaluation prestataire, boutons Saisir et « Copier le lien » | https://safeplace.teepee.fr/#/viewData/67103350/B7DA7935/HA023/HA0901EvaluationDesPrestatairesSousTraitantsV2 |
 | st-en | Worker profiles, et le + de My profiles | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
 | st-en | All documents, et le + de My documents | https://safeplace.teepee.fr/#/viewData/1428C838/C8E72E17/INDocumentST/INDocumentST |
