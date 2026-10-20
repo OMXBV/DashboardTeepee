@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Base vie · Omexom TeePee</title>
+<link rel="stylesheet" href="omexom.css">
+<style>
+/* Calculateur base vie : une colonne d'outil, centree. La question en haut, la reponse
+   juste en dessous, puis les points a verifier. */
+.bv-wrap { max-width: 820px; margin: 0 auto; padding: 24px 16px 40px; }
+.site-header select { margin-left: auto; padding: 7px 9px; border: 1px solid var(--border); border-radius: 3px; font: 13px 'Vinci Sans', Arial, sans-serif; background: #fff; color: var(--text); }
+.box { background: var(--white); border: 1px solid var(--border); border-radius: 3px; margin-top: 14px; }
+.box:first-child { margin-top: 0; }
+h2 { color: var(--deep); font-weight: 900; }
+
+/* Question principale */
+.ask { padding: 22px 16px; text-align: center; }
+.ask h2 { font-size: 18px; }
+.ask p { margin: 4px 0 14px; color: var(--mid); font-size: 13px; }
+.big { display: inline-flex; align-items: center; border: 2px solid var(--blue); border-radius: 4px; overflow: hidden; }
+.big button { width: 56px; height: 60px; border: none; background: #EAF3FB; color: var(--deep); font-size: 26px; cursor: pointer; }
+.big button:hover { background: var(--blue); color: #fff; }
+.big input { width: 110px; height: 60px; border: none; text-align: center; font: 900 34px 'Vinci Sans', Arial, sans-serif; color: var(--deep); -moz-appearance: textfield; }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.small-step { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 12px; font-size: 13.5px; color: var(--mid); }
+.ctr { display: inline-flex; border: 1px solid var(--border); border-radius: 3px; overflow: hidden; }
+.ctr button { width: 30px; height: 30px; border: none; background: #EAF3FB; color: var(--deep); font-size: 16px; cursor: pointer; }
+.ctr button:hover { background: var(--blue); color: #fff; }
+.ctr input { width: 44px; height: 30px; border: none; text-align: center; font: 700 14px 'Vinci Sans', Arial, sans-serif; color: var(--deep); -moz-appearance: textfield; }
+
+/* Options */
+details { border-top: 1px solid var(--border); }
+summary { cursor: pointer; padding: 11px 16px; font-size: 13.5px; color: var(--blue); list-style: none; user-select: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "▸ "; } details[open] summary::before { content: "▾ "; }
+.opts { padding: 0 16px 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; }
+.tog { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 7px 0; cursor: pointer; font-size: 13.5px; user-select: none; }
+.tog small { color: var(--mid); }
+.tog input[type=checkbox] { display: none; }
+.sw { width: 36px; height: 20px; border-radius: 10px; background: #CED6DE; position: relative; flex-shrink: 0; transition: background .15s; }
+.sw::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: left .15s; }
+.tog input:checked + .sw { background: var(--blue); }
+.tog input:checked + .sw::after { left: 18px; }
+.tog input[type=range] { width: 120px; accent-color: var(--blue); }
+
+/* Reponse */
+.verdict { padding: 16px; background: var(--deep); color: #fff; border-radius: 2px 2px 0 0; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.verdict b { font-size: 22px; font-weight: 900; }
+.verdict span { font-size: 13px; opacity: .85; }
+.mods { display: flex; gap: 4px; flex-wrap: wrap; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+.m { height: 28px; min-width: 56px; padding: 0 8px; border-radius: 2px; color: #fff; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; animation: pop .2s ease-out; }
+.m.v { background: var(--blue); } .m.r { background: var(--turq); } .m.s { background: var(--yellow); color: var(--deep); } .m.b { background: var(--mid); }
+@keyframes pop { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+.list { padding: 4px 16px 8px; }
+.cat { display: flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--mid); font-weight: 900; margin: 16px 0 4px; }
+.cat .ico, .warn h2 .ico { width: 18px; height: 18px; color: var(--blue); }
+.bv-it { display: grid; grid-template-columns: 76px 1fr auto; gap: 10px; align-items: baseline; padding: 7px 0; border-bottom: 1px solid #F0F3F7; }
+.bv-it:last-child { border-bottom: none; }
+.bv-it .n { font-size: 22px; font-weight: 900; color: var(--deep); text-align: right; }
+.bv-it .n small { font-size: 12px; font-weight: 400; color: var(--mid); }
+.bv-it .t { font-size: 15px; }
+.bv-it .why { display: none; grid-column: 2/4; font-size: 12.5px; color: var(--mid); margin-top: -4px; }
+.detail .bv-it .why { display: block; }
+.ref { font-size: 10.5px; font-weight: 700; padding: 2px 6px; border-radius: 2px; white-space: nowrap; background: #E3F7FB; color: var(--colvert); }
+.ref.leg { background: #EAF3FB; color: var(--blue); }
+.refs { display: flex; gap: 3px; justify-content: flex-end; flex-wrap: wrap; }
+.toggle-detail { background: none; border: none; color: var(--blue); font: 13px 'Vinci Sans', Arial, sans-serif; cursor: pointer; padding: 10px 16px; border-top: 1px solid var(--border); width: 100%; text-align: left; }
+
+/* A verifier */
+.warn { padding: 12px 16px; }
+.warn h2 { font-size: 15px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+.warn h2 .ico { color: var(--warn); }
+.w { display: flex; gap: 8px; padding: 5px 0; font-size: 14px; }
+.w .ref { margin-left: 4px; }
+
+.actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 14px; }
+.btn { font: 14px 'Vinci Sans', Arial, sans-serif; border: 1px solid var(--blue); background: var(--blue); color: #fff; padding: 9px 14px; border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--deep); border-color: var(--deep); }
+.btn.ghost { background: #fff; color: var(--blue); }
+.btn.ghost:hover { background: #EAF3FB; }
+.toast { color: var(--ok); font-size: 13px; }
+.bv-note { margin-top: 16px; font-size: 11.5px; color: var(--mid); line-height: 1.5; }
+.bv-note b { color: var(--text); }
+
+@media (max-width: 620px) { .opts { grid-template-columns: 1fr; } }
+@media print { body { background: #fff; } .ask, .actions, .toggle-detail, details, .site-footer { display: none !important; } .bv-it .why { display: block; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <img class="site-logo" src="img/omexom-logo.png" alt="Omexom" width="212" height="38">
+  <div class="site-id">
+    <div class="site-eyebrow">Omexom RE Solar · selon SM 08.5 et SM 15_A</div>
+    <div class="site-title">Calculateur base vie</div>
+  </div>
+  <select id="pays" aria-label="Pays">
+    <option value="fr" selected>France</option>
+    <option value="ie" disabled>Irlande · à venir</option>
+  </select>
+</header>
+
+<div class="bv-wrap">
+
+  <!-- 1. LA question -->
+  <section class="box">
+    <div class="ask">
+      <h2>Combien de personnes au maximum, en même temps ?</h2>
+      <p>Sous-traitants, encadrement et visiteurs compris</p>
+      <div class="big">
+        <button data-t="T" data-d="-1" aria-label="Moins">−</button>
+        <input id="T" type="number" min="0" value="37" aria-label="Effectif">
+        <button data-t="T" data-d="1" aria-label="Plus">+</button>
+      </div>
+      <div class="small-step">Dont femmes
+        <span class="ctr"><button data-t="f" data-d="-1">−</button><input id="f" type="number" min="0" value="0"><button data-t="f" data-d="1">+</button></span>
+      </div>
+    </div>
+
+    <details>
+      <summary>Options (repas, durée, zones éloignées…)</summary>
+      <div class="opts">
+        <label class="tog">Repas sur place<input type="checkbox" id="repas" checked><span class="sw"></span></label>
+        <label class="tog" id="simultRow">Mangent en même temps : <b id="simultV">100 %</b><input type="range" id="simult" min="30" max="100" step="5" value="100"></label>
+        <label class="tog">Chantier de moins de 4 mois<input type="checkbox" id="court"><span class="sw"></span></label>
+        <label class="tog"><span>Travaux « insalubres » officiels<br><small>amiante, égouts, ciment en vrac… La boue ne compte pas.</small></span><input type="checkbox" id="sal"><span class="sw"></span></label>
+        <label class="tog">Zones à + de 10 min à pied<input type="checkbox" id="loin"><span class="sw"></span></label>
+        <div class="tog" id="zoRow" style="display:none">Nombre de zones éloignées
+          <span class="ctr"><button data-t="zo" data-d="-1">−</button><input id="zo" type="number" min="0" value="1"><button data-t="zo" data-d="1">+</button></span></div>
+        <div class="tog">Équipes sur le terrain
+          <span class="ctr"><button data-t="eq" data-d="-1">−</button><input id="eq" type="number" min="0" value="4"><button data-t="eq" data-d="1">+</button></span></div>
+        <div class="tog">Dont visiteurs (sans armoire)
+          <span class="ctr"><button data-t="v" data-d="-1">−</button><input id="v" type="number" min="0" value="0"><button data-t="v" data-d="1">+</button></span></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- 2. LA réponse -->
+  <section class="box" id="out">
+    <div class="verdict"><b id="verdict"></b><span id="verdictSub"></span></div>
+    <div class="mods" id="mods"></div>
+    <div class="list" id="list"></div>
+    <button class="toggle-detail" id="tgl">▸ Voir pourquoi (réglementation)</button>
+  </section>
+
+  <!-- 3. À vérifier -->
+  <section class="box warn">
+    <h2><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 4.2L2.9 17.5a2 2 0 0 0 1.7 3h14.8a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5v4.5M12 17.2v.1"/></svg>À vérifier</h2>
+    <div id="warns"></div>
+  </section>
+
+  <div class="actions">
+    <button class="btn" id="copySpec">Copier la liste pour le loueur</button>
+    <button class="btn ghost" id="copyLink">Copier le lien</button>
+    <button class="btn ghost" onclick="window.print()">Imprimer</button>
+    <span class="toast" id="toast"></span>
+  </div>
+  <textarea id="clip" style="position:absolute;left:-9999px;top:0" aria-hidden="true"></textarea>
+
+  <div class="bv-note">
+    <b>Procédures liées :</b> SM 08.5 Installation et hygiène base vie (ex-SM 14_A) · SM 15_A Fiche pratique base vie · IN 150.1_B Réception base vie.<br>
+    Outil d'aide : si le PGC du chantier est plus exigeant, c'est lui qui s'applique. Toujours : locaux chauffés, aérés, éclairés, nettoyés chaque jour, WC avec chasse d'eau.
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-note">Omexom · Plateforme TeePee</div>
+</footer>
+
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id);};
+  var fmt=function(n){return n.toLocaleString('fr-FR',{maximumFractionDigits:0});};
+  var up=function(a,b){return a>0?Math.ceil(a/b):0;};
+  var num=function(id){var n=parseInt($(id).value,10);return isNaN(n)||n<0?0:n;};
+  var spec='';
+  var ICO={san:'<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5c3 3.6 5.5 6.8 5.5 10a5.5 5.5 0 0 1-11 0c0-3.2 2.5-6.4 5.5-10z"/></svg>',ves:'<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5a1.8 1.8 0 1 1 1.8 1.8c-.8 0-1.8.6-1.8 1.6"/><path d="M12 9.9l-8 5.6a1 1 0 0 0 .6 1.8h14.8a1 1 0 0 0 .6-1.8z"/></svg>',ref:'<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5v6.5M5 3.5v4.5a2 2 0 0 0 4 0V3.5M7 10v10.5"/><path d="M17 20.5v-17c-2 1.2-3 3.5-3 6.5v3.5h3"/></svg>',sec:'<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="6.5" width="17" height="13" rx="1.5"/><path d="M9 6.5V4.8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1.7M12 10v6M9 13h6"/></svg>',plus:'<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20.5h16M6 20.5V5.5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v15"/><path d="M9.5 8h1.5M13 8h1.5M9.5 11.5h1.5M13 11.5h1.5M10.5 20.5v-4h3v4"/></svg>'};
+
+  /* Règles par pays. Pour ajouter un pays : copier "fr", adapter, activer l'option du <select>. */
+  var PAYS={
+    fr:{
+      wcH:20, wcFn:2, wcF:20, lav:10, rob:10, dou:8, eau:3, sst:20, alarme:50,
+      ref:{wc:'R4228-14',lav:'R4228-7',dou:'R4228-8',arm:'R4228-6',refec:'R4534-142',eau:'R4534-143',pharm:'R4224-14',sst:'R4224-15'},
+      court:'Moins de 4 mois : base vie mobile ou cabines autonomes possibles.',
+      long:'Plus de 4 mois : base vie mobile ou cabines autonomes seulement avec dérogation DREETS.',
+      dae:'Pas obligatoire par la loi sur un chantier, mais exigé par Omexom.'
+    }
+  };
+
+  try{
+    var p=new URLSearchParams(location.search);
+    ['T','f','v','eq','zo','simult'].forEach(function(k){if(p.has(k))$(k).value=p.get(k);});
+    ['court','sal','loin'].forEach(function(k){if(p.get(k)==='1')$(k).checked=true;});
+    if(p.get('repas')==='0')$('repas').checked=false;
+    if(p.get('detail')==='1')$('out').classList.add('detail');
+  }catch(e){}
+
+  function R(c){return '<span class="ref'+(/^R\d/.test(c)?' leg':'')+'">'+c+'</span>';}
+  function it(n,unit,txt,refs,why){
+    return '<div class="bv-it"><div class="n">'+n+(unit?' <small>'+unit+'</small>':'')+'</div><div class="t">'+txt+'</div>'+
+      '<div class="refs">'+refs.map(R).join('')+'</div><div class="why">'+why+'</div></div>';
+  }
+  function cat(t){return '<div class="cat">'+t+'</div>';}
+
+  function calc(){
+    var P=PAYS[$('pays').value]||PAYS.fr, RF=P.ref;
+    var T=num('T'), f=Math.min(num('f'),T), v=Math.min(num('v'),T-f);
+    var repas=$('repas').checked, court=$('court').checked, sal=$('sal').checked, loin=$('loin').checked;
+    var simult=repas?num('simult'):0, eq=num('eq'), zo=loin?num('zo'):0;
+    var vr=1, rr=1.3;
+    var h=T-f, W=T-v;
+
+    var wc=up(h,P.wcH), ur=wc, wcF=f?P.wcFn*up(f,P.wcF):0;
+    var lav=T?Math.max(1,up(T,P.lav)):0;
+    var dou=sal?up(h,P.dou)+up(f,P.dou):(T?1:0);
+    var vestS=W*vr, places=repas?Math.ceil(T*simult/100):0, rob=up(places,P.rob), refS=places*rr;
+    var dae=T?1+zo:0, sst=W>=P.sst?Math.max(1,up(W,10)):(W?1:0);
+    var mV=up(vestS,15), mR=up(refS,15), mS=T?Math.max(1,up(T,25)):0, mTot=mV+mR+mS+(T?2:0);
+
+    $('simultV').textContent=simult+' %';
+    $('simultRow').style.display=repas?'flex':'none';
+    $('zoRow').style.display=loin?'flex':'none';
+
+    $('verdict').textContent=T?'Il te faut environ '+mTot+' modules':'Indique le nombre de personnes';
+    $('verdictSub').textContent=T?'pour '+T+' personne'+(T>1?'s':'')+(f?' dont '+f+' femme'+(f>1?'s':''):''):'';
+
+    var md='';
+    function add(n,c,l){for(var i=0;i<n;i++)md+='<div class="m '+c+'">'+l+'</div>';}
+    add(mV,'v','Vestiaire');add(mR,'r','Réfectoire');add(mS,'s','Sanitaire');
+    if(T){add(1,'b','Bureau');add(1,'b','Réunion');}
+    $('mods').innerHTML=md;
+
+    var l='';
+    l+=cat(ICO.san+'Sanitaires');
+    l+=it(wc+wcF,'','WC'+(f?' ('+wcF+' pour les femmes, séparés)':''),[RF.wc,'SM 15_A'],'1 WC par tranche de '+P.wcH+' hommes, '+P.wcFn+' par tranche de '+P.wcF+' femmes. Toujours avec chasse d\'eau.');
+    l+=it(ur,'','Urinoirs',[RF.wc],'1 urinoir par tranche de '+P.wcH+' hommes.');
+    l+=it(lav,'','Lavabos eau chaude / froide',[RF.lav,'SM 15_A'],'1 lavabo pour '+P.lav+' personnes maximum.');
+    l+=it(dou,'',sal?'Douches':'Douche avec eau chaude',sal?[RF.dou,'SM 15_A']:['SM 15_A'],sal?'Travaux de la liste officielle (arrêté du 23/07/1947) : 1 douche pour '+P.dou+' travailleurs.':'La loi ne l\'impose pas pour du PV (boue et terrassement ne sont pas dans la liste officielle), mais Omexom exige au moins 1 douche avec eau chaude.');
+    if(loin)l+=it(up(T,10),'','Cabines WC d\'appoint près des zones',['SM 08.5'],'1 cabine pour 10 personnes max, avec chasse d\'eau. WC chimiques seulement en appoint.');
+
+    l+=cat(ICO.ves+'Vestiaires');
+    l+=it(W,'','Armoires individuelles (2 compartiments, à clé)',[RF.arm],'1 armoire par compagnon : un côté propre, un côté sale. Plus 1 siège par personne.');
+    l+=it(fmt(vestS),'m²','de vestiaires',['SM 15_A'],'La loi ne donne pas de m² : 1 m² par personne, c\'est le standard Omexom. Si le PGC du chantier demande plus (ex. 1,25 m²), on suit le PGC.');
+
+    if(repas){
+      l+=cat(ICO.ref+'Réfectoire');
+      l+=it(places,'','places assises',[RF.refec],'Tables et chaises pour tous ceux qui mangent en même temps. Plus un frigo et un micro-ondes.');
+      l+=it(fmt(refS),'m²','de réfectoire',['SM 15_A'],'La loi ne donne pas de m² : 1,30 m² par place, c\'est le standard Omexom. Si le PGC du chantier demande plus (ex. 1,50 m²), on suit le PGC.');
+      l+=it(rob,'','robinets eau chaude / froide',[RF.refec],'1 robinet pour '+P.rob+' personnes.');
+    }
+    l+=it(P.eau*T,'L/jour','d\'eau potable',[RF.eau],P.eau+' litres par personne et par jour.');
+
+    l+=cat(ICO.sec+'Premiers secours');
+    l+=it(dae,'','défibrillateur'+(dae>1?'s':'')+' (DAE)',['SM 15_A'],'1 à la base vie'+(zo?' + 1 par zone éloignée':'')+'. '+P.dae);
+    l+=it(1,'','armoire à pharmacie à la base vie',[RF.pharm,'NC-2026-314'],'Contenu défini avec le médecin du travail, contrôlée et référencée dans TeePee.');
+    l+=it(eq,'','trousse'+(eq>1?'s':'')+' de secours mobile'+(eq>1?'s':''),[RF.pharm],'La loi dit « facilement accessible », sans nombre. Repère : 1 par équipe sur le terrain, plus 1 par véhicule.');
+    l+=it(sst,'','sauveteur'+(sst>1?'s':'')+' secouriste'+(sst>1?'s':'')+' (SST)',[RF.sst],'Obligatoire dès '+P.sst+' travailleurs pendant plus de 15 jours avec travaux dangereux. Repère : environ 10 % de l\'effectif.');
+
+    l+=cat(ICO.plus+'En plus');
+    l+=it('1 + 1','','bureau (2 pers.) et salle de réunion (10 pers.)',['SM 15_A'],'Exigence Omexom.');
+    l+=it(Math.max(1,Math.ceil(mTot*15/200)),'','extincteur'+(mTot*15>200?'s':''),['CRAMIF'],'1 par 200 m² de modules, jamais à plus de 15 m.');
+    if(T>P.alarme)l+=it('Oui','','alarme sonore',['CRAMIF'],'Obligatoire au-delà de '+P.alarme+' personnes.');
+    $('list').innerHTML=l;
+
+    /* À vérifier : 3 à 4 points max */
+    var w=[];
+    if(h>0&&wc*P.wcH-h<=3)w.push('Ça passe juste : avec <b>'+(wc*P.wcH-h+1)+' personne'+(wc*P.wcH-h?'s':'')+' de plus</b>, il faut '+(wc+1)+' WC et '+(wc+1)+' urinoirs.');
+    if(T>0&&lav*P.lav-T<=2&&!(h>0&&wc*P.wcH-h<=3))w.push('Ça passe juste : avec <b>'+(lav*P.lav-T+1)+' personne'+(lav*P.lav-T?'s':'')+' de plus</b>, il faut '+(lav+1)+' lavabos.');
+    w.push('Avant de poser la base vie, superposer le plan d\'installation avec le plan des pieux et des tables (Geloux : 6 500 € de déplacement). '+R('NC-2026-246'));
+    w.push((court?P.court:P.long)+' '+R('SM 08.5'));
+    w.push('Le chantier démarre seulement une fois la base vie réceptionnée avec l\'installateur. '+R('IN 150.1_B'));
+    $('warns').innerHTML=w.map(function(x){return '<div class="w">•<span>'+x+'</span></div>';}).join('');
+
+    var s=['BASE VIE · '+T+' personnes max en même temps'+(f?' (dont '+f+' femmes)':''),'Référentiel Omexom SM 08.5 / SM 15_A',''];
+    s.push('Sanitaires : '+wc+' WC + '+ur+' urinoirs'+(f?' ; '+wcF+' WC femmes séparés':'')+' (chasse d\'eau), '+lav+' lavabos eau chaude/froide, '+dou+' douche(s) eau chaude');
+    s.push('Vestiaires : '+W+' armoires 2 compartiments à clé, '+W+' sièges, '+fmt(vestS)+' m² minimum');
+    if(repas)s.push('Réfectoire : '+places+' places, '+rob+' robinets eau chaude/froide, frigo, micro-ondes, '+fmt(refS)+' m² minimum');
+    s.push('Bureau 2 personnes + salle de réunion 10 personnes');
+    s.push('Secours : '+dae+' DAE, 1 armoire à pharmacie, '+eq+' trousse(s) mobile(s)');
+    s.push('Réception contradictoire selon IN 150.1_B');
+    spec=s.join('\n');
+  }
+
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('button[data-t]');
+    if(b){$(b.dataset.t).value=Math.max(0,num(b.dataset.t)+parseInt(b.dataset.d,10));calc();}
+  });
+  ['T','f','v','eq','zo','simult','repas','court','sal','loin','pays'].forEach(function(id){
+    $(id).addEventListener('input',calc);$(id).addEventListener('change',calc);
+  });
+  $('tgl').addEventListener('click',function(){
+    var on=$('out').classList.toggle('detail');
+    this.textContent=(on?'▾ Masquer':'▸ Voir')+' pourquoi (réglementation)';
+  });
+
+  function toast(t){$('toast').textContent=t;setTimeout(function(){$('toast').textContent='';},2200);}
+  function copy(txt,msg){
+    var fb=function(){var t=$('clip');t.value=txt;t.select();try{document.execCommand('copy');toast(msg);}catch(e){toast('Copie bloquée : sélectionne à la main.');}};
+    if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(function(){toast(msg);},fb);else fb();
+  }
+  $('copySpec').addEventListener('click',function(){copy(spec,'Liste copiée');});
+  $('copyLink').addEventListener('click',function(){
+    var q=new URLSearchParams({pays:$('pays').value,T:num('T'),f:num('f'),v:num('v'),eq:num('eq'),zo:num('zo'),simult:num('simult'),
+      repas:$('repas').checked?1:0,court:$('court').checked?1:0,sal:$('sal').checked?1:0,loin:$('loin').checked?1:0});
+    copy(location.origin+location.pathname+'?'+q,'Lien copié');
+  });
+
+  calc();
+})();
+</script>
+</body>
+</html>
