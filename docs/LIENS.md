@@ -103,6 +103,7 @@ fichier, et l'historique en bas.
 | Tableau de bord RH | `924A151C` | rh | https://safeplace.teepee.fr/#/homepage/view/924A151C |
 | Suivi chantier | `D877A9DE` | index, offre | https://safeplace.teepee.fr/#/homepage/view/D877A9DE |
 | Site monitoring | `91A00BA1` | en | https://safeplace.teepee.fr/#/homepage/view/91A00BA1 |
+| RH · Pépinière, fourni par Bastou le 2026-10-21 | `6233CFAC` | pepiniere | https://safeplace.teepee.fr/#/homepage/view/6233CFAC |
 | CRM | `D35E43C6` | offre, achats | https://safeplace.teepee.fr/#/homepage/view/D35E43C6 |
 
 ## Projets France
@@ -245,7 +246,6 @@ Ce qu'il reste à obtenir, et pourquoi :
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
 | Saisie de Panel d'entreprise, page `achats.html` | bouton Saisir de Panel d'entreprise (`67103350` / `321BF513`, `TEEPEE_Entreprise`) | à relever, le bouton reste grisé |
 | Second rapport Power BI de la page `achats.html` | carte « Tableau de bord achats », grisée en attendant. Nom et identifiant `homepage/view` à fournir | rapport pas encore créé |
-| Rapport Power BI `RH · Pépinière`, page `pepiniere.html` | carte Pilotage, grisée « Bientôt » en attendant. Identifiant `homepage/view` à fournir une fois le rapport publié dans TeePee | rapport créé le 2026-10-20, pas encore publié |
 | Saisies du module Pépinière | boutons Saisir sur Suivi des jalons, Types de parcours et Types de jalons (`DF694CB5`), à relever deux fois chacun | à relever, les cartes n'ont pour l'instant que « Ouvrir » |
 | Menu racine Pépinière `DF694CB5` | lien de menu complet, non déduit de l'identifiant | à confirmer |
 | Tableau de bord `HA · Panel d'entreprise` | le rapport le plus largement accessible de tous, 31 rôles sur 33, affiché sur aucune page | à fournir |
