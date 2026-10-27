@@ -16,13 +16,12 @@ Dans TeePee, chacune de ces pages est une entrée « Home page » du menu **Aide
 | Page | Entrée TeePee | Public |
 |---|---|---|
 | `index.html` | ORES · Home page | 8 rôles ORES : études, chantier, QHSE, ingénierie, performance PV, supervision, sous-traitance |
-| `en.html` | OSI · Home page | 8 rôles OSI : direction projet, HSE site, ingénierie, supervision, sous-traitance |
+| `en.html` | OSI · Home page | rôles OSI internes : direction projet, HSE site, ingénierie, supervision, responsable d'activité, chef d'entreprise. Depuis le 2026-10-27, les sous-traitants OSI n'y arrivent plus, ils ont `st-en.html` (décision Bastou). La page porte tout le module logistique, ouvert à ces rôles |
 | `offre.html` | CRM · Home page | 5 rôles ORES : chef d'entreprise, chef de projet, responsable d'activité, responsable projet |
 | `achats.html` | à créer, HA · Home page | service Achats. Public exact à confirmer dans l'export |
 | `rh.html` | RH · Home page | 4 rôles CRE : directeur, gestionnaire RH, responsable RH |
 | `pepiniere.html` | à créer | admins et RH du pôle qui suivent les pépiniéristes. Les pépiniéristes eux-mêmes n'y ont pas accès, ils ont leur profil ailleurs. Rôles exacts à confirmer dans l'export, le menu `DF694CB5` étant postérieur à l'analyse |
-| `st-en.html` | à créer, OSI | sous-traitants OSI, et les Méthodes & HSE qui contrôlent leurs documents. Public exact à confirmer dans l'export |
-| `logistics.html` | à créer, OSI · Logistics | les 6 rôles OSI internes des chantiers qui ont le module (Garr, Johnstown North) : ils ouvrent toutes les cartes. Le rôle OSI · Sous-traitant voit le menu mais seulement Pick-up permits, Items et Site areas : la page n'est pas faite pour lui, ne pas la lui servir |
+| `st-en.html` | OSI · sous-traitants | rôle OSI · Sous-traitant, et les Méthodes & HSE qui contrôlent leurs documents. Côté logistique, le sous-traitant n'ouvre que les pick-up permits (voir, créer, modifier), plus les items et les lieux en lecture |
 | `st.html` | à créer, ORES, plus tard | version française pour les sous-traitants ORES, gardée de côté |
 | `ia.html` | à créer | l'assistant IA Copilot Studio. Aucune carte TeePee, la page ne porte que la conversation : son public est celui à qui l'agent est partagé côté Microsoft |
 | `base-vie.html` | à créer | le calculateur base vie, pour qui prépare un chantier : chefs de chantier, conducteurs de travaux, QHSE. Aucune carte TeePee, rien à vérifier dans l'export. Public exact à confirmer |
