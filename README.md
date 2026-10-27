@@ -17,6 +17,7 @@ TeePee via son URL de publication GitHub Pages.
 | `ia.html` | Assistant IA · Omexom TeePee, l'agent Copilot Studio dans un cadre de conversation plein écran | https://omxbv.github.io/DashboardTeepee/ia.html |
 | `base-vie.html` | Calculateur base vie · Omexom RE Solar, dimensionne la base vie d'un chantier selon SM 08.5 et SM 15_A. Pas encore branchée dans TeePee | https://omxbv.github.io/DashboardTeepee/base-vie.html |
 | `st-en.html` | Subcontractor portal · Omexom International, home page des sous-traitants OSI | https://omxbv.github.io/DashboardTeepee/st-en.html |
+| `logistics.html` | Site logistics · Omexom International, page d'accueil du module logistique OSI. Pas encore branchée dans TeePee | https://omxbv.github.io/DashboardTeepee/logistics.html |
 | `st.html` | Version française, base de la future home page des sous-traitants ORES. Pas encore branchée dans TeePee | https://omxbv.github.io/DashboardTeepee/st.html |
 
 ## Organisation du dépôt

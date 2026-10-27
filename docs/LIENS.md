@@ -192,8 +192,8 @@ Menu `1428C838`, celui que l'export nommait « Suivi ST ». Relevé par Bastou l
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
-| Pick Up Permit | `C602A3FD` / `969BDBDF` | en | https://safeplace.teepee.fr/#/category/C602A3FD/969BDBDF/dataList/TESTGARRPICKUPPERMIT/default_TESTGARRPICKUPPERMIT |
-| Delivery | `C602A3FD` / `72956F51` | en | https://safeplace.teepee.fr/#/category/C602A3FD/72956F51/dataList/TESTGARRLIVRAISONS/default_TESTGARRLIVRAISONS |
+| Pick Up Permit, ancien module TEST-GARR, plus utilisé par aucune page depuis le 2026-10-27 | `C602A3FD` / `969BDBDF` | aucune | https://safeplace.teepee.fr/#/category/C602A3FD/969BDBDF/dataList/TESTGARRPICKUPPERMIT/default_TESTGARRPICKUPPERMIT |
+| Delivery, ancien module TEST-GARR, plus utilisé par aucune page depuis le 2026-10-27 | `C602A3FD` / `72956F51` | aucune | https://safeplace.teepee.fr/#/category/C602A3FD/72956F51/dataList/TESTGARRLIVRAISONS/default_TESTGARRLIVRAISONS |
 | HSE Observations | `18F7F9BA` / `CC910484` | en | https://safeplace.teepee.fr/#/category/18F7F9BA/CC910484/dataList/SMObservationsHSE/default_SMObservationsHSE |
 | Minor Injury Report | `18F7F9BA` / `3D8F08DD` | en | https://safeplace.teepee.fr/#/category/18F7F9BA/3D8F08DD/dataList/AccidentBeNin/default_AccidentBeNin |
 | Subcontractor documents, registre des documents posés sur les profils ST | `18F7F9BA` / `323269CE` | en | https://safeplace.teepee.fr/#/category/18F7F9BA/323269CE/dataList/INDocumentST/default_INDocumentST |
@@ -202,6 +202,28 @@ Menu `1428C838`, celui que l'export nommait « Suivi ST ». Relevé par Bastou l
 Relevés par Bastou le 2026-10-14. Le formulaire `INDocumentST` est aussi posé sur
 `st-en` sous un autre chemin, `1428C838` / `C8E72E17` (menu Suivi ST) : ce sont deux
 entrées de menu distinctes vers le même formulaire, pas un remplacement.
+
+## International · Logistique
+
+Module logistique OSI (projets Garr et Johnstown North), menu TeePee « Logistics ». Relevé le 2026-10-27 en ouvrant chaque entrée du menu. Les saisies vierges suivent le même couple d'identifiants : `#/viewData/2B2D892F/<sous-cat>/<formulaire>/<formulaire>`, testé sur LOG 30.
+
+**Droits au 2026-10-27 : menu et formulaires ouverts au seul rôle Administrateur.** `logistics.html` ne doit pas être branchée dans TeePee avant l'ouverture des droits aux rôles OSI concernés.
+
+| Libellé | Identifiants | Pages | URL |
+|---|---|---|---|
+| Logistics, menu complet | `2B2D892F` | logistics, en | https://safeplace.teepee.fr/#/category/2B2D892F |
+| Deliveries, LOG 20 · Trucks | `2B2D892F` / `566A63C2` | logistics, en | https://safeplace.teepee.fr/#/category/2B2D892F/566A63C2/dataList/LOG20Trucks/default_LOG20Trucks |
+| Pick-up permits, LOG 30 | `2B2D892F` / `E6ADD45E` | logistics, en | https://safeplace.teepee.fr/#/category/2B2D892F/E6ADD45E/dataList/LOG30PickUpPermits/default_LOG30PickUpPermits |
+| Stock movements, LOG 50 | `2B2D892F` / `D9B327D1` | logistics | https://safeplace.teepee.fr/#/category/2B2D892F/D9B327D1/dataList/LOG50StockMovements/default_LOG50StockMovements |
+| Stock counts, LOG 51 | `2B2D892F` / `E520B196` | logistics | https://safeplace.teepee.fr/#/category/2B2D892F/E520B196/dataList/LOG51StockCounts/default_LOG51StockCounts |
+| Purchase orders, LOG 10 | `2B2D892F` / `1CEF1F7E` | logistics | https://safeplace.teepee.fr/#/category/2B2D892F/1CEF1F7E/dataList/LOG10PurchaseOrders/default_LOG10PurchaseOrders |
+| Invoices, LOG 40 | `2B2D892F` / `996112DA` | logistics | https://safeplace.teepee.fr/#/category/2B2D892F/996112DA/dataList/LOG40Invoices/default_LOG40Invoices |
+| Items, LOG 01 | `2B2D892F` / `767883C2` | logistics | https://safeplace.teepee.fr/#/category/2B2D892F/767883C2/dataList/LOG01Items/default_LOG01Items |
+| Site areas, CE · Lieux projet | `2B2D892F` / `B13B17EA` | logistics | https://safeplace.teepee.fr/#/category/2B2D892F/B13B17EA/dataList/CELieuxProjet/default_CELieuxProjet |
+| PO lines, LOG 11, pas de carte (saisies dans la commande) | `2B2D892F` / `92536BC8` | aucune | https://safeplace.teepee.fr/#/category/2B2D892F/92536BC8/dataList/LOG11POLines/default_LOG11POLines |
+| Truck lines, LOG 21, pas de carte (saisies dans le camion) | `2B2D892F` / `F6E45837` | aucune | https://safeplace.teepee.fr/#/category/2B2D892F/F6E45837/dataList/LOG21TruckLines/default_LOG21TruckLines |
+| Pick-up lines, LOG 31, pas de carte (saisies dans le permis) | `2B2D892F` / `B357F508` | aucune | https://safeplace.teepee.fr/#/category/2B2D892F/B357F508/dataList/LOG31PickUpLines/default_LOG31PickUpLines |
+| Invoice lines, LOG 41, pas de carte (saisies dans la facture) | `2B2D892F` / `7909480E` | aucune | https://safeplace.teepee.fr/#/category/2B2D892F/7909480E/dataList/LOG41InvoiceLines/default_LOG41InvoiceLines |
 
 ## Transverse
 
@@ -218,6 +240,7 @@ entrées de menu distinctes vers le même formulaire, pas un remplacement.
 | 2026-09-21 | Menu MPA réorganisé, tous les liens CRM cassés | `0E3BFD62` | `32DB80F2` |
 | 2026-10-10 | Saisie Non-conformités passée sur la vue V3 du formulaire (accueil, offre, achats) | `FicheDeNonConformite/FicheDeNonConformite` | `FicheDeNonConformite/FicheDeNonConformiteV3` |
 | 2026-10-27 | Cartes projet passées sur les vues V3, sans `?context=` (index, offre, en, st) | `Projets/FRWEBV2/…?context=…`, `Projets/ENProjetWeb/…?context=…` | `Projets/FRWEBV3/…`, `Projets/ENWEBV3/…` |
+| 2026-10-27 | Raccourcis Pick Up Permit et Delivery de la page OSI passés sur le nouveau module logistique (en) | `C602A3FD` / `969BDBDF` `TESTGARRPICKUPPERMIT`, `C602A3FD` / `72956F51` `TESTGARRLIVRAISONS` | `2B2D892F` / `E6ADD45E` `LOG30PickUpPermits`, `2B2D892F` / `566A63C2` `LOG20Trucks` |
 
 Détail du remplacement du 2026-09-21 :
 
@@ -242,7 +265,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 |---|---|---|
 | ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
-| Saisies des quatre raccourcis de la page OSI | bouton + sur Pick Up Permit (`C602A3FD` / `969BDBDF`, `TESTGARRPICKUPPERMIT`), Delivery (`C602A3FD` / `72956F51`, `TESTGARRLIVRAISONS`), HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
+| Saisies des raccourcis de la page OSI | Pick-up permits et Deliveries ont leur bouton + depuis le 2026-10-27. Restent HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
 | Saisie de Panel d'entreprise, page `achats.html` | bouton Saisir de Panel d'entreprise (`67103350` / `321BF513`, `TEEPEE_Entreprise`) | à relever, le bouton reste grisé |
