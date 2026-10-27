@@ -207,12 +207,12 @@ entrées de menu distinctes vers le même formulaire, pas un remplacement.
 
 Module logistique OSI (projets Garr et Johnstown North), menu TeePee « Logistics ». Relevé le 2026-10-27 en ouvrant chaque entrée du menu. Les saisies vierges suivent le même couple d'identifiants : `#/viewData/2B2D892F/<sous-cat>/<formulaire>/<formulaire>`, testé sur LOG 30.
 
-**Droits au 2026-10-27 : menu et formulaires ouverts au seul rôle Administrateur.** `logistics.html` ne doit pas être branchée dans TeePee avant l'ouverture des droits aux rôles OSI concernés.
+**Droits ouverts le 2026-10-27.** Menu Logistics visible des 7 rôles OSI et de l'Administrateur. Les rôles OSI internes (chef d'entreprise, directeur projet, HSE site, ingénieur étude, responsable d'activité, superviseur travaux) voient, créent et modifient les 12 formulaires, sans droit de suppression. OSI · Sous-traitant ne voit dans le menu que les entrées Pick-up, Items et Site areas : il voit LOG 01, LOG 30, LOG 31 et les lieux, et ne crée ou modifie que LOG 30 et LOG 31. Commandes, factures, camions et stock lui restent fermés.
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
 | Logistics, menu complet | `2B2D892F` | logistics, en | https://safeplace.teepee.fr/#/category/2B2D892F |
-| Deliveries, LOG 20 · Trucks | `2B2D892F` / `566A63C2` | logistics, en | https://safeplace.teepee.fr/#/category/2B2D892F/566A63C2/dataList/LOG20Trucks/default_LOG20Trucks |
+| Deliveries, LOG 20 · Trucks | `2B2D892F` / `566A63C2` | logistics | https://safeplace.teepee.fr/#/category/2B2D892F/566A63C2/dataList/LOG20Trucks/default_LOG20Trucks |
 | Pick-up permits, LOG 30 | `2B2D892F` / `E6ADD45E` | logistics, en | https://safeplace.teepee.fr/#/category/2B2D892F/E6ADD45E/dataList/LOG30PickUpPermits/default_LOG30PickUpPermits |
 | Stock movements, LOG 50 | `2B2D892F` / `D9B327D1` | logistics | https://safeplace.teepee.fr/#/category/2B2D892F/D9B327D1/dataList/LOG50StockMovements/default_LOG50StockMovements |
 | Stock counts, LOG 51 | `2B2D892F` / `E520B196` | logistics | https://safeplace.teepee.fr/#/category/2B2D892F/E520B196/dataList/LOG51StockCounts/default_LOG51StockCounts |
@@ -240,7 +240,7 @@ Module logistique OSI (projets Garr et Johnstown North), menu TeePee « Logistic
 | 2026-09-21 | Menu MPA réorganisé, tous les liens CRM cassés | `0E3BFD62` | `32DB80F2` |
 | 2026-10-10 | Saisie Non-conformités passée sur la vue V3 du formulaire (accueil, offre, achats) | `FicheDeNonConformite/FicheDeNonConformite` | `FicheDeNonConformite/FicheDeNonConformiteV3` |
 | 2026-10-27 | Cartes projet passées sur les vues V3, sans `?context=` (index, offre, en, st) | `Projets/FRWEBV2/…?context=…`, `Projets/ENProjetWeb/…?context=…` | `Projets/FRWEBV3/…`, `Projets/ENWEBV3/…` |
-| 2026-10-27 | Raccourcis Pick Up Permit et Delivery de la page OSI passés sur le nouveau module logistique (en) | `C602A3FD` / `969BDBDF` `TESTGARRPICKUPPERMIT`, `C602A3FD` / `72956F51` `TESTGARRLIVRAISONS` | `2B2D892F` / `E6ADD45E` `LOG30PickUpPermits`, `2B2D892F` / `566A63C2` `LOG20Trucks` |
+| 2026-10-27 | Raccourci Pick Up Permit de la page OSI passé sur le nouveau module logistique. Raccourci Delivery retiré : la page est servie au rôle OSI · Sous-traitant, qui n'ouvre pas les camions (en) | `C602A3FD` / `969BDBDF` `TESTGARRPICKUPPERMIT`, `C602A3FD` / `72956F51` `TESTGARRLIVRAISONS` | `2B2D892F` / `E6ADD45E` `LOG30PickUpPermits`, Delivery sans remplaçant |
 
 Détail du remplacement du 2026-09-21 :
 
@@ -265,7 +265,7 @@ Ce qu'il reste à obtenir, et pourquoi :
 |---|---|---|
 | ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
-| Saisies des raccourcis de la page OSI | Pick-up permits et Deliveries ont leur bouton + depuis le 2026-10-27. Restent HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
+| Saisies des raccourcis de la page OSI | Pick-up permits a son bouton + depuis le 2026-10-27, Delivery a été retiré. Restent HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
 | Listes RH hors recrutement | menu `D92BB7C3`, aujourd'hui seul le menu racine est lié. L'export nomme les quatre entrées : demande d'ouverture de poste, parcours d'intégration, fiche d'évaluation Omexom RE, grille d'évaluation de formation | à fournir |
 | Page `st.html`, version française pour les sous-traitants ORES | les mêmes liens côté France, plus le menu IN `0CBC7D3A` à confirmer | plus tard |
 | Saisie de Panel d'entreprise, page `achats.html` | bouton Saisir de Panel d'entreprise (`67103350` / `321BF513`, `TEEPEE_Entreprise`) | à relever, le bouton reste grisé |

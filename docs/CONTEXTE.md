@@ -22,7 +22,7 @@ Dans TeePee, chacune de ces pages est une entrée « Home page » du menu **Aide
 | `rh.html` | RH · Home page | 4 rôles CRE : directeur, gestionnaire RH, responsable RH |
 | `pepiniere.html` | à créer | admins et RH du pôle qui suivent les pépiniéristes. Les pépiniéristes eux-mêmes n'y ont pas accès, ils ont leur profil ailleurs. Rôles exacts à confirmer dans l'export, le menu `DF694CB5` étant postérieur à l'analyse |
 | `st-en.html` | à créer, OSI | sous-traitants OSI, et les Méthodes & HSE qui contrôlent leurs documents. Public exact à confirmer dans l'export |
-| `logistics.html` | à créer, OSI · Logistics | magasinier, responsable logistique, valideur, conducteurs de travaux et chefs de projet des chantiers OSI qui ont le module (Garr, Johnstown North). Aujourd'hui le menu Logistics n'est ouvert qu'au rôle Administrateur : droits à ouvrir avant de brancher la page |
+| `logistics.html` | à créer, OSI · Logistics | les 6 rôles OSI internes des chantiers qui ont le module (Garr, Johnstown North) : ils ouvrent toutes les cartes. Le rôle OSI · Sous-traitant voit le menu mais seulement Pick-up permits, Items et Site areas : la page n'est pas faite pour lui, ne pas la lui servir |
 | `st.html` | à créer, ORES, plus tard | version française pour les sous-traitants ORES, gardée de côté |
 | `ia.html` | à créer | l'assistant IA Copilot Studio. Aucune carte TeePee, la page ne porte que la conversation : son public est celui à qui l'agent est partagé côté Microsoft |
 | `base-vie.html` | à créer | le calculateur base vie, pour qui prépare un chantier : chefs de chantier, conducteurs de travaux, QHSE. Aucune carte TeePee, rien à vérifier dans l'export. Public exact à confirmer |
