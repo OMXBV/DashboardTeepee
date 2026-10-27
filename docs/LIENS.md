@@ -110,15 +110,15 @@ fichier, et l'historique en bas.
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
-| Lorris 1 | `F427C2AF` / `D956BEFD` | index (offre garde FRWEBV2) | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/ACD92E16-845D-472B-8980-51F9F4274178 |
+| Lorris 1 | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/ACD92E16-845D-472B-8980-51F9F4274178 |
 | Voir tous les projets / Tous les projets | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/category/F427C2AF/D956BEFD/dataList/Projets/default_Projets |
-| Lorris 2 | `F427C2AF` / `D956BEFD` | index (offre garde FRWEBV2) | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/77FA5821-4992-46BE-B434-941BC3A1F169 |
-| Sennely | `F427C2AF` / `D956BEFD` | index (offre garde FRWEBV2) | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/151959C9-2C1D-4B22-8E7C-0AAF0E75C6A9 |
-| Chauvigny | `F427C2AF` / `D956BEFD` | index (offre garde FRWEBV2) | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/2450A316-F4B0-467D-BDD9-3A660E517E23 |
-| Geloux 2 | `F427C2AF` / `D956BEFD` | index (offre garde FRWEBV2) | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/8AB86A1F-FF0F-4AFB-B8C0-0EECD079676D |
-| Beauchêne | `F427C2AF` / `D956BEFD` | index (offre garde FRWEBV2) | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/909B5DEA-0E07-4CEE-A2E0-70B4C4C075C3 |
-| Barlieu | `F427C2AF` / `D956BEFD` | index (offre garde FRWEBV2) | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/9FE56ECE-FEF0-4CE8-855C-5D540AE5E813 |
-| Monts | `F427C2AF` / `D956BEFD` | index (offre garde FRWEBV2) | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/B089CAB9-1BF4-4FFA-BCA1-B93E3921789B |
+| Lorris 2 | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/77FA5821-4992-46BE-B434-941BC3A1F169 |
+| Sennely | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/151959C9-2C1D-4B22-8E7C-0AAF0E75C6A9 |
+| Chauvigny | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/2450A316-F4B0-467D-BDD9-3A660E517E23 |
+| Geloux 2 | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/8AB86A1F-FF0F-4AFB-B8C0-0EECD079676D |
+| Beauchêne | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/909B5DEA-0E07-4CEE-A2E0-70B4C4C075C3 |
+| Barlieu | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/9FE56ECE-FEF0-4CE8-855C-5D540AE5E813 |
+| Monts | `F427C2AF` / `D956BEFD` | index, offre | https://safeplace.teepee.fr/#/viewData/F427C2AF/D956BEFD/Projets/FRWEBV3/B089CAB9-1BF4-4FFA-BCA1-B93E3921789B |
 
 ## Projets International
 
@@ -126,9 +126,9 @@ fichier, et l'historique en bas.
 |---|---|---|---|
 | View all projects | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/default_Projets |
 | My projects, vue `ProjetsOSI`, à filtrer côté TeePee pour que chaque sous-traitant ne voie que son projet | `DDCDAF73` / `7ADDAB11` | st-en | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/ProjetsOSI |
-| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en (st garde ENProjetWeb) | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/98EE3433-FBE0-44E2-B1CA-39A70FC34B79 |
+| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/98EE3433-FBE0-44E2-B1CA-39A70FC34B79 |
 | Ballinknockane | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/00F71013-6615-4195-A339-B004991B3CB7 |
-| Garr | `DDCDAF73` / `7ADDAB11` | en (st garde ENProjetWeb) | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/4F9DBAFD-E998-4801-8C86-EC361E5F5006 |
+| Garr | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/4F9DBAFD-E998-4801-8C86-EC361E5F5006 |
 | Johnstown North | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/F1713C99-2928-4BAB-8E2A-9EC6BFD70761 |
 
 ## MPA · CRM
@@ -217,7 +217,7 @@ entrées de menu distinctes vers le même formulaire, pas un remplacement.
 |---|---|---|---|
 | 2026-09-21 | Menu MPA réorganisé, tous les liens CRM cassés | `0E3BFD62` | `32DB80F2` |
 | 2026-10-10 | Saisie Non-conformités passée sur la vue V3 du formulaire (accueil, offre, achats) | `FicheDeNonConformite/FicheDeNonConformite` | `FicheDeNonConformite/FicheDeNonConformiteV3` |
-| 2026-10-27 | Cartes projet de l'accueil passées sur les vues V3, sans `?context=` (index, en). offre et st gardent encore l'ancienne vue | `Projets/FRWEBV2/…?context=…`, `Projets/ENProjetWeb/…?context=…` | `Projets/FRWEBV3/…`, `Projets/ENWEBV3/…` |
+| 2026-10-27 | Cartes projet passées sur les vues V3, sans `?context=` (index, offre, en, st) | `Projets/FRWEBV2/…?context=…`, `Projets/ENProjetWeb/…?context=…` | `Projets/FRWEBV3/…`, `Projets/ENWEBV3/…` |
 
 Détail du remplacement du 2026-09-21 :
 
