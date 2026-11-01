@@ -229,13 +229,14 @@ Module logistique OSI (projets Garr et Johnstown North), menu TeePee « Logistic
 
 Menu `FFF3B773`, créé le 2026-10-26 pour le bureau d'études, porté par la page `ce.html`. Relevé dans TeePee le 2026-11-01.
 
-**Droits à ouvrir avant mise en ligne.** Au 2026-11-01, le menu CE n'est visible que de l'Administrateur, et la liste des demandes de fiches vit encore dans le menu Paramétrage IN (`2B051B24`), dont l'ouverture aux rôles BE n'est pas vérifiée. Voir `CONTEXTE.md`.
+**Droits ouverts le 2026-11-01.** Menu CE visible de l'Administrateur, ORES · Chargé d'études, ORES · Responsable Ingénierie, OHS · Responsable Bureau d'étude et Support · Service QHSE. Chargé d'études et Responsable Ingénierie voient, créent et modifient Suivi des plans, les demandes et le référentiel, sans droit de suppression. Page d'accueil TeePee : entrée « CE · Home page » du menu Aide, dashboard « Home page · CE ».
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
 | CE · Conception & Études, menu complet | `FFF3B773` | aucune | https://safeplace.teepee.fr/#/category/FFF3B773 |
 | Suivi des plans, formulaire `CESuiviDesPlans` | `FFF3B773` / `7FD13DF2` | ce | https://safeplace.teepee.fr/#/category/FFF3B773/7FD13DF2/dataList/CESuiviDesPlans/default_CESuiviDesPlans |
-| Demandes de fiches de contrôle, formulaire `BEImpleMentationDesFichesDeControLeQualite` (ex « IN · Implémentation ou modification des fiches de contrôle qualité »), encore rangé dans Paramétrage IN | `2B051B24` / `57D6B28A` | ce | https://safeplace.teepee.fr/#/category/2B051B24/57D6B28A/dataList/BEImpleMentationDesFichesDeControLeQualite/BEImpleMentationDesFichesDeControLeQualite |
+| Demandes de fiches de contrôle, formulaire `BEImpleMentationDesFichesDeControLeQualite` (ex « IN · Implémentation ou modification des fiches de contrôle qualité ») | `FFF3B773` / `BA54A806` | ce | https://safeplace.teepee.fr/#/category/FFF3B773/BA54A806/dataList/BEImpleMentationDesFichesDeControLeQualite/default_BEImpleMentationDesFichesDeControLeQualite |
+| Référentiel des fiches de contrôle, formulaire `NomDesFiches`, pas de carte | `FFF3B773` / `0F383B50` | aucune | https://safeplace.teepee.fr/#/category/FFF3B773/0F383B50/dataList/NomDesFiches/default_NomDesFiches |
 
 La page reprend aussi, depuis les sections existantes : Tous les projets et les huit projets France, les tableaux de bord Suivi fiche de contrôle et Suivi chantier, Support, Plan d'action, Non-conformités et Quart d'heures QSE.
 
@@ -254,6 +255,7 @@ La page reprend aussi, depuis les sections existantes : Tous les projets et les 
 | 2026-09-21 | Menu MPA réorganisé, tous les liens CRM cassés | `0E3BFD62` | `32DB80F2` |
 | 2026-10-10 | Saisie Non-conformités passée sur la vue V3 du formulaire (accueil, offre, achats) | `FicheDeNonConformite/FicheDeNonConformite` | `FicheDeNonConformite/FicheDeNonConformiteV3` |
 | 2026-10-27 | Cartes projet passées sur les vues V3, sans `?context=` (index, offre, en, st) | `Projets/FRWEBV2/…?context=…`, `Projets/ENProjetWeb/…?context=…` | `Projets/FRWEBV3/…`, `Projets/ENWEBV3/…` |
+| 2026-11-01 | Demandes de fiches de contrôle rangées dans le menu CE (ce) | `2B051B24` / `57D6B28A`, vue `BEImpleMentationDesFichesDeControLeQualite` | `FFF3B773` / `BA54A806`, vue `default_BEImpleMentationDesFichesDeControLeQualite` |
 | 2026-10-27 | Raccourcis Pick Up Permit et Delivery de la page OSI remplacés par le bloc Logistique complet du nouveau module (en). Les sous-traitants OSI passent sur `st-en.html`, qui reçoit Pick-up permits | `C602A3FD` / `969BDBDF` `TESTGARRPICKUPPERMIT`, `C602A3FD` / `72956F51` `TESTGARRLIVRAISONS` | `2B2D892F` / `E6ADD45E` `LOG30PickUpPermits`, `2B2D892F` / `566A63C2` `LOG20Trucks` |
 
 Détail du remplacement du 2026-09-21 :
@@ -277,8 +279,6 @@ Ce qu'il reste à obtenir, et pourquoi :
 
 | Ce qu'il faut | Pour quoi faire | État |
 |---|---|---|
-| Référentiel « Nom des fiches » (Paramétrage PV) | carte Référentiel des fiches sur `ce.html` | à relever |
-| Demandes de fiches de contrôle déplacées dans le menu CE | le lien actuel passe par Paramétrage IN `2B051B24` / `57D6B28A` : s'il change, remplacer et noter dans l'historique | à faire côté TeePee |
 | ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
 | Saisies des raccourcis de la page OSI | Remplacés le 2026-10-27 par le bloc Logistique, qui a tous ses boutons +. Restent HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
@@ -343,7 +343,7 @@ relève, jamais ne se reconstruit.
 | en | Subcontractor documents | https://safeplace.teepee.fr/#/viewData/18F7F9BA/323269CE/INDocumentST/INDocumentST |
 | accueil, offre, achats, ce | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformiteV3 |
 | ce | Suivi des plans, aussi bouton d'en-tête « Déposer un plan ». Deux échantillons identiques le 2026-11-01 | https://safeplace.teepee.fr/#/viewData/FFF3B773/7FD13DF2/CESuiviDesPlans/CESuiviDesPlans |
-| ce | Demandes de fiches de contrôle. **Un seul échantillon** le 2026-11-01, le second clic sur Saisir n'a rien ouvert : à relever une seconde fois | https://safeplace.teepee.fr/#/viewData/2B051B24/57D6B28A/BEImpleMentationDesFichesDeControLeQualite/BEImpleMentationDesFichesDeControLeQualite |
+| ce | Demandes de fiches de contrôle, depuis le menu CE. Deux échantillons identiques le 2026-11-01 | https://safeplace.teepee.fr/#/viewData/FFF3B773/BA54A806/BEImpleMentationDesFichesDeControLeQualite/BEImpleMentationDesFichesDeControLeQualite |
 | accueil, offre, achats, ce | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
 Non-conformités a été relevée à nouveau par Bastou le 2026-10-10 : le formulaire est
