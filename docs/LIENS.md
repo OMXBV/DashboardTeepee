@@ -225,6 +225,20 @@ Module logistique OSI (projets Garr et Johnstown North), menu TeePee « Logistic
 | Pick-up lines, LOG 31, pas de carte (saisies dans le permis) | `2B2D892F` / `B357F508` | aucune | https://safeplace.teepee.fr/#/category/2B2D892F/B357F508/dataList/LOG31PickUpLines/default_LOG31PickUpLines |
 | Invoice lines, LOG 41, pas de carte (saisies dans la facture) | `2B2D892F` / `7909480E` | aucune | https://safeplace.teepee.fr/#/category/2B2D892F/7909480E/dataList/LOG41InvoiceLines/default_LOG41InvoiceLines |
 
+## CE · Conception & Études
+
+Menu `FFF3B773`, créé le 2026-10-26 pour le bureau d'études, porté par la page `ce.html`. Relevé dans TeePee le 2026-11-01.
+
+**Droits à ouvrir avant mise en ligne.** Au 2026-11-01, le menu CE n'est visible que de l'Administrateur, et la liste des demandes de fiches vit encore dans le menu Paramétrage IN (`2B051B24`), dont l'ouverture aux rôles BE n'est pas vérifiée. Voir `CONTEXTE.md`.
+
+| Libellé | Identifiants | Pages | URL |
+|---|---|---|---|
+| CE · Conception & Études, menu complet | `FFF3B773` | aucune | https://safeplace.teepee.fr/#/category/FFF3B773 |
+| Suivi des plans, formulaire `CESuiviDesPlans` | `FFF3B773` / `7FD13DF2` | ce | https://safeplace.teepee.fr/#/category/FFF3B773/7FD13DF2/dataList/CESuiviDesPlans/default_CESuiviDesPlans |
+| Demandes de fiches de contrôle, formulaire `BEImpleMentationDesFichesDeControLeQualite` (ex « IN · Implémentation ou modification des fiches de contrôle qualité »), encore rangé dans Paramétrage IN | `2B051B24` / `57D6B28A` | ce | https://safeplace.teepee.fr/#/category/2B051B24/57D6B28A/dataList/BEImpleMentationDesFichesDeControLeQualite/BEImpleMentationDesFichesDeControLeQualite |
+
+La page reprend aussi, depuis les sections existantes : Tous les projets et les huit projets France, les tableaux de bord Suivi fiche de contrôle et Suivi chantier, Support, Plan d'action, Non-conformités et Quart d'heures QSE.
+
 ## Transverse
 
 | Libellé | Identifiants | Pages | URL |
@@ -263,6 +277,8 @@ Ce qu'il reste à obtenir, et pourquoi :
 
 | Ce qu'il faut | Pour quoi faire | État |
 |---|---|---|
+| Référentiel « Nom des fiches » (Paramétrage PV) | carte Référentiel des fiches sur `ce.html` | à relever |
+| Demandes de fiches de contrôle déplacées dans le menu CE | le lien actuel passe par Paramétrage IN `2B051B24` / `57D6B28A` : s'il change, remplacer et noter dans l'historique | à faire côté TeePee |
 | ~~Contacts CRM~~ | ~~carte Contacts sur la page Offre~~ | **abandonné**, voir `CONTEXTE.md` |
 | URL du bouton **Saisir**, deux échantillons du même formulaire | raccourcis de création directe sur les cartes | à tester, voir plus bas |
 | Saisies des raccourcis de la page OSI | Remplacés le 2026-10-27 par le bloc Logistique, qui a tous ses boutons +. Restent HSE Observations (`18F7F9BA` / `CC910484`, `SMObservationsHSE`), Minor Injury Report (`18F7F9BA` / `3D8F08DD`, `AccidentBeNin`) | à relever, demandé par Bastou |
@@ -319,14 +335,16 @@ relève, jamais ne se reconstruit.
 | rh | Renseignements d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/0A9A7C08/RHDemandeDeRenseignementsDEmbauche/RHAutorisationDEmbauche |
 | rh | Autorisations d'embauche | https://safeplace.teepee.fr/#/viewData/02E2474B/EBEF9E36/RHAutorisationDEmbauche/RHAutorisationDEmbauche |
 | rh | Entreprises Omexom | https://safeplace.teepee.fr/#/viewData/02E2474B/092F1C43/EntrepriseOmexomRE/RHRecrutement |
-| accueil, offre, achats | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
+| accueil, offre, achats, ce | Plan d'action | https://safeplace.teepee.fr/#/viewData/0CBC7D3A/1A268114/PlanDActions/PlanDActions |
 | accueil, rh, offre, achats, en, st-en, st, pepiniere | Support | https://safeplace.teepee.fr/#/viewData/DC3605A6/AE9641CE/TicketsSupport/TicketsSupport |
 | achats | Évaluation prestataire, boutons Saisir et « Copier le lien » | https://safeplace.teepee.fr/#/viewData/67103350/B7DA7935/HA023/HA0901EvaluationDesPrestatairesSousTraitantsV2 |
 | st-en | Worker profiles, et le + de My profiles | https://safeplace.teepee.fr/#/viewData/1428C838/C3224BB5/INProfilST/INProfilST |
 | st-en | All documents, et le + de My documents | https://safeplace.teepee.fr/#/viewData/1428C838/C8E72E17/INDocumentST/INDocumentST |
 | en | Subcontractor documents | https://safeplace.teepee.fr/#/viewData/18F7F9BA/323269CE/INDocumentST/INDocumentST |
-| accueil, offre, achats | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformiteV3 |
-| accueil, offre, achats | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
+| accueil, offre, achats, ce | Non-conformités | https://safeplace.teepee.fr/#/viewData/92F82BEE/E279156E/FicheDeNonConformite/FicheDeNonConformiteV3 |
+| ce | Suivi des plans, aussi bouton d'en-tête « Déposer un plan ». Deux échantillons identiques le 2026-11-01 | https://safeplace.teepee.fr/#/viewData/FFF3B773/7FD13DF2/CESuiviDesPlans/CESuiviDesPlans |
+| ce | Demandes de fiches de contrôle. **Un seul échantillon** le 2026-11-01, le second clic sur Saisir n'a rien ouvert : à relever une seconde fois | https://safeplace.teepee.fr/#/viewData/2B051B24/57D6B28A/BEImpleMentationDesFichesDeControLeQualite/BEImpleMentationDesFichesDeControLeQualite |
+| accueil, offre, achats, ce | Quart d'heures QSE | https://safeplace.teepee.fr/#/viewData/92F82BEE/4231E439/14DHeureQHSE/QuartDHeureSeCuriteEnvironnement |
 
 Non-conformités a été relevée à nouveau par Bastou le 2026-10-10 : le formulaire est
 passé sur sa vue `FicheDeNonConformiteV3`, l'ancienne vue `FicheDeNonConformite` ne sert

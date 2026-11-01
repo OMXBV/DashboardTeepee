@@ -22,6 +22,7 @@ Dans TeePee, chacune de ces pages est une entrée « Home page » du menu **Aide
 | `rh.html` | RH · Home page | 4 rôles CRE : directeur, gestionnaire RH, responsable RH |
 | `pepiniere.html` | à créer | admins et RH du pôle qui suivent les pépiniéristes. Les pépiniéristes eux-mêmes n'y ont pas accès, ils ont leur profil ailleurs. Rôles exacts à confirmer dans l'export, le menu `DF694CB5` étant postérieur à l'analyse |
 | `st-en.html` | OSI · sous-traitants | rôle OSI · Sous-traitant, et les Méthodes & HSE qui contrôlent leurs documents. Côté logistique, le sous-traitant n'ouvre que les pick-up permits (voir, créer, modifier), plus les items et les lieux en lecture |
+| `ce.html` | à créer, CE · Home page | bureau d'études (rôles CE : chargés d'études, responsable ingénierie, à confirmer dans l'export). **Au 2026-11-01 les deux cartes CE ne sont ouvrables que par l'Administrateur** : menu CE en accès admin, demandes de fiches dans Paramétrage IN. Ouvrir les droits avant de servir la page |
 | `st.html` | à créer, ORES, plus tard | version française pour les sous-traitants ORES, gardée de côté |
 | `ia.html` | à créer | l'assistant IA Copilot Studio. Aucune carte TeePee, la page ne porte que la conversation : son public est celui à qui l'agent est partagé côté Microsoft |
 | `base-vie.html` | à créer | le calculateur base vie, pour qui prépare un chantier : chefs de chantier, conducteurs de travaux, QHSE. Aucune carte TeePee, rien à vérifier dans l'export. Public exact à confirmer |
