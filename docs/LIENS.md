@@ -124,12 +124,12 @@ fichier, et l'historique en bas.
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
-| View all projects | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/default_Projets |
+| View all projects | `DDCDAF73` / `7ADDAB11` | en, ce | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/default_Projets |
 | My projects, vue `ProjetsOSI`, à filtrer côté TeePee pour que chaque sous-traitant ne voie que son projet | `DDCDAF73` / `7ADDAB11` | st-en | https://safeplace.teepee.fr/#/category/DDCDAF73/7ADDAB11/dataList/Projets/ProjetsOSI |
-| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/98EE3433-FBE0-44E2-B1CA-39A70FC34B79 |
-| Ballinknockane | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/00F71013-6615-4195-A339-B004991B3CB7 |
-| Garr | `DDCDAF73` / `7ADDAB11` | en, st | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/4F9DBAFD-E998-4801-8C86-EC361E5F5006 |
-| Johnstown North | `DDCDAF73` / `7ADDAB11` | en | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/F1713C99-2928-4BAB-8E2A-9EC6BFD70761 |
+| ThreeCastle | `DDCDAF73` / `7ADDAB11` | en, st, ce | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/98EE3433-FBE0-44E2-B1CA-39A70FC34B79 |
+| Ballinknockane | `DDCDAF73` / `7ADDAB11` | en, ce | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/00F71013-6615-4195-A339-B004991B3CB7 |
+| Garr | `DDCDAF73` / `7ADDAB11` | en, st, ce | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/4F9DBAFD-E998-4801-8C86-EC361E5F5006 |
+| Johnstown North | `DDCDAF73` / `7ADDAB11` | en, ce | https://safeplace.teepee.fr/#/viewData/DDCDAF73/7ADDAB11/Projets/ENWEBV3/F1713C99-2928-4BAB-8E2A-9EC6BFD70761 |
 
 ## MPA · CRM
 
@@ -229,7 +229,7 @@ Module logistique OSI (projets Garr et Johnstown North), menu TeePee « Logistic
 
 Menu `FFF3B773`, créé le 2026-10-26 pour le bureau d'études, porté par la page `ce.html`. Relevé dans TeePee le 2026-11-01.
 
-**Droits ouverts le 2026-11-01.** Menu CE visible de l'Administrateur, ORES · Chargé d'études, ORES · Responsable Ingénierie, OHS · Responsable Bureau d'étude et Support · Service QHSE. Chargé d'études et Responsable Ingénierie voient, créent et modifient Suivi des plans, les demandes et le référentiel, sans droit de suppression. Page d'accueil TeePee : entrée « CE · Home page » du menu Aide, dashboard « Home page · CE ».
+**Droits ouverts le 2026-11-01.** Menu CE visible de l'Administrateur, ORES · Chargé d'études, ORES · Responsable Ingénierie, OHS · Responsable Bureau d'étude et Support · Service QHSE. Chargé d'études et Responsable Ingénierie voient, créent et modifient Suivi des plans, les demandes et le référentiel, sans droit de suppression. Page d'accueil TeePee : entrée « CE · Home page » du menu Aide, dashboard « Home page · CE ». Le 2026-11-01, Chargé d'études et Responsable Ingénierie ajoutés au menu OSI « Projects » (`DDCDAF73`) : OSI n'a pas de bureau d'études propre, le BE ORES couvre ses projets. Les deux rôles voient et modifient déjà le formulaire `Projets`.
 
 | Libellé | Identifiants | Pages | URL |
 |---|---|---|---|
@@ -238,7 +238,7 @@ Menu `FFF3B773`, créé le 2026-10-26 pour le bureau d'études, porté par la pa
 | Demandes de fiches de contrôle, formulaire `BEImpleMentationDesFichesDeControLeQualite` (ex « IN · Implémentation ou modification des fiches de contrôle qualité ») | `FFF3B773` / `BA54A806` | ce | https://safeplace.teepee.fr/#/category/FFF3B773/BA54A806/dataList/BEImpleMentationDesFichesDeControLeQualite/default_BEImpleMentationDesFichesDeControLeQualite |
 | Référentiel des fiches de contrôle, formulaire `NomDesFiches`, pas de carte | `FFF3B773` / `0F383B50` | aucune | https://safeplace.teepee.fr/#/category/FFF3B773/0F383B50/dataList/NomDesFiches/default_NomDesFiches |
 
-La page reprend aussi, depuis les sections existantes : Tous les projets et les huit projets France, les tableaux de bord Suivi fiche de contrôle et Suivi chantier, Support, Plan d'action, Non-conformités et Quart d'heures QSE.
+La page reprend aussi, depuis les sections existantes : Tous les projets et les huit projets France, les quatre projets OSI et View all projects (section Projets International, ajoutés le 2026-11-01), les tableaux de bord Suivi fiche de contrôle et Suivi chantier, Support, Plan d'action, Non-conformités et Quart d'heures QSE.
 
 ## Transverse
 
